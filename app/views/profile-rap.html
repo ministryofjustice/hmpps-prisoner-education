@@ -1,0 +1,445 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+        <ol class="govuk-breadcrumbs__list">
+
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="../../dps-home">Digital Prison Services</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="../../prisoners-arriving-today">Prisoners expected to arrive on Thursday 20 May</a>
+            </li>
+        </ol>
+    </div>
+    <main class="govuk-main-wrapper">
+
+        <div class="header-with-link">
+            <h1 class="govuk-heading-l">James, Ben</h1>
+        </div>
+
+        <div class="prisoner-header">
+            <div class="prisoner-header__image-container">
+                    <img src="/public/images/NoPhoto.png" alt="Picture of" class="prisoner-image">
+            </div>
+            <div class="prisoner-header__details">
+                <div class="prisoner-header__details__alerts">
+                </div>
+                <ul class="prisoner-header__details__information">
+                    <li class="">
+                        <strong>Date of birth</strong>
+                        <br>
+                        <span data-test="">
+            13 August 1991
+            </span>
+                    </li>
+
+                    <li class="">
+                        <strong>Age</strong>
+                        <br>
+                        <span data-test="">
+            <span>
+            29
+            </span>
+            </span>
+                    </li>
+
+                    <li class="">
+                        <strong>Nationality</strong>
+                        <br>
+                        <span data-test="">
+            <span>British</span>
+            </a>
+            </span>
+                    </li>
+
+                    <li class="">
+                        <strong>Prison number</strong>
+                        <br>
+                        <span data-test="">
+                    G6539GZ
+                    </span>
+                    </li>
+
+                    <li class="">
+                        <strong>PNC number</strong>
+                        <br>
+                        <span data-test="">
+            <span>
+            26/836373L
+            </span>
+            </span>
+                    </li>
+
+                    <li class="">
+                        <strong>CRO number</strong>
+                        <br>
+                        <span data-test="">
+            <span>452581/35A</span>
+            </a>
+            </span>
+                    </li>
+                    <li class="">
+                        <strong>Returning from</strong>
+                        <br>
+                        <span data-test="keyworker-name">
+            Hospital appointment
+            </span>
+                    </li>
+                    <li class="">
+                        <strong>Custody status</strong>
+                        <br>
+                        <span data-test="last-session">
+            On remand
+            </span>
+                    </li>
+                    <li>
+                        <strong>Move status</strong>
+                        <br>
+                        <span data-test="">
+            Out at 08:15
+            </span>
+          </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <a href="confirm-arrival" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+            Confirm arrival
+            <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+            </svg></a>
+
+        <div class="govuk-tabs" data-module="govuk-tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#tab-1">
+                Overview
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-2">
+                Personal details
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-3">
+                Risk information (2)
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-4">
+                Reception notes (0)
+              </a>
+            </li>
+          </ul>
+          <div class="govuk-tabs__panel" id="tab-1">
+            <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+              <h2 class="govuk-heading-l">Overview</h2>
+
+            <h2 class="govuk-heading-m">Personal details</h2>
+
+            <div data-test="risk-summary">
+            <dl class="govuk-summary-list">
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Full name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Ben James
+                </dd>
+
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Date of birth
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  13 August 1991
+                </dd>
+
+              </div>
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Age
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      29
+                    </dd>
+
+                  </div>
+
+            </dl>
+
+              </div>
+<h2 class="govuk-heading-m">Offence and custody status</h2>
+              <div data-test="offence">
+              <dl class="govuk-summary-list">
+
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Current offence
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Robbery
+                      </dd>
+
+                    </div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Custody status
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        On remand
+                      </dd>
+
+                    </div>
+
+              </dl>
+
+                </div>
+
+            </div>
+
+</div>
+
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-2">
+                        <h2 class="govuk-heading-l">Personal details</h2>
+            <div data-test="personal-summary">
+
+            <dl class="govuk-summary-list">
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Ben James
+                </dd>
+
+              </div>
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Date of birth
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      13 August 1991
+                    </dd>
+
+                  </div>
+
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Age
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      29
+                    </dd>
+
+                  </div>
+
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Nationality
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      British
+                    </dd>
+
+                  </div>
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Ethnicity
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      White: Eng./Welsh/Scot./N.Irish/British (W1)
+                    </dd>
+
+                  </div>
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Last known address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      12 Seaside Parade, Whitby, YO10 3HP
+                    </dd>
+
+                  </div>
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Disabilities
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Not entered
+                    </dd>
+                  </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Tattoos or scars
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Not entered
+                      </dd>
+</div>
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Smoker or vaper
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        No
+                      </dd>
+
+                  </div>
+
+
+            </dl>
+
+              </div>
+
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-3">
+            <h2 class="govuk-heading-l">Risk information</h2>
+            <table class="govuk-table fixed-table" data-qa="inactive-alerts-table">
+
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+
+          <th scope="col" class="govuk-table__header">Type of risk</th>
+
+          <th scope="col" class="govuk-table__header">Details</th>
+
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Comments</th>
+
+          <th scope="col" class="govuk-table__header">Date from /<br>date closed</th>
+
+          <th scope="col" class="govuk-table__header">Added by /<br>closed by</th>
+
+        </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+
+
+            <tr class="govuk-table__row">
+
+
+
+              <td class="govuk-table__cell"
+              >Self Harm (H)</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >ACCT Post Closure (HMPS) (HA1)</td>
+
+
+
+
+              <td class="govuk-table__cell clip-overflow"
+              >None</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >25 November 2016<br>30 November 2016</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >Ben Stewart<br>Ben Stewart</td>
+
+
+            </tr>
+
+
+
+            <tr class="govuk-table__row">
+
+
+
+              <td class="govuk-table__cell"
+              >Self Harm (H)</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >ACCT Closed (HMPS) (HA2)</td>
+
+
+
+
+              <td class="govuk-table__cell clip-overflow"
+              >None</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >23 November 2016<br>25 November 2016</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >Ben Stewart<br>Ben Stewart</td>
+
+
+            </tr>
+
+
+      </tbody>
+    </table>
+
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-4">
+            <h2 class="govuk-heading-l">Reception notes</h2>
+              <a onclick="showAlert()" href="#" class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button" rel="noopener noreferrer">
+                  Add reception note
+              </a>
+            <!--<table class="govuk-table">-->
+              <!--<thead class="govuk-table__head">-->
+                <!--<tr class="govuk-table__row">-->
+                  <!--<th scope="col" class="govuk-table__header app-custom-class">Created</th>-->
+                  <!--<th scope="col" class="govuk-table__header app-custom-class">Note</th>-->
+                <!--</tr>-->
+              <!--</thead>-->
+              <!--<tbody class="govuk-table__body">-->
+              <!--</tbody>-->
+            <!--</table>-->
+          </div>
+        </div>
+
+    </main>
+</div>
+
+{% endblock %}
