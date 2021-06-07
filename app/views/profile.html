@@ -172,83 +172,333 @@
               </a>
             </li>
           </ul>
+
+<!--First tab of profile page-->
+
           <div class="govuk-tabs__panel" id="tab-1">
-            <div class="govuk-grid-row">
-            <div class="govuk-grid-column-full">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <div class="govuk-!-margin-bottom-6">
+                <h3 class="govuk-heading-m">Offences</h3>
 
-              <h2 class="govuk-heading-l">Overview</h2>
-
-            <h2 class="govuk-heading-m">Personal details</h2>
-
-            <div data-test="risk-summary">
-            <dl class="govuk-summary-list">
-
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Full name
-                </dt>
-                <dd class="govuk-summary-list__value">
-                    Ben James
-                </dd>
-
-              </div>
-
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Date of birth
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  13 August 1991
-                </dd>
-
-              </div>
-
-                  <div class="govuk-summary-list__row">
+                <div data-test="offender-offences">
+                  <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="offence-summary">
+                    <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
-                      Age
+                      Main offence
                     </dt>
                     <dd class="govuk-summary-list__value">
-                      29
+                      Robbery
                     </dd>
-
-                  </div>
-
-            </dl>
-
-              </div>
-<h2 class="govuk-heading-m">Offence and custody status</h2>
-              <div data-test="offence">
-              <dl class="govuk-summary-list">
-
-
-                    <div class="govuk-summary-list__row">
-                      <dt class="govuk-summary-list__key">
-                        Current offence
-                      </dt>
-                      <dd class="govuk-summary-list__value">
-                        Robbery
-                      </dd>
-
-                    </div>
-                    <div class="govuk-summary-list__row">
-                      <dt class="govuk-summary-list__key">
-                        Custody status
-                      </dt>
-                      <dd class="govuk-summary-list__value">
-                        On remand
-                      </dd>
-
                     </div>
 
-              </dl>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Imprisonment status
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Adult Imprisonment Without Option CJA03
+                  </dd>
 
                 </div>
 
-            </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Release date
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    24/11/2022
+                  </dd>
 
-</div>
+                </div>
+                </dl>
+                <a href="#" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">View sentence and release details</a>
+
+              </div>
+
+            </div>
+          </div>
+
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Finances</h3>
+        <div data-test="offender-balances">
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="money-summary">
+
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Spends
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="#" class="govuk-link govuk-link--no-visited-state">£0.00</a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Private cash
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="#" class="govuk-link govuk-link--no-visited-state">£25.00</a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Savings
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="#" class="govuk-link govuk-link--no-visited-state">£0.00</a>
+            </dd>
+          </div>
+
+
+        </dl>
+      </div>
+      </div>
+    </div>
+    </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Incentives and adjudications in last 3 months</h3>
+
+  <div data-test="incentives-and-adjudications">
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="incentives-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Incentive level warnings
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Incentive encouragements
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Last incentive level review
+        </dt>
+        <dd class="govuk-summary-list__value">
+          25 days ago
+        </dd>
+      </div>
+
+    </dl>
+
+    <a href="#" class="govuk-link govuk-link--no-visited-state govuk-body govuk-!-margin-bottom-2 govuk-!-display-inline-block" data-test="incentive-details-link">View incentive level details</a>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="adjudications-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Proven adjudications
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Active adjudications
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">No active awards</p>
+        </dd>
+      </div>
+
+    </dl>
+
+  <a href="#" class="govuk-link govuk-link--no-visited-state govuk-body" data-test="adjudication-history-link">View adjudication history</a>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Visits</h3>
+
+        <div data-test="visit-details">
+          <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="visits-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Remaining visits
+        </dt>
+        <dd class="govuk-summary-list__value">
+          26
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Remaining privileged visits
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Next visit date
+        </dt>
+        <dd class="govuk-summary-list__value">
+          No upcoming visits
+        </dd>
+      </div>
+      </dl>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Personal information</h3>
+<div data-test="personal-details">
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="personal-info-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Age
+        </dt>
+        <dd class="govuk-summary-list__value">
+          36
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Nationality
+        </dt>
+        <dd class="govuk-summary-list__value">
+          British
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          PNC number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          95/508700E
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          CRO number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          008252/96V
+        </dd>
+      </div>
+
+      <!--New addition by including LDD on Quick Look-->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Learning difficulties and disabilities (LDD)
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Autistic spectrum disorder
+          <br>
+          Dyslexia
+        </dd>
+      </div>
+
+    </dl>
+    </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Schedule</h3>
+      <div data-test="schedules">
+        <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="schedule-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Morning
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <div class="">
+                <strong>AWAITING INDUCTION</strong>
+                <span></span>
+                <div>
+                  08:15
+                   to 11:45
+                </div>
+              </div>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Afternoon
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <div class="">
+                <strong>AWAITING INDUCTION</strong>
+                <span></span>
+                <div>
+                  14:00
+                   to 16:45
+                </div>
+              </div>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Evening
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Nothing scheduled</p>
+        </dd>
+      </div>
+</dl>
+
+        <a href="#" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">
+           View 7 day schedule
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="prisoner-footer">
+    <p class="govuk-body" data-test="data-retention-record-details">
+      <strong>Prevent removal of this offender record:</strong>
+      Not set -
+      <a href="#" class="govuk-link govuk-link--no-visited-state">
+        Update
+      </a>
+    </p>
+  </div>
 
           </div>
+
+<!--Second tab of profile page-->
+
           <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-2">
                         <h2 class="govuk-heading-l">Personal details</h2>
             <div data-test="personal-summary">
