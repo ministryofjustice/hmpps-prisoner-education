@@ -19,6 +19,60 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+// Learning status
+
+.govuk-tabs__panel {
+  @include govuk-responsive-margin(0, "bottom");
+  padding: govuk-spacing(6) 0 !important;
+  // padding: govuk-spacing(6) govuk-spacing(4);
+  // border: 1px solid $govuk-border-colour;
+  // border-top: 0;
+  border: none !important;
+}
+
+.status {
+  display: inline-block;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 1;
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+}
+
+.in-progress {
+  background-color: #CCDEEF;
+}
+
+.deferred {
+  background-color: #F9E6A7;
+}
+
+.pass {
+  background-color: #BAEAB8;
+}
+
+.merit {
+  background-color: #BAEAB8;
+}
+
+.fail {
+  background-color: #D9A0A0;
+}
+
+.withdrawn {
+  background-color: #E2E2E2;
+}
+
 // DPS header
 @import "components/dps-header";
 
