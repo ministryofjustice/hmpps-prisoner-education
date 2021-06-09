@@ -1,0 +1,1341 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+        <ol class="govuk-breadcrumbs__list">
+
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="../../dps-home">Digital Prison Services</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                Armstrong, Dylan Adam
+            </li>
+        </ol>
+    </div>
+    <main class="govuk-main-wrapper">
+
+        <div class="header-with-link">
+            <h1 class="govuk-heading-l">Armstrong, Dylan Adam</h1>
+        </div>
+
+        <div class="prisoner-header">
+            <div class="prisoner-header__image-container">
+                    <img src="/public/images/dylan-photo.jpg" alt="Picture of Dylan" class="prisoner-image">
+            </div>
+            <div class="prisoner-header__details">
+                <div class="prisoner-header__details__alerts">
+                </div>
+                <ul class="prisoner-header__details__information">
+                    <li class="nomis ID">
+                        <strong>Prison number</strong>
+                        <br>
+                        <span data-test="G2911GD">
+                        G2911GD
+                        </span>
+                    </li>
+
+                    <li class="category">
+                        <strong>Category </strong>
+                        <br>
+                        <span data-test="Cat C">
+                        <span>
+                        Cat C
+                        </span>
+                        <br>
+                        <a href="#" class="govuk-link govuk-link--no-visited-state">View category</a>
+                        </span>
+                      </li>
+
+                      <li class="incentive level">
+                          <strong>Incentive level</strong>
+                          <br>
+                          <span data-test="standard">
+                          <span>
+                          Standard
+                          </span>
+                          <br>
+                          <a href="#" class="govuk-link govuk-link--no-visited-state">View details</a>
+                          </span>
+                        </li>
+
+                    <li class="location">
+                        <strong>Location</strong>
+                        <br>
+                        <span data-test="D-4-027">
+                        <span>D-4-027<br>Hull (HMP)</span>
+                        <br>
+                        <a href="#" class="govuk-link govuk-link--no-visited-state">View details</a>
+                        </span>
+                    </li>
+
+                    <li class="CSRA">
+                        <strong>CSRA</strong>
+                        <br>
+                        <span data-test="Standard">
+                    Standard - 01/06/2021
+                    <br>
+                    <a href="#" class="govuk-link govuk-link--no-visited-state">View details</a>
+                    </span>
+                    </span>
+                    </li>
+
+
+                    <li class="Alerts">
+                        <strong>Alerts</strong>
+                        <br>
+                        <span data-test="1 active alert">
+                        1 active, 0 inactive
+                        <br>
+                        <a href="#" class="govuk-link govuk-link--no-visited-state">View alerts</a>
+                        </span>
+                    </li>
+
+                    <li class="Key worker">
+                        <strong>Key worker</strong>
+                        <br>
+                        <span data-test="last-session">
+                        Terry King
+                        </span>
+                        <br>
+                        <strong>Last session</strong>
+                        <br>
+                        <span data-test="last-session">
+                        No previous session
+                        </span>
+                    </li>
+
+                    <li class="POM">
+                        <strong>Prison Offender Manager</strong>
+                        <br>
+                        <span data-test="">
+                        Molly Metcalfe
+                        </span>
+                    </li>
+                </ul>
+
+                <div class="prisoner-header__details__actions">
+
+
+      <a href="#" role="button" draggable="false" class="govuk-button govuk-button--link govuk-!-margin-bottom-3" data-module="govuk-button">
+        Add a case note
+      </a>
+
+
+    <a href="#" role="button" draggable="false" class="govuk-button govuk-button--link govuk-!-margin-bottom-3" data-module="govuk-button">
+      Add an appointment
+    </a>
+
+        </div>
+
+            </div>
+        </div>
+
+        <div class="govuk-tabs" data-module="govuk-tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#tab-1">
+                Quick look
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-2">
+                Personal
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-3">
+                Alerts
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-4">
+                Case notes
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-4">
+                Sentence and release
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-4">
+                Learning and skills
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#tab-4">
+                Goals
+              </a>
+            </li>
+          </ul>
+
+<!--First tab of profile page-->
+
+          <div class="govuk-tabs__panel" id="tab-1">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <div class="govuk-!-margin-bottom-6">
+                <h3 class="govuk-heading-m">Offences</h3>
+
+                <div data-test="offender-offences">
+                  <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="offence-summary">
+                    <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Main offence
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      Robbery
+                    </dd>
+                    </div>
+
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Imprisonment status
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Adult Imprisonment Without Option CJA03
+                  </dd>
+
+                </div>
+
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Release date
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    24/11/2022
+                  </dd>
+
+                </div>
+                </dl>
+                <a href="#" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">View sentence and release details</a>
+
+              </div>
+
+            </div>
+          </div>
+
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Finances</h3>
+        <div data-test="offender-balances">
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="money-summary">
+
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Spends
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="#" class="govuk-link govuk-link--no-visited-state">£0.00</a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Private cash
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="#" class="govuk-link govuk-link--no-visited-state">£25.00</a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Savings
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <a href="#" class="govuk-link govuk-link--no-visited-state">£0.00</a>
+            </dd>
+          </div>
+
+
+        </dl>
+      </div>
+      </div>
+    </div>
+    </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Incentives and adjudications in last 3 months</h3>
+
+  <div data-test="incentives-and-adjudications">
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="incentives-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Incentive level warnings
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Incentive encouragements
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Last incentive level review
+        </dt>
+        <dd class="govuk-summary-list__value">
+          25 days ago
+        </dd>
+      </div>
+
+    </dl>
+
+    <a href="#" class="govuk-link govuk-link--no-visited-state govuk-body govuk-!-margin-bottom-2 govuk-!-display-inline-block" data-test="incentive-details-link">View incentive level details</a>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="adjudications-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Proven adjudications
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Active adjudications
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">No active awards</p>
+        </dd>
+      </div>
+
+    </dl>
+
+  <a href="#" class="govuk-link govuk-link--no-visited-state govuk-body" data-test="adjudication-history-link">View adjudication history</a>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Visits</h3>
+
+        <div data-test="visit-details">
+          <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="visits-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Remaining visits
+        </dt>
+        <dd class="govuk-summary-list__value">
+          26
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Remaining privileged visits
+        </dt>
+        <dd class="govuk-summary-list__value">
+          0
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Next visit date
+        </dt>
+        <dd class="govuk-summary-list__value">
+          No upcoming visits
+        </dd>
+      </div>
+      </dl>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-6">
+        <h3 class="govuk-heading-m">Personal information</h3>
+<div data-test="personal-details">
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="personal-info-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Age
+        </dt>
+        <dd class="govuk-summary-list__value">
+          36
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Nationality
+        </dt>
+        <dd class="govuk-summary-list__value">
+          British
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          PNC number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          95/508700E
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          CRO number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          008252/96V
+        </dd>
+      </div>
+
+      <!--New addition by including LDD on Quick Look-->
+      <!--Decided not to split this in 'primary' and 'additional' because although this is how the data is captured in Curious, it's irrelevant for the end user to see. It doesn't mean anything.-->
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Learning difficulties and disabilities (LDD)
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Autistic spectrum disorder
+          <br>
+          Dyslexia
+        </dd>
+      </div>
+
+    </dl>
+    </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">Schedule</h3>
+      <div data-test="schedules">
+        <dl class="govuk-summary-list govuk-!-margin-bottom-2" data-test="schedule-summary">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Morning
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <div class="">
+                <strong>AWAITING INDUCTION</strong>
+                <span></span>
+                <div>
+                  08:15
+                   to 11:45
+                </div>
+              </div>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Afternoon
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <div class="">
+                <strong>AWAITING INDUCTION</strong>
+                <span></span>
+                <div>
+                  14:00
+                   to 16:45
+                </div>
+              </div>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Evening
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Nothing scheduled</p>
+        </dd>
+      </div>
+</dl>
+
+        <a href="#" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">
+           View 7 day schedule
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="prisoner-footer">
+    <p class="govuk-body" data-test="data-retention-record-details">
+      <strong>Prevent removal of this offender record:</strong>
+      Not set -
+      <a href="#" class="govuk-link govuk-link--no-visited-state">
+        Update
+      </a>
+    </p>
+  </div>
+
+          </div>
+
+<!--Second tab of profile page-->
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-2">
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-half">
+                <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                  <div class="govuk-accordion__section ">
+                    <div class="govuk-accordion__section-header">
+                      <h2 class="govuk-accordion__section-heading">
+                        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                          Personal details
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                      <dl class="govuk-summary-list">
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Age
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            36
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Date of birth
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            03/01/1985
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Place of birth
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Leeds
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Gender
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Male
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Ethnicity
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            White: Eng./Welsh/Scot./N.Irish/British (W1)
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Religion of belief
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Church of England (Anglican)
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Nationality
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            British
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Sexual orientation
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Heterosexual/ Straight
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Marital status
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Single-not married/in civil partnership
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Number of children
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            1
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Smoker or vaper
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Yes
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Interest to immigration
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Not entered
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Warned about tattooing
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Yes
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Warned not to change appearance
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Yes
+                          </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Property
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            None
+                          </dd>
+                        </div>
+
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="govuk-accordion__section ">
+                    <div class="govuk-accordion__section-header">
+                      <h2 class="govuk-accordion__section-heading">
+                        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                          Physical characteristics
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                      <dl class="govuk-summary-list">
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Height
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        1.7m
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Weight
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        74kg
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Hair colour
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Brown
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Left eye colour
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Brown
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Right eye colour
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Brown
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Facial hair
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Clean Shaven
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Shape of face
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Oval
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Build
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Slight
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Shoe size
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        9
+                      </dd>
+                    </div>
+
+                  </dl>
+                    </div>
+
+                  </div>
+                  <div class="govuk-accordion__section ">
+                    <div class="govuk-accordion__section-header">
+                      <h2 class="govuk-accordion__section-heading">
+                        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                          Distinguishing marks
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                      <div id="prisoner-accordion-content-3 " class="govuk-accordion__section-content" aria-labelledby="prisoner-accordion-heading-3">
+
+                <div data-test="distinguishing-marks-summary">
+
+                  <h3 class="govuk-summary-list-title govuk-heading-s">Tattoo</h3>
+
+                  <dl class="govuk-summary-list">
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                        Body part
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Wrist
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                        Side
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Right
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                        Comment
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Female name 'Laura'
+                      </dd>
+                    </div>
+
+                  </dl>
+                </div>
+
+                  </div>
+                  </div>
+                  </div>
+
+                  <div class="govuk-accordion__section ">
+                    <div class="govuk-accordion__section-header">
+                      <h2 class="govuk-accordion__section-heading">
+                        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                          Personal care needs
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                      <p class='govuk-body'>None</p>
+                    </div>
+                  </div>
+
+                  <div class="govuk-accordion__section ">
+                    <div class="govuk-accordion__section-header">
+                      <h2 class="govuk-accordion__section-heading">
+                        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                          Languages
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                      <p class='govuk-body'>No language entered</p>
+                    </div>
+                  </div>
+
+<!--New section! Functional skills, data comes from Curious-->
+
+                  <div class="govuk-accordion__section ">
+                    <div class="govuk-accordion__section-header">
+                      <h2 class="govuk-accordion__section-heading">
+                        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                          Functional skills level
+                        </span>
+                      </h2>
+                    </div>
+                    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                      <dl class="govuk-summary-list govuk-summary-list--no-border">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Maths
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Entry Level 2
+                          </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Assessment date
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            1 May 2021
+                          </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Assessment location
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            HMP Leeds
+                          </dd>
+                        </div>
+                      </dl>
+
+                      <hr class="govuk-section-break govuk-section-break--visible">
+
+                      <dl class="govuk-summary-list govuk-summary-list--no-border">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            English/ Welsh
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Entry Level 2
+                          </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Assessment date
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            2 May 2021
+                          </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Assessment location
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            HMP Leeds
+                          </dd>
+                        </div>
+                      </dl>
+
+                      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+                      <dl class="govuk-summary-list govuk-summary-list--no-border">
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Digital Literacy
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            Entry Level 1
+                          </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Assessment date
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            1 June 2021
+                          </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Assessment location
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            HMP Hull
+                          </dd>
+                        </div>
+                      </dl>
+
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="govuk-grid-column-one-half">
+                  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                    <div class="govuk-accordion__section ">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-7">
+                            Aliases
+                          </span>
+                        </h2>
+                      </div>
+                      <div id="accordion-default-content-7" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-7">
+                        <p class='govuk-body'>None</p>
+                      </div>
+                    </div>
+
+                    <div class="govuk-accordion__section ">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-8">
+                            Identifiers
+                          </span>
+                        </h2>
+                      </div>
+                      <div id="accordion-default-content-8" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-8">
+                        <dl class="govuk-summary-list">
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          PNC number
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          13/297504W
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          CRO number
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          325534/13A
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          National insurance number
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          WP042383D
+                        </dd>
+                      </div>
+
+                    </dl>
+                      </div>
+                    </div>
+
+                    <div class="govuk-accordion__section ">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-9">
+                            Prisoner's address
+                          </span>
+                        </h2>
+                      </div>
+                      <div id="accordion-default-content-9" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-9">
+                        <div id="prisoner-accordion-content-9 " class="govuk-accordion__section-content" aria-labelledby="prisoner-accordion-heading-9">
+
+                  <div data-test="addresses-summary">
+
+                  <h3 class="govuk-summary-list-title govuk-heading-s govuk-!-padding-bottom-1">Primary address</h3>
+
+                      <p class="govuk-body govuk-!-margin-bottom-1" data-test="address-type">Discharge - Permanent Housing</p>
+                      <dl class="govuk-summary-list">
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                          Address
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          12 Seaside Parade
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                          Town
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          Whitby
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                          Postcode
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                        YO10 3HP
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                          Country
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          England
+                        </dd>
+                      </div>
+
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                          Phone
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          Not entered
+                        </dd>
+                      </div>
+
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                          Added
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          May 2021
+                        </dd>
+                      </div>
+
+                    </dl>
+                  </div>
+                    </div>
+                  </div>
+
+                    <div class="govuk-accordion__section ">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-10">
+                            Personal contacts
+                          </span>
+                        </h2>
+                      </div>
+                      <div id="accordion-default-content-10" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-10">
+                        <div id="prisoner-accordion-content-10 " class="govuk-accordion__section-content" aria-labelledby="prisoner-accordion-heading-10">
+
+                      <div data-test="personal-contacts-summary">
+
+                        <h3 class="govuk-summary-list-title govuk-heading-s govuk-!-padding-bottom-1">Anne-Marie Coggins</h3>
+                        <p class="govuk-body govuk-!-margin-bottom-1">Next of kin</p>
+
+                        <dl class="govuk-summary-list">
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Relationship
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              Mother
+                            </dd>
+                          </div>
+
+
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Phone number
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              01947 123123
+                            </dd>
+                          </div>
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Address
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              2, Main Street
+                            </dd>
+                          </div>
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Town
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              Whitby
+                            </dd>
+                          </div>
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Postcode
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              Not entered
+                            </dd>
+                          </div>
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Country
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              England
+                            </dd>
+                          </div>
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Address phone
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              Not entered
+                            </dd>
+                          </div>
+
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                              Address type
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              Not entered
+                            </dd>
+
+                          </div>
+                    </dl>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="govuk-accordion__section ">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-11">
+                            Professional contacts
+                          </span>
+                        </h2>
+                      </div>
+                      <div id="accordion-default-content-11" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-11"><div id="professional-contacts" data-test="professional-contacts-summary">
+
+                      <div class="professional-contact">
+                          <h3 class="govuk-summary-list-title govuk-heading-s govuk-!-padding-bottom-1">Maria Peterson</h3>
+                        <p class="govuk-body govuk-!-margin-bottom-1">Offender Supervisor</p>
+                      </div>
+
+                    <div class="govuk-!-margin-top-3">
+                      <a href="#" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-19">View all professional contacts and their contact details</a>
+                    </div>
+
+                    </div>
+
+                      </div>
+                    </div>
+
+                    <!--New section! LDD, data comes from Curious-->
+
+                    <div class="govuk-accordion__section ">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-12">
+                            Learning difficulties and disabilities (LDD)
+                          </span>
+                        </h2>
+                      </div>
+                      <div id="accordion-default-content-12" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-12">
+                        <dl class="govuk-summary-list govuk-summary-list--no-border">
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                              Learning difficulties and disabilities (LDD)
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                            Autistic spectrum disorder
+                            <br>
+                            Dyslexia
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                  </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-3">
+            <h2 class="govuk-heading-l">Risk information</h2>
+            <table class="govuk-table fixed-table" data-qa="inactive-alerts-table">
+
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+
+          <th scope="col" class="govuk-table__header">Type of risk</th>
+
+          <th scope="col" class="govuk-table__header">Details</th>
+
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Comments</th>
+
+          <th scope="col" class="govuk-table__header">Date from /<br>date closed</th>
+
+          <th scope="col" class="govuk-table__header">Added by /<br>closed by</th>
+
+        </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+
+
+            <tr class="govuk-table__row">
+
+
+
+              <td class="govuk-table__cell"
+              >Self Harm (H)</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >ACCT Post Closure (HMPS) (HA1)</td>
+
+
+
+
+              <td class="govuk-table__cell clip-overflow"
+              >None</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >25 November 2016<br>30 November 2016</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >Ben Stewart<br>Ben Stewart</td>
+
+
+            </tr>
+
+
+
+            <tr class="govuk-table__row">
+
+
+
+              <td class="govuk-table__cell"
+              >Self Harm (H)</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >ACCT Closed (HMPS) (HA2)</td>
+
+
+
+
+              <td class="govuk-table__cell clip-overflow"
+              >None</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >23 November 2016<br>25 November 2016</td>
+
+
+
+
+              <td class="govuk-table__cell"
+              >Ben Stewart<br>Ben Stewart</td>
+
+
+            </tr>
+
+
+      </tbody>
+    </table>
+
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-4">
+            <h2 class="govuk-heading-l">Reception notes</h2>
+              <a onclick="showAlert()" href="#" class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button" rel="noopener noreferrer">
+                  Add reception note
+              </a>
+            <!--<table class="govuk-table">-->
+              <!--<thead class="govuk-table__head">-->
+                <!--<tr class="govuk-table__row">-->
+                  <!--<th scope="col" class="govuk-table__header app-custom-class">Created</th>-->
+                  <!--<th scope="col" class="govuk-table__header app-custom-class">Note</th>-->
+                <!--</tr>-->
+              <!--</thead>-->
+              <!--<tbody class="govuk-table__body">-->
+              <!--</tbody>-->
+            <!--</table>-->
+          </div>
+        </div>
+
+    </main>
+</div>
+
+{% endblock %}
