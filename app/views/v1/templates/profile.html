@@ -1218,11 +1218,197 @@
                   </div>
                 </div>
 
-  <!--Tab 3-->
+  <!--Tab 3 ALERTS-->
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-3">
 
+        <div class="govuk-width-container govuk-!-padding-3 govuk-!-margin-bottom-5 form-background">
+    <h2 class="govuk-heading-m">View by</h2>
+    <form class="horizontal-form govuk-!-display-none-print govuk-body govuk-!-margin-bottom-3">
+      <input type="hidden" name="_csrf" value="b5YR3L1I-j8ic7pUA-47zvf5XjvvFbCUmtX8">
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="active">
+    Active or inactive
+  </label>
+
+  <select class="govuk-select" id="active" name="active" data-qa="active-filter">
+
+      <option value="ACTIVE">Active</option>
+
+      <option value="INACTIVE">Inactive</option>
+
+
+  </select>
+</div>
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="alertType">
+    Type of alert
+  </label>
+
+
+  <select class="govuk-select" id="alertType" name="alertType" data-qa="type-filter">
+
+      <option value="">Select</option>
+
+      <option value="L">Care Leaver</option>
+
+      <option value="C">Child Communication Measures</option>
+
+      <option value="U">COVID unit management</option>
+
+      <option value="F1">Ex Armed Forces</option>
+
+      <option value="T">Hold Against Transfer</option>
+
+      <option value="P">MAPPP Case</option>
+
+      <option value="M">Medical</option>
+
+      <option value="O">Other</option>
+
+      <option value="R">Risk</option>
+
+      <option value="X">Security</option>
+
+      <option value="D">Security. Do not share with offender</option>
+
+      <option value="H">Self Harm</option>
+
+      <option value="S">Sexual Offence</option>
+
+      <option value="A">Social Care</option>
+
+      <option value="V">Vulnerability</option>
+
+      <option value="W">Warrant</option>
+
+  </select>
+</div>
+
+
+
+    <div class="date-picker-container ">
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="fromDate">
+    Date from
+  </label>
+
+<input class="govuk-input date-input undefined hasDatepicker" id="fromDate" name="fromDate" type="text" autocomplete="off" data-qa="from-filter" placeholder="DD/MM/YYYY" readonly="readonly">
+</div>
+
+    </div>
+
+    <div class="date-picker-container ">
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="toDate">
+    Date to
+  </label>
+
+<input class="govuk-input date-input undefined hasDatepicker" id="toDate" name="toDate" type="text" autocomplete="off" data-qa="to-filter" placeholder="DD/MM/YYYY" readonly="readonly">
+</div>
+
+    </div>
+
+
+<button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+  Apply
+</button>
+
+      <a href="#" data-qa="clear-link" class="govuk-link govuk-link--no-visited-state govuk-!-padding-bottom-1 govuk-body govuk-!-margin-left-3">Clear</a>
+    </form>
+  </div>
+
+  <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <h2 class="govuk-heading-m" data-qa="alerts-table-title">Active alerts</h2>
+        </div>
+
+      <div class="govuk-grid-column-one-half">
+
+
+<a href="#" role="button" draggable="false" class="govuk-button govuk-button--link" data-module="govuk-button" data-test="active-create-alerts-link" style="float:right">
+  Create an alert
+</a>
+
       </div>
+
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+  <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list"></ul>
+    <p class="moj-pagination__results">Showing <b>1</b> to <b>2</b> of <b>2</b> results</p>
+  </nav>
+
+  <table class="govuk-table fixed-table" data-qa="active-alerts-table">
+
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+
+      <th scope="col" class="govuk-table__header">Type of alert</th>
+
+      <th scope="col" class="govuk-table__header">Alert</th>
+
+      <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Comments</th>
+
+      <th scope="col" class="govuk-table__header">Date from</th>
+
+      <th scope="col" class="govuk-table__header">Added by</th>
+
+      <th scope="col" class="govuk-table__header"> </th>
+
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Security (X)</td>
+          <td class="govuk-table__cell">Terrorism Act or Related Offence (XTACT)</td>
+          <td class="govuk-table__cell clip-overflow">this is the 2nd update done by the 2nd user</td>
+          <td class="govuk-table__cell">17 January 2020</td>
+          <td class="govuk-table__cell">Dom Bull</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric"><button class="govuk-button govuk-button--secondary" href="#">Change or close</button></td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MAPPP Case (P)</td>
+          <td class="govuk-table__cell">MAPPA Level 2 Case (P2)</td>
+          <td class="govuk-table__cell clip-overflow">iiEfvyTBiiEfvyTB</td>
+          <td class="govuk-table__cell">3 June 2015</td>
+          <td class="govuk-table__cell">Ipoustius Leoneph</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric"><button class="govuk-button govuk-button--secondary" href="#">Change or close</button></td>
+        </tr>
+
+  </tbody>
+</table>
+
+<nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+<ul class="moj-pagination__list"></ul>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>2</b> of <b>2</b> results</p>
+</nav>
+
+        </div>
+      </div>
+
+      </div>
+
+
+  <!--Tab 3 CASE NOTES-->
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-4">
 
