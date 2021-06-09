@@ -1408,11 +1408,202 @@
       </div>
 
 
-  <!--Tab 3 CASE NOTES-->
+  <!--Tab 4 CASE NOTES-->
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-4">
 
+        <div class="govuk-width-container govuk-!-padding-3 govuk-!-margin-bottom-5 form-background">
+        <h2 class="govuk-heading-m">View by</h2>
+        <form class="horizontal-form govuk-body govuk-!-margin-bottom-3" method="GET">
+            <input type="hidden" name="pageOffsetOption" value="0">
+
+
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="type">
+                Type
+              </label>
+
+
+              <select class="govuk-select" id="type" name="type">
+
+                  <option value="">Select</option>
+                  <option value="ACP">Accredited Programme</option>
+                  <option value="ACHIEVEMENTS">Achievements</option>
+                  <option value="ATR">Alcohol Treatment Requirement</option>
+                  <option value="ALERT">Alert</option>
+                  <option value="APP">Appointment</option>
+                  <option value="BR">Breach</option>
+                  <option value="CNOTE">Case Note</option>
+                  <option value="CHAP">Chaplaincy</option>
+                  <option value="COMMS">Communication</option>
+                  <option value="CAB">Conduct &amp; Behaviour</option>
+                  <option value="CRT">Court</option>
+                  <option value="CVM">Custodial Violence Management Model</option>
+                  <option value="DRR">Drug Rehabilitation Requirement</option>
+                  <option value="DSPD">DSPD Offender</option>
+                  <option value="EARNED_HDC">Earned HDC Scheme</option>
+                  <option value="ETE">Education, Training and Employment</option>
+                  <option value="EN">Enforcement</option>
+                  <option value="IEP ENTRY">Entry Level IEP information</option>
+                  <option value="GEN">General</option>
+                  <option value="INTERVENTION">Interventions</option>
+                  <option value="KA">Key Worker Activity</option>
+                  <option value="LAB_ALLOC">Labour Allocation</option>
+                  <option value="LTR">Letter</option>
+                  <option value="MCHECK">Management Check</option>
+                  <option value="MHT">Mental Health Treatment Requirement</option>
+                  <option value="MOVED_CELL">Moved Cell</option>
+                  <option value="NCS">National Career Service</option>
+                  <option value="NEG">Negative Behaviour</option>
+                  <option value="OBSERVE">Observations</option>
+                  <option value="OM">Offender Management</option>
+                  <option value="PADVIS">Personal Advisor</option>
+                  <option value="PA">Planned Appointments</option>
+                  <option value="POS">Positive Behaviour</option>
+                  <option value="PRISON">Prison</option>
+                  <option value="TRANSFER">Prison Transfer</option>
+                  <option value="REC">Recall</option>
+                  <option value="REPORT">Report</option>
+                  <option value="REPORTS">Reports</option>
+                  <option value="REQUIREMENT">Requirement</option>
+                  <option value="SENTENCE">Sentence</option>
+                  <option value="SC">Social Care</option>
+                  <option value="SA">Specified Activity Requirement</option>
+                  <option value="SUPERVISION">Supervision</option>
+                  <option value="SUPPLAN">Supervision Plan</option>
+                  <option value="TC">Telephone call</option>
+                  <option value="TRNG">Training</option>
+                  <option value="UW">Unpaid Work</option>
+                  <option value="UPC">Unplanned contact</option>
+
+              </select>
+            </div>
+
+            <div id="subTypes">
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="subType">
+                Sub-type
+              </label>
+
+              <select class="govuk-select" id="subType" name="subType">
+
+                  <option value="">Select</option>
+
+              </select>
+            </div>
+
+            </div>
+
+
+            <div class="date-picker-container ">
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="fromDate">
+                From
+              </label>
+
+            <input class="govuk-input date-input undefined hasDatepicker" id="fromDate" name="fromDate" type="text" autocomplete="off" placeholder="DD/MM/YYYY" readonly="readonly">
+            </div>
+
+            </div>
+
+              <div class="date-picker-container ">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="toDate">
+                  To
+                </label>
+
+              <input class="govuk-input date-input undefined hasDatepicker" id="toDate" name="toDate" type="text" autocomplete="off" placeholder="DD/MM/YYYY" readonly="readonly">
+              </div>
+              </div>
+
+              <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                Apply
+              </button>
+
+              <a href="#" class="govuk-link">Clear</a>
+              </form>
+              </div>
+
+              <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+
+            <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+            <ul class="moj-pagination__list">
+                <li class="moj-pagination__item  moj-pagination__item--prev">
+                  <a class="moj-pagination__link" href="#">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+                </li>
+
+                    <li class="moj-pagination__item moj-pagination__item--active">1</li>
+
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">4</a></li>
+
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">5</a></li>
+
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">6</a></li>
+
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">7</a></li>
+
+                    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">8</a></li>
+
+                <li class="moj-pagination__item  moj-pagination__item--next">
+                  <a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+                </li>
+              </ul>
+              <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>159</b> results</p>
+            </nav>
+
+            <div class="govuk-body govuk-!-margin-top-0">
+                <a data-test="view-all-case-notes-top-link" href="#" class="govuk-link" style="float:right"> View all case notes</a>
+            </div>
+            <table class="govuk-table">
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Created</th>
+              <th scope="col" class="govuk-table__header">Case note detail</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Friday 26 March 2021
+                <br>16:17
+                <br>Dom Bull</td>
+              <td class="govuk-table__cell"><h3 class="govuk-heading-s">Alert: Made Inactive</h3>
+              <p class="govuk-body">Alert Risk and Listed on VISOR System made inactive.</p>
+              <p class="govuk-body">Happened: Friday 26 March 2021 - 13:30</p>
+            </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Friday 26 March 2021
+                <br>16:17
+                <br>Terry King</td>
+              <td class="govuk-table__cell"><h3 class="govuk-heading-s">Key Worker Activity: Key Worker Entry</h3>
+              <p class="govuk-body">Alert Risk and Listed on VISOR System made inactive.</p>
+              <p class="govuk-body">Happened: Tuesday 9 March 2021 - 09:00</p>
+            </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell">Friday 17 January 2021
+                <br>16:17
+                <br>Dom Bull</td>
+              <td class="govuk-table__cell"><h3 class="govuk-heading-s">Alert: Made Inactive</h3>
+              <p class="govuk-body">Alert Risk and Listed on VISOR System made inactive.</p>
+              <p class="govuk-body">Happened: Friday 26 March 2021 - 00:00</p>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+
       </div>
+
+        <!--Tab 5 Sentence and release-->
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-5">
         <div class="govuk-grid-row">
@@ -1455,49 +1646,48 @@
             </div>
             <div>
             <h3 class="govuk-heading-s govuk-!-margin-top-3"> Offences </h3>
-                <p class="govuk-body govuk-!-margin-left-9" data-test="offence-description"> Assault a girl under 13 by touching - SOA 2003 </p>
-                <p class="govuk-body govuk-!-margin-left-9" data-test="offence-description"> Common assault </p>
+                <p class="govuk-body govuk-!-margin-left-9" data-test="offence-description"> Robbery </p>
             </div>
             <div class="govuk-!-margin-bottom-4">
                 <b class="govuk-body govuk-!-font-weight-bold" data-test="sentence-header"> Sentence 1</b> <span class="govuk-body govuk-!-margin-left-1" data-test="sentence-description"> Licence Recall </span>
             </div>
             <dl class="govuk-summary-list" data-test="sentence-terms">
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
-          Start date
-        </dt>
-        <dd class="govuk-summary-list__value">
-          23 July 2013
-        </dd>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                Start date
+              </dt>
+              <dd class="govuk-summary-list__value">
+                23 July 2013
+              </dd>
 
-      </div>
+            </div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
-          Imprisonment
-        </dt>
-        <dd class="govuk-summary-list__value">
-          4 years, 6 months
-        </dd>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                Imprisonment
+              </dt>
+              <dd class="govuk-summary-list__value">
+                4 years, 6 months
+              </dd>
 
-      </div>
-    </dl>
+            </div>
+          </dl>
 
-    <h2 class="govuk-heading-m">Sentence adjustments</h2>
-    <h3 class="govuk-heading-s" data-test="other-release-dates-heading">Days removed from sentence</h3>
-    <dl class="govuk-summary-list" data-test="sentence-adjustments-days-removed-section">
+          <h2 class="govuk-heading-m">Sentence adjustments</h2>
+          <h3 class="govuk-heading-s" data-test="other-release-dates-heading">Days removed from sentence</h3>
+          <dl class="govuk-summary-list" data-test="sentence-adjustments-days-removed-section">
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
-          Recall remand
-        </dt>
-        <dd class="govuk-summary-list__value">
-          16
-        </dd>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-summary-list__key--indent">
+                Recall remand
+              </dt>
+              <dd class="govuk-summary-list__value">
+                16
+              </dd>
 
-      </div>
-    </dl>
+            </div>
+          </dl>
 
               </div>
               </div>
@@ -1585,11 +1775,139 @@
 
       </div>
 
+
+  <!--Tab 6 new section!-->
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-6">
+
+        <h2 class="govuk-heading-l">Learning and skills</h2>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Awarding body or organisation</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Start date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Planned or actual end date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Guided learning hours</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Status</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                BTEC
+              </td>
+              <td class="govuk-table__cell">
+                Level 2 Award in Construction - Carpentry
+              </td>
+              <td class="govuk-table__cell">
+                City & Guilds
+              </td>
+              <td class="govuk-table__cell">
+                HMP Winchester
+              </td>
+              <td class="govuk-table__cell">
+                3 Mar 2021
+              </td>
+              <td class="govuk-table__cell">
+                29 Mar 2022
+              </td>
+              <td class="govuk-table__cell">
+                44 hours
+              </td>
+              <td class="govuk-table__cell">
+                <div class="status in-progress">
+                  In Progress
+                </div>
+              </td>
+            </tr>
+            <!-- Row 2 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                BA/Bsc
+              </td>
+              <td class="govuk-table__cell">
+                BA/BSc (Honours) Design and Innovation
+              </td>
+              <td class="govuk-table__cell">
+                Open University
+              </td>
+              <td class="govuk-table__cell">
+                Distance learning
+              </td>
+              <td class="govuk-table__cell">
+                25 Feb 2021
+              </td>
+              <td class="govuk-table__cell">
+                21 Jun 2021
+              </td>
+              <td class="govuk-table__cell">
+                4 hours
+              </td>
+              <td class="govuk-table__cell">
+                <div class="status deferred">
+                  Deferred
+                </div>
+              </td>
+            </tr>
+            <!-- Row 3 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Numeracy skills
+              </td>
+              <td class="govuk-table__cell">
+                Milton Keynes College
+              </td>
+              <td class="govuk-table__cell">
+                Virtual Campus
+              </td>
+              <td class="govuk-table__cell">
+                16 Jan 2021
+              </td>
+              <td class="govuk-table__cell">
+                Ongoing
+              </td>
+              <td class="govuk-table__cell">
+                18 hours
+              </td>
+              <td class="govuk-table__cell">
+                <div class="status pass">
+                  Pass
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
 
+  <!--Tab 7 new section! Goals-->
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-7">
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-half">
+              <h3 class="govuk-heading-m">Employment goals</h3>
+              <p class="govuk-body">I want to work in the construction industry as a carpenter.</p>
+              <p class="govuk-body">To earn lots of money.</p>
+
+            </div>
+
+            <div class="govuk-grid-column-one-half">
+              <h3 class="govuk-heading-m">Personal goals</h3>
+              <p class="govuk-body">To get fit and healthy and do weights.</p>
+              <p class="govuk-body">To eat more vegetables and fruit.</p>
+              <p class="govuk-body">I want to improve my writing skills so I can start writing birthday and Christmas cards to my kids. I want them to be happy and be proud of me..</p>
+            </div>
+
+
+        </div>
+
 
       </div>
 
