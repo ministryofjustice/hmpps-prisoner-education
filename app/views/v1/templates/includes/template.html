@@ -131,6 +131,18 @@ text: "Restart journey"
     })
   }
 </script>
+
+<script>
+$(document).ready(function(){
+  $("#keyword").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#learningTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
 {% block pageScripts %}{% endblock %}
 {% endblock %}
 <!-- GOV.UK Prototype Kit {{releaseVersion}} -->

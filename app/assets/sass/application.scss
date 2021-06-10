@@ -21,6 +21,10 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Learning status
 
+.table-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
 .govuk-tabs__panel {
   @include govuk-responsive-margin(0, "bottom");
   padding: govuk-spacing(6) 0 !important;

@@ -1,9 +1,6 @@
 {% extends "./includes/template.html" %}
 
 {% block content %}
-
-
-
 <div class="govuk-width-container">
     <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
         <ol class="govuk-breadcrumbs__list">
@@ -1352,79 +1349,180 @@
 
           <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-6">
 
-            <!--Top filter-->
+            <h2 class="govuk-heading-l">Learning and skills</h2>
+            <!--Side filter-->
 
-            <div class="govuk-width-container govuk-!-padding-3 govuk-!-margin-bottom-5 form-background">
-            <h2 class="govuk-heading-m">View by</h2>
-            <form class="horizontal-form govuk-body govuk-!-margin-bottom-3" method="GET">
-                <input type="hidden" name="pageOffsetOption" value="0">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-quarter">
 
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="keyword">
-                      Keyword
-                  </label>
-                  <input class="govuk-input govuk-input--width-20" id="keyword" name="keyword" type="text">
+            <div class="moj-filter">
+
+              <div class="moj-filter__header">
+
+                <div class="moj-filter__header-title">
+                  <h2 class="govuk-heading-m">Filter</h2>
                 </div>
 
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="type">
-                    Status
-                  </label>
-                  <select class="govuk-select" id="type" name="type">
-                      <option value="">All</option>
-                      <option value="INPROGRESS">In progress</option>
-                      <option value="DEFERRED">Deferred</option>
-                      <option value="PASS">Pass</option>
-                      <option value="FAIL">Fail</option>
-                      <option value="WITHDRAWN">Withdrawn</option>
-                      <option value="MERIT">Merit</option>
-                  </select>
+                <div class="moj-filter__header-action">
+
                 </div>
 
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="sort">
-                    Sort by
-                  </label>
-                  <select class="govuk-select" id="sort" name="sort">
-                      <option value="">Select</option>
-                      <option value="INPROGRESS">Start date</option>
-                      <option value="DEFERRED">Planned or actual end date</option>
-                  
-                  </select>
-                </div>
+              </div>
 
+              <div class="moj-filter__content">
 
-                <!-- <div class="date-picker-container ">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="fromDate">
-                      From
-                    </label>
-                  <input class="govuk-input date-input undefined hasDatepicker" id="fromDate" name="fromDate" type="text" autocomplete="off" placeholder="DD/MM/YYYY" readonly="readonly">
+                <div class="moj-filter__selected">
+
+                  <div class="moj-filter__selected-heading">
+
+                    <div class="moj-filter__heading-title">
+                      <h2 class="govuk-heading-m">Selected filters</h2>
+                    </div>
+
+                    <!-- <div class="moj-filter__heading-action">
+                      <p><a class="govuk-link govuk-link--no-visited-state" href="">Clear filters</a></p>
+                    </div> -->
+
                   </div>
+
+                  <p class="govuk-body">No filters selected</p>
+
+                  <!-- <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Type</h3>
+
+                  <ul class="moj-filter-tags">
+
+                    <li><a class="moj-filter__tag" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Blue</a></li>
+
+                    <li><a class="moj-filter__tag" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Yellow</a></li>
+
+                  </ul>
+
+                  <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Status</h3>
+
+                  <ul class="moj-filter-tags">
+
+                    <li><a class="moj-filter__tag" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Completed</a></li>
+
+                  </ul> -->
+
                 </div>
 
-                <div class="date-picker-container ">
+                <div class="moj-filter__options">
+
+                  <button class="govuk-button" data-module="govuk-button">
+                    Apply filters
+                  </button>
+
                   <div class="govuk-form-group">
-                    <label class="govuk-label" for="toDate">
-                      To
+                    <label class="govuk-label govuk-label--s" for="keywords">
+                      Keywords
                     </label>
-                  <input class="govuk-input date-input undefined hasDatepicker" id="toDate" name="toDate" type="text" autocomplete="off" placeholder="DD/MM/YYYY" readonly="readonly">
+
+                    <input class="govuk-input" id="keywords" name="keywords" type="text">
                   </div>
-                </div> -->
 
-                <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
-                  Apply
-                </button>
+                  <div class="govuk-form-group">
 
-                <a href="#" class="govuk-link">Clear</a>
-                </form>
+                    <fieldset class="govuk-fieldset">
+
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+
+                        Location
+
+                      </legend>
+
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="location" name="location" location="checkbox" value="1" checked>
+                          <label class="govuk-label govuk-checkboxes__label" for="location">
+                            HMP Winchester (1)
+                          </label>
+
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="location-2" name="location" location="checkbox" value="2" checked>
+                          <label class="govuk-label govuk-checkboxes__label" for="location-2">
+                            Distance learning (1)
+                          </label>
+
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="location-3" name="location" location="checkbox" value="3">
+                          <label class="govuk-label govuk-checkboxes__label" for="location-3">
+                            Virtual campus (1)
+                          </label>
+
+                        </div>
+
+                      </div>
+
+                    </fieldset>
+
+                  </div>
+
+                  <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset">
+
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+
+                        Status
+
+                      </legend>
+
+                      <div class="govuk-checkboxes govuk-checkboxes--small">
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete">
+                          <label class="govuk-label govuk-checkboxes__label" for="status">
+                            In progress (1)
+                          </label>
+
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                          <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                            Deferred (1)
+                          </label>
+
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox" value="inprogress">
+                          <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                            Pass (1)
+                          </label>
+
+                        </div>
+
+                      </div>
+
+                    </fieldset>
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
 
-            <!-- Tab body -->
+        </div>
 
-            <h2 class="govuk-heading-l">Learning and skills</h2>
+        <!-- Tab body -->
 
-            <table class="govuk-table" id="learningTable">
+        <div class="govuk-grid-column-three-quarters">
+
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            Hide filter
+          </button>
+
+          <div class="table-container">
+            <table class="govuk-table">
               <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
                   <th scope="col" class="govuk-table__header app-custom-class">Type</th>
@@ -1529,6 +1627,9 @@
             </table>
 
           </div>
+          </div>
+          </div>
+          </div>
 
           <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-7">
           </div>
@@ -1536,8 +1637,5 @@
 
     </main>
 </div>
-
-
-
 
 {% endblock %}
