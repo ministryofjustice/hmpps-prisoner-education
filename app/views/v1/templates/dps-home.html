@@ -9,7 +9,8 @@
         <div class="govuk-width-container">
             <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Search for a prisoner</h2>
             <p class="govuk-body govuk-hint">Leave blank to view all results for selected residential location</p>
-            <form class="horizontal-form" data-test="homepage-search-form">
+            <form class="horizontal-form" data-test="homepage-search-form" action="/v1/templates/search-results" method="post" novalidate>
+
                 <div class="govuk-form-group">
                     <label class="govuk-label" for="keywords">Name or prison number</label> <input class="govuk-input" data-test="homepage-search-keywords" id="keywords" name="keywords" type="text">
                 </div>

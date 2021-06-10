@@ -6,7 +6,7 @@
         <ol class="govuk-breadcrumbs__list">
 
             <li class="govuk-breadcrumbs__list-item">
-                <a class="govuk-breadcrumbs__link" href="../../dps-home">Home</a>
+                <a class="govuk-breadcrumbs__link" href="/v1/templates/dps-home">Home</a>
             </li>
             <li class="govuk-breadcrumbs__list-item">
                 Prisoner search results
@@ -319,7 +319,7 @@
 
 <div class="govuk-form-group">
   <label class="govuk-label" for="sortFieldsWithOrder">
-    Order 3 results by
+    Order 1 result by
   </label>
 
   <select class="govuk-select" id="sortFieldsWithOrder" name="sortFieldsWithOrder" data-test="prisoner-search-order">
@@ -347,11 +347,92 @@
 
 </form>
 
+<nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
 
+    <p class="moj-pagination__results" style="float:right">Showing <b>1</b> to <b>1</b> of <b>1</b> results</p>
+  </nav>
+
+  <div class="prisoner-search__results-list">
+  <table class="govuk-table" data-test="prisoner-search-results-table">
+
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+
+      <th scope="col" class="govuk-table__header"><span class="govuk-visually-hidden">Picture</span></th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="1">Name</button></th>
+
+      <th scope="col" class="govuk-table__header">Prison number</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="3">Location</button></th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="4">Incentive level</button></th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="5">Age</button></th>
+
+      <th scope="col" class="govuk-table__header">Relevant alerts</th>
+
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell"><img src="/public/images/dylan-photo.jpg" alt="Picture of Dylan" class="prisoner-search__results-list__image"></td>
+
+          <td class="govuk-table__cell" data-sort-value="Dylan Adam Armstrong"><a href="/v1/templates/profile" class="govuk-link govuk-link--no-visited-state">Armstrong, Dylan Adam</a></td>
+
+          <td class="govuk-table__cell">G2911GD</td>
+
+          <td class="govuk-table__cell">D-4-027</td>
+
+          <td class="govuk-table__cell">Standard</td>
+
+          <td class="govuk-table__cell">36</td>
+
+          <td class="govuk-table__cell">
+
+          <!-- <ul class="alerts-list-no-flex">
+                <li class="alert-status alert-status--tact">
+                  TACT
+                </li><br>
+
+            </ul> -->
+
+
+
+
+
+  <span class="">
+
+
+
+
+
+
+
+  </span>
+</td>
+
+
+        </tr>
+
+
+  </tbody>
+</table>
+
+<div aria-live="polite" role="status" aria-atomic="true" class="govuk-visually-hidden"></div></div>
 
     </div>
   </div>
+
+
 
 
     </main>
