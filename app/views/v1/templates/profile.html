@@ -1814,12 +1814,12 @@
                       </div>
 
                       <div class="govuk-form-group">
-                        <label class="govuk-label" for="type">
+                        <label class="govuk-label" for="status">
                           Status
                         </label>
-                        <select class="govuk-select" id="type" name="type">
+                        <select class="govuk-select" id="status" name="status">
                             <option value="">All</option>
-                            <option value="INPROGRESS">In progress</option>
+                            <option value="IN PROGRESS">In progress</option>
                             <option value="DEFERRED">Deferred</option>
                             <option value="PASS">Pass</option>
                             <option value="FAIL">Fail</option>
@@ -1859,11 +1859,12 @@
                         </div>
                       </div> -->
 
-                      <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                      <!-- <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" onclick="allFilters()"> -->
+                      <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" onclick="allFilters()" type="button">
                         Apply
                       </button>
 
-                      <a href="#" class="govuk-link">Clear</a>
+                      <a href="#" class="govuk-link" onclick="showAll()">Clear</a>
                       </form>
                   </div>
 
@@ -1885,7 +1886,7 @@
                       </tr>
                     </thead>
 
-                    <tbody class="govuk-table__body">
+                    <tbody class="govuk-table__body" id="tableBody">
                       <tr class="govuk-table__row">
                         <td class="govuk-table__cell">
                           BTEC
@@ -1939,7 +1940,7 @@
                         </td>
                         <td class="govuk-table__cell">
                           <div class="status deferred">
-                            Deferred
+                          Deferred
                           </div>
                         </td>
                       </tr>
@@ -1968,7 +1969,36 @@
                         </td>
                         <td class="govuk-table__cell">
                           <div class="status pass">
-                            Pass
+                          Pass
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- Row 4 -->
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">
+                          Non-accredited
+                        </td>
+                        <td class="govuk-table__cell">
+                          Help with numbers
+                        </td>
+                        <td class="govuk-table__cell">
+                          Milton Keynes College
+                        </td>
+                        <td class="govuk-table__cell">
+                          Virtual Campus
+                        </td>
+                        <td class="govuk-table__cell">
+                          8 Jun 2020
+                        </td>
+                        <td class="govuk-table__cell">
+                          8 Mar 2021
+                        </td>
+                        <td class="govuk-table__cell">
+                          60 hours
+                        </td>
+                        <td class="govuk-table__cell">
+                          <div class="status pass">
+                          Pass
                           </div>
                         </td>
                       </tr>

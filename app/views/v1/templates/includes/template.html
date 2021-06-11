@@ -133,15 +133,36 @@ text: "Restart journey"
 </script>
 
 <script>
-$(document).ready(function(){
-  $("#keyword").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#learningTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
+
+function keywordFilter() {
+  var keyword = $("#keyword").val().toLowerCase();
+
+  $("#tableBody tr").filter(function() {
+    return $(this).text().toLowerCase().indexOf(keyword) == -1;}).hide();
+};
+
+function statusFilter() {
+  var status = $("#status").val().toLowerCase();
+  console.log(status);
+  $("#tableBody tr").filter(function() {
+    return $(this).text().toLowerCase().indexOf(status) == -1;}).hide();
+};
+
+// Call both filters and sort
+function allFilters(){
+    $("#tableBody tr").show();
+    keywordFilter();
+    statusFilter();
+};
+
+//Clear filters
+function showAll(){
+    $("#tableBody tr").show();
+};
+
 </script>
+
+
 
 {% block pageScripts %}{% endblock %}
 {% endblock %}
