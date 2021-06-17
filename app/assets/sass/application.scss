@@ -82,19 +82,6 @@ $govuk-assets-path: '/govuk/assets/';
   background-color: #E2E2E2;
 }
 
-//card
-
-.card {
-        display: block;
-        position: relative;
-        background: govuk-colour("mid-grey");
-        background-color: govuk-colour("mid-grey");
-        border-color: govuk-colour("mid-grey");
-        padding: 5px;
-        width: 100%;
-        height: 100%;
-        margin-right: 5px;
-       }
 
 // DPS header
 @import "components/dps-header";
