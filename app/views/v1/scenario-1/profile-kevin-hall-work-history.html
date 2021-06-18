@@ -14,7 +14,7 @@
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="/v1/scenario-1/profile-kevin-hall-activities-v2">Hall, Kevin</a>
       </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Learning history</li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Work history in prison</li>
       </ol>
       </div>
   </div>
@@ -23,9 +23,13 @@
 
     </div>
     <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+     <div class="govuk-grid-column-two-thirds">
 
-        <div class="header-with-link">
-            <h1 class="govuk-heading-l">Learning history</h1>
+      <h1 class="govuk-heading-l">Work history in prison</h1>
+
+        <!-- <div class="header-with-link">
+            <h1 class="govuk-heading-l">Work history in prison</h1>
         </div>
 
         <div class="govuk-width-container govuk-!-padding-3 govuk-!-margin-bottom-5 form-background">
@@ -47,7 +51,7 @@
               <select class="govuk-select" id="status" name="status">
                   <option value="">All</option>
                   <option value="IN PROGRESS">In progress</option>
-                  <!-- <option value="DEFERRED">Deferred</option> -->
+                  <option value="DEFERRED">Deferred</option>
                   <option value="PASS">Pass</option>
                   <option value="FAIL">Fail</option>
                   <option value="WITHDRAWN">Withdrawn</option>
@@ -65,7 +69,7 @@
                   <option value="DEFERRED">Planned or actual end date</option>
 
               </select>
-            </div>
+            </div> -->
 
 
             <!-- <div class="date-picker-container ">
@@ -87,32 +91,29 @@
             </div> -->
 
             <!-- <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" onclick="allFilters()"> -->
-            <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" onclick="allFilters()" type="button">
+            <!-- <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" onclick="allFilters()" type="button">
               Apply
             </button>
 
             <a href="#" class="govuk-link" onclick="showAll()">Clear</a>
             </form>
-        </div>
+        </div> -->
 
         <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
   <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
   <ul class="moj-pagination__list"></ul>
-    <p class="moj-pagination__results">Showing <b>1</b> to <b>4</b> of <b>4</b> results</p>
+    <p class="moj-pagination__results">Showing <b>1</b> to <b>3</b> of <b>3</b> results</p>
   </nav>
         <!-- table body -->
 
         <table class="govuk-table" id="learningTable">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header app-custom-class">Type</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
-              <!-- <th scope="col" class="govuk-table__header app-custom-class">Awarding body or organisation</th> -->
+              <th scope="col" class="govuk-table__header app-custom-class">Job title</th>
               <th scope="col" class="govuk-table__header app-custom-class">Location</th>
-              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Start date</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Planned or actual end date</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Guided learning hours</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Start date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">End date</th>
               <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Status</th>
             </tr>
           </thead>
@@ -120,10 +121,30 @@
           <tbody class="govuk-table__body" id="tableBody">
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                BTEC
+                Listener
+              </td>
+              <!-- <td class="govuk-table__cell">
+                Milton Keynes College
+              </td> -->
+              <td class="govuk-table__cell">
+                Hull (HMP)
               </td>
               <td class="govuk-table__cell">
-                Level 2 Award in Construction - Carpentry
+                3 Feb 2021
+              </td>
+              <td class="govuk-table__cell">
+                Ongoing
+              </td>
+              <td class="govuk-table__cell">
+                <div class="status deferred">
+                Current
+                </div>
+              </td>
+            </tr>
+            <!-- Row 2 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Kitchen server
               </td>
               <!-- <td class="govuk-table__cell">
                 City & Guilds
@@ -132,92 +153,29 @@
                 Hull (HMP)
               </td>
               <td class="govuk-table__cell">
-                3 Mar 2021
+                26 Nov 2020
               </td>
               <td class="govuk-table__cell">
-                29 Mar 2022
+                Ongoing
               </td>
               <td class="govuk-table__cell">
-                44 hours
-              </td>
-              <td class="govuk-table__cell">
-                <div class="status in-progress">
-                  In Progress
+                <div class="status deferred">
+                  Current
                 </div>
               </td>
             </tr>
-            <!-- Row 2 -->
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                BA/Bsc
-              </td>
-              <td class="govuk-table__cell">
-                BA/BSc (Honours) Design and Innovation
-              </td>
-              <!-- <td class="govuk-table__cell">
-                Open University
-              </td> -->
-              <td class="govuk-table__cell">
-                Distance learning
-              </td>
-              <td class="govuk-table__cell">
-                18 Feb 2021
-              </td>
-              <td class="govuk-table__cell">
-                25 Feb 2021
-              </td>
-              <td class="govuk-table__cell">
-                4 hours
-              </td>
-              <td class="govuk-table__cell">
-                <div class="status fail">
-                Withdrawn
-                </div>
-              </td>
-            </tr>
+
             <!-- Row 3 -->
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                Non-accredited
+                Cleaner
               </td>
               <td class="govuk-table__cell">
-                Numeracy skills
+                Leeds (HMP)
               </td>
               <!-- <td class="govuk-table__cell">
                 Milton Keynes College
               </td> -->
-              <td class="govuk-table__cell">
-                Virtual Campus
-              </td>
-              <td class="govuk-table__cell">
-                16 Jan 2021
-              </td>
-              <td class="govuk-table__cell">
-                16 Feb 2021
-              </td>
-              <td class="govuk-table__cell">
-                18 hours
-              </td>
-              <td class="govuk-table__cell">
-                <div class="status pass">
-                Pass
-                </div>
-              </td>
-            </tr>
-            <!-- Row 4 -->
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Non-accredited
-              </td>
-              <td class="govuk-table__cell">
-                Help with numbers
-              </td>
-              <!-- <td class="govuk-table__cell">
-                Milton Keynes College
-              </td> -->
-              <td class="govuk-table__cell">
-                Virtual Campus
-              </td>
               <td class="govuk-table__cell">
                 8 Jun 2020
               </td>
@@ -225,11 +183,8 @@
                 8 Mar 2021
               </td>
               <td class="govuk-table__cell">
-                60 hours
-              </td>
-              <td class="govuk-table__cell">
                 <div class="status pass">
-                Pass
+                Previous
                 </div>
               </td>
             </tr>
@@ -237,6 +192,8 @@
         </table>
 
       </div>
+    </div>
+  </div>
 
     </main>
 </div>
