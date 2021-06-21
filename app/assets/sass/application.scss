@@ -19,6 +19,15 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+//tabular data font
+.app-\!-font-family-tabular {
+  @include govuk-font($size: false, $tabular: true);
+}
+
+.app-\!-font-family-tabular-bold {
+  @include govuk-font($size: false, $tabular: true, $weight: bold);
+}
+
 // Secondary text colour
 .secondary-text-col {
   color: $govuk-secondary-text-colour;
