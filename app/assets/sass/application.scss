@@ -19,6 +19,16 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+// print list
+.print-link {
+  display: inline-block;
+  margin: 0 0 15px -10px;
+  position: relative;
+  padding: .5em .5em .5em 38px;
+  background: url("/public/images/Printer_icon.png") no-repeat 10px 50%;
+  background-size: 16px 18px;
+}
+
 //tabular data font
 .app-\!-font-family-tabular {
   @include govuk-font($size: false, $tabular: true);
