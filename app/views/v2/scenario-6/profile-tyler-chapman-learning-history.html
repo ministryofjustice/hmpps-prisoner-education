@@ -3,58 +3,111 @@
 {% block content %}
 <div class="govuk-width-container">
     <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
-      <div class="prisoner-profile-breadcrumbs">
+
+      <a href="/v2/scenario-6/profile-tyler-chapman#tab-6" class="govuk-back-link">Back</a>
+
+      <!-- <div class="prisoner-profile-breadcrumbs">
 
   <div class="prisoner-profile-breadcrumbs__breadcrumbs">
     <div class="govuk-breadcrumbs ">
       <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="/v2/scenario-6/dps-home">Home</a>
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/dps-home">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="/v2/scenario-6/profile-tyler-chapman">Chapman, Tyler</a>
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/profile-kevin-hall">Hall, Kevin</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">Learning history</li>
       </ol>
       </div>
   </div>
 
-</div>
+</div> -->
 
     </div>
     <main class="govuk-main-wrapper">
 
-        <div class="header-with-link">
+          <span class="govuk-caption-l">Chapman, Tyler</span>
             <h1 class="govuk-heading-l">Learning history</h1>
-        </div>
-
-
-
-            <!-- <div class="date-picker-container ">
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="fromDate">
-                  From
-                </label>
-              <input class="govuk-input date-input undefined hasDatepicker" id="fromDate" name="fromDate" type="text" autocomplete="off" placeholder="DD/MM/YYYY" readonly="readonly">
-              </div>
-            </div>
-
-            <div class="date-picker-container ">
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="toDate">
-                  To
-                </label>
-              <input class="govuk-input date-input undefined hasDatepicker" id="toDate" name="toDate" type="text" autocomplete="off" placeholder="DD/MM/YYYY" readonly="readonly">
-              </div>
-            </div> -->
-
-            <!-- <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" onclick="allFilters()"> -->
 
             <div style="text-align: right">
               <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
                 Print this page
               </a>
             </div>
+
+            <div class="govuk-tabs" data-module="govuk-tabs">
+              <h2 class="govuk-tabs__title">
+                Contents
+              </h2>
+              <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                  <a class="govuk-tabs__tab" href="#tab-1">
+                    Current courses
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#tab-2">
+                    Previous courses
+                  </a>
+                </li>
+              </ul>
+
+            <div class="govuk-tabs__panel" id="tab-1">
+
+              <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+        <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+        <ul class="moj-pagination__list"></ul>
+          <p class="moj-pagination__results">Showing <b>1</b> result</p>
+        </nav>
+              <!-- table body -->
+
+              <table class="govuk-table" id="learningTable">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Location</th>
+                    <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Start date</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Planned end date</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Guided learning hours</th>
+                    <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Status</th>
+                  </tr>
+                </thead>
+
+                <tbody class="govuk-table__body" id="tableBody">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">
+                      Accredited
+                    </td>
+                    <td class="govuk-table__cell">
+                      Award in Construction Skills (Carpentry and Joinery)
+                    </td>
+                    <td class="govuk-table__cell">
+                      Hull (HMP)
+                    </td>
+                    <td class="govuk-table__cell">
+                      03/12/2020
+                    </td>
+                    <td class="govuk-table__cell">
+                      15/08/2021
+                    </td>
+                    <td class="govuk-table__cell">
+                      100 hours
+                    </td>
+                    <td class="govuk-table__cell">
+                      <strong class="govuk-tag govuk-tag--yellow">
+                        In progress
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          <div class="govuk-tabs__panel" id="tab-2">
 
         <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
   <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
@@ -140,6 +193,9 @@
         </table>
 
       </div>
+
+    </div>
+  </div>
 
     </main>
 </div>

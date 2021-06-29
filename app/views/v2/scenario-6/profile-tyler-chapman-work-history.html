@@ -3,30 +3,58 @@
 {% block content %}
 <div class="govuk-width-container">
     <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
-      <div class="prisoner-profile-breadcrumbs">
+
+      <a href="/v2/scenario-6/profile-tyler-chapman#tab-6" class="govuk-back-link">Back</a>
+
+      <!-- <div class="prisoner-profile-breadcrumbs">
 
   <div class="prisoner-profile-breadcrumbs__breadcrumbs">
     <div class="govuk-breadcrumbs ">
       <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="/v2/scenario-6/dps-home">Home</a>
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/dps-home">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="/v2/scenario-6/profile-tyler-chapman">Chapman, Tyler</a>
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/profile-kevin-hall">Hall, Kevin</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">Work history in prison</li>
       </ol>
       </div>
   </div>
 
-</div>
+  </div> -->
 
-    </div>
-    <main class="govuk-main-wrapper">
-      <div class="govuk-grid-row">
-     <div class="govuk-grid-column-two-thirds">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
 
-      <h1 class="govuk-heading-l">Work history in prison</h1>
+        <span class="govuk-caption-l">Chapman, Tyler</span>
+       <h1 class="govuk-heading-l">Work history</h1>
+       <div style="text-align: right">
+         <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
+           Print this page
+         </a>
+       </div>
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+        <a class="govuk-tabs__tab" href="#tab-1">
+          Work inside prison
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#tab-2">
+          Work outside prison
+        </a>
+      </li>
+    </ul>
+
+      <div class="govuk-tabs__panel" id="tab-1">
+        <!-- <div class="govuk-grid-column-two-thirds"> -->
 
         <!-- <div class="header-with-link">
             <h1 class="govuk-heading-l">Work history in prison</h1>
@@ -99,12 +127,6 @@
             </form>
         </div> -->
 
-        <div style="text-align: right">
-          <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
-            Print this page
-          </a>
-        </div>
-
         <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
   <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
@@ -176,10 +198,90 @@
         </table>
 
       </div>
-    </div>
-  </div>
 
-    </main>
+
+
+    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-2">
+     <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+<ul class="moj-pagination__list"></ul>
+ <p class="moj-pagination__results">Showing <b>1</b> to <b>2</b> of <b>2</b> results</p>
+</nav>
+     <!-- table body -->
+
+     <table class="govuk-table" id="learningTable">
+       <thead class="govuk-table__head">
+         <tr class="govuk-table__row">
+           <th scope="col" class="govuk-table__header app-custom-class">Job title</th>
+           <th scope="col" class="govuk-table__header app-custom-class">Employer</th>
+           <th scope="col" class="govuk-table__header app-custom-class">Start date</th>
+           <th scope="col" class="govuk-table__header app-custom-class">End date</th>
+           <th scope="col" class="govuk-table__header app-custom-class">Work pattern</th>
+           <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Status</th>
+         </tr>
+       </thead>
+
+       <tbody class="govuk-table__body" id="tableBody">
+         <tr class="govuk-table__row">
+           <td class="govuk-table__cell">
+             Customer Experience Assistant
+           </td>
+           <td class="govuk-table__cell">
+             Morrisons,
+             <br>Bradford
+           </td>
+           <td class="govuk-table__cell">
+             02/03/2017
+           </td>
+           <td class="govuk-table__cell">
+             09/04/2018
+           </td>
+           <td class="govuk-table__cell">
+            Part time
+            <br>12.5 hours
+           </td>
+           <td class="govuk-table__cell">
+             <strong class="govuk-tag govuk-tag--yellow">
+               Previous
+             </strong>
+           </td>
+         </tr>
+         <!-- Row 2 -->
+         <tr class="govuk-table__row">
+           <td class="govuk-table__cell">
+             Sales Assistant
+           </td>
+           <td class="govuk-table__cell">
+             Cash Converters,
+             <br>Bradford
+           </td>
+           <td class="govuk-table__cell">
+             16/12/2015
+           </td>
+           <td class="govuk-table__cell">
+             28/02/2016
+           </td>
+           <td class="govuk-table__cell">
+             Part time
+             <br>12.5 hours
+           </td>
+           <td class="govuk-table__cell">
+             <strong class="govuk-tag govuk-tag--yellow">
+               Previous
+             </strong>
+           </td>
+         </tr>
+       </tbody>
+     </table>
+
 </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+    </main>
 
 {% endblock %}
