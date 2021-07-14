@@ -1,0 +1,232 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+      <a href="/v3/scenario-1/profile-kevin-hall#tab-6" class="govuk-back-link">Back</a>
+
+      <!-- <div class="prisoner-profile-breadcrumbs">
+
+  <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/dps-home">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/profile-kevin-hall">Hall, Kevin</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Learning history</li>
+      </ol>
+      </div>
+  </div>
+
+</div> -->
+
+    </div>
+    <main class="govuk-main-wrapper">
+
+          <span class="govuk-caption-l">Hall, Kevin</span>
+            <h1 class="govuk-heading-l">Learning history</h1>
+
+            <div style="text-align: right">
+              <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
+                Print this page
+              </a>
+            </div>
+
+            <div class="govuk-tabs" data-module="govuk-tabs">
+              <h2 class="govuk-tabs__title">
+                Contents
+              </h2>
+              <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                  <a class="govuk-tabs__tab" href="#tab-1">
+                    Current courses (1)
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#tab-2">
+                    Previous courses (3)
+                  </a>
+                </li>
+              </ul>
+
+            <div class="govuk-tabs__panel" id="tab-1">
+
+              <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+        <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+        <ul class="moj-pagination__list"></ul>
+          <p class="moj-pagination__results">Showing <b>1</b> result</p>
+        </nav>
+              <!-- table body -->
+
+              <table class="govuk-table" id="learningTable">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Location</th>
+                    <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Start date / planned end date</th>
+                    <th scope="col" class="govuk-table__header app-custom-class">Guided learning hours</th>
+                    <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Outcome</th>
+                  </tr>
+                </thead>
+
+                <tbody class="govuk-table__body" id="tableBody">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">
+                      Accredited
+                    </td>
+                    <td class="govuk-table__cell">
+                      Level 2 Award in Construction - Carpentry
+                    </td>
+                    <td class="govuk-table__cell">
+                      Hull (HMP)
+                    </td>
+                    <td class="govuk-table__cell">
+                      03/03/2021
+                      <br>
+                      29/03/2022
+                    </td>
+
+                    <td class="govuk-table__cell">
+                      44 hours
+                    </td>
+                    <td class="govuk-table__cell">
+                      <strong class="govuk-tag govuk-tag--yellow">
+                        In progress
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          <div class="govuk-tabs__panel" id="tab-2">
+
+        <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list"></ul>
+    <p class="moj-pagination__results">Showing <b>1</b> to <b>3</b> of <b>3</b> results</p>
+  </nav>
+        <!-- table body -->
+
+        <table class="govuk-table" id="learningTable">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Start date / end date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Guided learning hours</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:20%">Outcome</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body" id="tableBody">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                BA/BSc (Honours) Design and Innovation
+              </td>
+              <!-- <td class="govuk-table__cell">
+                Open University
+              </td> -->
+              <td class="govuk-table__cell">
+                Hull (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                18/02/2021
+                <br>
+                25/02/2021
+              </td>
+              <td class="govuk-table__cell">
+                4 hours
+              </td>
+
+              <td class="govuk-table__cell">
+                <strong class="govuk-tag govuk-tag--red">
+                  Withdrawn
+                </strong>
+                <br>
+                <br>
+                Significant ill health causing them to be unable to attend education
+              </td>
+            </tr>
+            <!-- Row 3 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Numeracy skills
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                16/01/2021
+                <br>
+                08/03/2021
+              </td>
+              <td class="govuk-table__cell">
+                18 hours
+              </td>
+
+              <td class="govuk-table__cell">
+                <strong class="govuk-tag govuk-tag--green">
+                  Merit
+                </strong>
+                <br>
+                <br>
+                Achieved awaiting certificate
+              </td>
+            </tr>
+            <!-- Row 4 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Help with numbers
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                08/06/2020
+                <br>
+                16/02/2021
+              </td>
+              <td class="govuk-table__cell">
+                60 hours
+              </td>
+
+              <td class="govuk-table__cell">
+                <strong class="govuk-tag govuk-tag--green">
+                  Pass
+                </strong>
+                <br>
+                <br>
+                Achieved
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+
+    </main>
+</div>
+
+{% endblock %}
