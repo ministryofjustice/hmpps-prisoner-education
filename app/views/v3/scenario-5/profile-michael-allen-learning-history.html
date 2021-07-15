@@ -1,0 +1,210 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+      <a href="/v3/scenario-5/profile-michael-allen#tab-6" class="govuk-back-link">Back</a>
+
+      <!-- <div class="prisoner-profile-breadcrumbs">
+
+  <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/dps-home">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/profile-kevin-hall">Hall, Kevin</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Learning history</li>
+      </ol>
+      </div>
+  </div>
+
+</div> -->
+
+    </div>
+    <main class="govuk-main-wrapper">
+
+          <span class="govuk-caption-l">Allen, Michael</span>
+            <h1 class="govuk-heading-l">Learning history</h1>
+
+            <div style="text-align: right">
+              <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
+                Print this page
+              </a>
+            </div>
+
+            <div class="govuk-tabs" data-module="govuk-tabs">
+              <h2 class="govuk-tabs__title">
+                Contents
+              </h2>
+              <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                  <a class="govuk-tabs__tab" href="#tab-1">
+                    Current courses (0)
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#tab-2">
+                    Previous courses (4)
+                  </a>
+                </li>
+              </ul>
+
+            <div class="govuk-tabs__panel" id="tab-1">
+
+            <p class="govuk-body">No current courses.</p>
+
+            </div>
+
+          <div class="govuk-tabs__panel" id="tab-2">
+
+        <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list"></ul>
+    <p class="moj-pagination__results">Showing <b>1</b> to <b>4</b> of <b>4</b> results</p>
+  </nav>
+        <!-- table body -->
+
+        <table class="govuk-table" id="learningTable">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:12%">Start date / end date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Guided learning hours</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:20%">Outcome</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body" id="tableBody">
+            <!-- Row 1 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Art Therapy
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                16/04/2020
+                <br>
+                08/05/2020
+              </td>
+              <td class="govuk-table__cell">
+                9 hours
+              </td>
+              <td class="govuk-table__cell">
+                <strong class="govuk-tag govuk-tag--green">
+                  Pass
+                </strong>
+                <br>
+                <br>
+                Partial achievement
+              </td>
+            </tr>
+            <!-- Row 2 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Award in Creative Craft
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                10/12/2019
+                <br>
+                01/02/2020
+              </td>
+              <td class="govuk-table__cell">
+                80 hours
+              </td>
+              <td class="govuk-table__cell">
+                <strong class="govuk-tag govuk-tag--green">
+                  Merit
+                </strong>
+                <br>
+                <br>
+                Achieved
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Award in Stress and Stress Management
+              </td>
+              <td class="govuk-table__cell">
+                Durham (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                11/09/2019
+                <br>
+                02/12/2019
+              </td>
+              <td class="govuk-table__cell">
+                30 hours
+              </td>
+              <td class="govuk-table__cell">
+                <strong class="govuk-tag govuk-tag--green">
+                  Pass
+                </strong>
+                <br>
+                <br>
+                Achieved awaiting certificate
+              </td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                GCSE (9-1) in Art and Design
+              </td>
+              <td class="govuk-table__cell">
+                The Mount (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                08/09/2018
+                <br>
+                29/09/2019
+              </td>
+              <td class="govuk-table__cell">
+                140 hours
+              </td>
+              <td class="govuk-table__cell">
+                <strong class="govuk-tag govuk-tag--green">
+                  Distinction
+                </strong>
+                <br>
+                <br>
+                Achieved
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+
+    </main>
+</div>
+
+{% endblock %}
