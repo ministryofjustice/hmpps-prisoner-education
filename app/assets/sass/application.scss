@@ -101,6 +101,18 @@ $govuk-assets-path: '/govuk/assets/';
   background-color: #E2E2E2;
 }
 
+//note panel
+
+.note-panel {
+  background-color: govuk-colour("light-grey");
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.note-panel ul {
+  margin-top: 0;
+}
+
 
 // DPS header
 @import "components/dps-header";
@@ -134,5 +146,6 @@ $govuk-assets-path: '/govuk/assets/';
 @import "components/prisonerProfile/prisoner-visits";
 @import "components/prisonerProfile/prisoner-button";
 @import "components/summary-list";
+@import "components/summary-card";
 
 @import "components/modal";
