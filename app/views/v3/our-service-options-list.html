@@ -1,8 +1,8 @@
 
-{% extends "layout-index.html" %}
+{% extends "layout-options.html" %}
 
 {% block pageTitle %}
-  Prisoner education prototype index
+  Prisoner education scenarios list
 {% endblock %}
 
 {% block content %}
@@ -10,32 +10,43 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full-width">
 
+      <a href="/index" class="govuk-back-link">Back to prototype home</a>
+
+
 
 <div class="govuk-!-padding-bottom-6"></div>
 <div class="govuk-grid-column-two-thirds">
 
-  <h2 class="govuk-heading-m">Alpha - MVP for our service area</h2>
 
-  <p class="govuk-body-lead">We are exploring a task based service area.</p>
+  <form action="/v3/our-service/prisoner-first/dps-home" method="post" novalidate>
+  <div class="govuk-form-group">
 
-  <p class="govuk-body-lead">We want to validate whether a task first or a prisoner first journey into the service is the right approach, and whether these are the tasks users would find most useful.</p>
+    <h2 class="govuk-heading-m">Option 1 - prisoner first</h2>
 
-  <a href="/v3/our-service-options-list" class="govuk-button">View the options</a>
+    <p>The prototype follows the journey of opening our service from the DPS home page and searching for a prisoner.</p>
 
-  <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--m">
+    <button class="govuk-button" data-module="govuk-button">
+      View the prototype
+    </button>
 
+    </div>
+    </form>
 
-  <h2 class="govuk-heading-m">Alpha - MVP for displaying education, skills, and work information within the existing DPS prisoner profile page</h2>
-
-  <p class="govuk-body-lead">We have created 6 scenarios for testing with the following users in prisons: Prison Offender Managers, Activity Managers, and Key Workers.</p>
-
-  <p class="govuk-body-lead">The prototype follows the journey of searching for prisoner on DPS and viewing their profile. We have added a new 'Work and skills' tab within the profile, and we are showing neurodiversity information within the 'Personal' tab.</p>
-
-  <a href="v3/scenarios-list" class="govuk-button">Choose a scenario</a>
-
-  <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--m">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
+    <form action="/v3/our-service/task-first/dps-home" method="post" novalidate>
+    <div class="govuk-form-group">
+
+    <h2 class="govuk-heading-m">Option 2 - task first</h2>
+
+      <p>The prototype follows the journey of opening our service from the DPS home page and choosing a task to complete.</p>
+
+    <button class="govuk-button" data-module="govuk-button">
+    View the prototype
+    </button>
+    </form>
+    </div>
 
 </div>
 </div>
