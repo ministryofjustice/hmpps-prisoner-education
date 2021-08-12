@@ -113,6 +113,22 @@ $govuk-assets-path: '/govuk/assets/';
   margin-top: 0;
 }
 
+//feedback banner
+
+.feedback-banner {
+    background: #1d70b8;
+    padding: 20px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
 
 // DPS header
 @import "components/dps-header";
