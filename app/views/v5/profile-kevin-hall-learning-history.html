@@ -7,19 +7,14 @@
       <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
         <div class="prisoner-profile-breadcrumbs">
 
-      <div class="prisoner-profile-breadcrumbs__search">
-        <a href="/v5/search-results" class="govuk-link govuk-link--no-visited-state" data-test="recent-search-link">
-          View most recent search
-        </a>
-      </div>
-
     <div class="prisoner-profile-breadcrumbs__breadcrumbs">
       <div class="govuk-breadcrumbs ">
         <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="/v5/dps-home">Digital Prison Services</a>
         </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">Hall, Kevin</li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/v5/profile-kevin-hall#tab-6">Hall, Kevin</a></li>
         </ol>
         </div>
     </div>
@@ -31,7 +26,13 @@
 
     <main class="govuk-main-wrapper">
 
-      <h1 class="govuk-heading-l govuk-!-padding-bottom-4">Kevin Hall's courses and qualifications </h1>
+      <h1 class="govuk-heading-l govuk-!-padding-bottom-4">Kevin Hall's courses and qualifications</h1>
+
+      <div style="text-align: right">
+        <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
+          Print this page
+        </a>
+      </div>
 
       <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
     <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
@@ -41,14 +42,14 @@
     </nav>
 
         <!-- table body -->
-        <table class="govuk-table" id="learningTable">
+        <table class="govuk-table" data-module="moj-sortable-table" id="learningTable">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Type</th>
               <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Location</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Date</th>
-              <th scope="col" class="govuk-table__header app-custom-class">Outcome</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="ascending">Dates</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Outcome</th>
               <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:20%">Outcome details</th>
             </tr>
           </thead>
