@@ -24,15 +24,31 @@
 </div>
     </div>
 
-    <main class="govuk-main-wrapper">
+  </div>
+
+    <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing">
 
       <h1 class="govuk-heading-l govuk-!-padding-bottom-4">Desmond Jackson's courses and qualifications</h1>
 
+      
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">
+      <a href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing" class="govuk-link govuk-link--no-visited-state" target="_blank" data-test="recent-search-link">
+        Give feedback on this page (opens in a new tab)
+      </a>
+      </p>
+    </div>
+
+
+     <div class="govuk-grid-column-one-third">
       <div style="text-align: right">
         <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
           Print this page
         </a>
       </div>
+
 
       <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
     <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
@@ -40,6 +56,7 @@
     <ul class="moj-pagination__list"></ul>
     <p class="moj-pagination__results">Showing <b>4</b> results</p>
     </nav>
+  </div>
 
         <!-- table body -->
         <table class="govuk-table" data-module="moj-sortable-table" id="learningTable">
@@ -153,13 +170,9 @@
         </a>
         </p>
 
-        <p class="govuk-body">
-        <a href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing" class="govuk-link govuk-link--no-visited-state" target="_blank" data-test="recent-search-link">
-          Give feedback on this page (opens in a new tab)
-        </a>
-        </p>
-      </div>
-  </div>
+
+    </div>
+        </main>
 
   <div class="feedback-banner" data-test="feedback-banner">
   <a href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing" class="govuk-link govuk-link--inverse" target="_blank" rel="noopener noreferrer">
@@ -167,7 +180,8 @@
   </a>
 </div>
 
-    </main>
-</div>
+
+
+
 
 {% endblock %}
