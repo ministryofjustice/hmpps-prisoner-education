@@ -27,7 +27,7 @@ div {
     max-width: 100%;
 }
 
-.govuk-heading-m, .app-contact-panel__heading, .app-prose-scope h3 {
+.app-contact-panel__heading, .app-prose-scope h3 {
     color: #0b0c0c;
     font-family: "GDS Transport",arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -41,15 +41,15 @@ div {
     margin-bottom: 15px;
 }
 
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
+// h2 {
+//     display: block;
+//     font-size: 1.5em;
+//     margin-block-start: 0.83em;
+//     margin-block-end: 0.83em;
+//     margin-inline-start: 0px;
+//     margin-inline-end: 0px;
+//     font-weight: bold;
+// }
 
 .govuk-template {
     background-color: #f3f2f1;
