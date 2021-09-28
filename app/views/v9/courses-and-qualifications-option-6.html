@@ -1,0 +1,188 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+      <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+        <div class="prisoner-profile-breadcrumbs">
+
+    <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+      <div class="govuk-breadcrumbs ">
+        <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Digital Prison Services</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/v8/profile#tab-6">Jackson, Desmond</a></li>
+        </ol>
+        </div>
+    </div>
+
+  </div>
+
+</div>
+    </div>
+
+  </div>
+
+    <div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing">
+
+      <h1 class="govuk-heading-l govuk-!-padding-bottom-4">Desmond Jackson's courses and qualifications</h1>
+
+
+    <div class="govuk-grid-column-one-half">
+      <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label" style="text-align: left">
+    <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+    <ul class="moj-pagination__list"></ul>
+    <p class="moj-pagination__results">Showing <b>4</b> results</p>
+    </nav>
+
+    </div>
+
+
+     <div class="govuk-grid-column-one-half">
+      <div style="text-align: right">
+        <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
+          Print this page
+        </a>
+      </div>
+
+
+      <p class="govuk-body" style="text-align: right">
+      <a href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing" class="govuk-link govuk-link--no-visited-state" target="_blank" data-test="recent-search-link" >
+        Give feedback on this page (opens in a new tab)
+      </a>
+      </p>
+  </div>
+
+        <!-- table body -->
+        <table class="govuk-table" data-module="moj-sortable-table" id="learningTable">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Type</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="ascending">Dates</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Outcome</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:20%">Outcome details</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body" id="tableBody">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Level 2 Award in Construction - Carpentry
+              </td>
+              <td class="govuk-table__cell">
+                Hull (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                03/03/2021
+                <br>
+                to 29/03/2022
+              </td>
+              <td class="govuk-table__cell">
+                  In progress
+              </td>
+              <td class="govuk-table__cell">
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                BA/BSc (Honours) Design and Innovation
+              </td>
+              <td class="govuk-table__cell">
+                Hull (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                18/02/2021
+                <br>
+                to 25/02/2021
+              </td>
+              <td class="govuk-table__cell">
+                  Withdrawn
+                </td>
+              <td class="govuk-table__cell">
+                Significant ill health causing them to be unable to attend education
+              </td>
+            </tr>
+            <!-- Row 3 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Numeracy skills
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                16/01/2021
+                <br>
+                to 08/03/2021
+              </td>
+              <td class="govuk-table__cell">
+                  Merit
+              </td>
+              <td class="govuk-table__cell">
+                Achieved awaiting certificate
+              </td>
+            </tr>
+            <!-- Row 4 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Help with numbers
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                08/06/2020
+                <br>
+                to 16/02/2021
+              </td>
+              <td class="govuk-table__cell">
+                  Pass
+              </td>
+              <td class="govuk-table__cell">
+                Achieved
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="govuk-body">
+        <a href="/v8/profile#tab-6" class="govuk-link govuk-link--no-visited-state" data-test="recent-search-link">
+          Return to prisoner profile
+        </a>
+        </p>
+
+
+    </div>
+        </main>
+
+  <div class="feedback-banner" data-test="feedback-banner">
+  <a href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing" class="govuk-link govuk-link--inverse" target="_blank" rel="noopener noreferrer">
+    Give feedback on Digital Prison Services (opens in a new tab)
+  </a>
+</div>
+
+
+
+
+
+{% endblock %}
