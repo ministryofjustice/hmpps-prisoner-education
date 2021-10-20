@@ -1,0 +1,87 @@
+
+{% extends "layout-scenarios.html" %}
+
+{% block pageTitle %}
+  Prisoner education scenarios list
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width">
+
+      <a href="/index" class="govuk-back-link">Back to prototype home</a>
+
+
+
+<div class="govuk-!-padding-bottom-6"></div>
+<div class="govuk-grid-column-two-thirds">
+
+
+  <form action="/v13/1/dps-home" method="post" novalidate>
+  <div class="govuk-form-group">
+
+    <h2 class="govuk-heading-l">Scenario 1</h2>
+
+    <h2 class="govuk-heading-m">Prisoner details</h2>
+    <p><span class="govuk-body govuk-!-font-weight-bold">Desmond Jackson</span><br>Male, 32 years old</p>
+
+    <h2 class="govuk-heading-m">Task</h2>
+    <p>----</p>
+
+    <button class="govuk-button" data-module="govuk-button">
+      Start task
+    </button>
+
+    </div>
+    </form>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+    <form action="/v13/2/dps-home" method="post" novalidate>
+    <div class="govuk-form-group">
+
+      <h2 class="govuk-heading-l">Scenario 2</h2>
+
+      <h2 class="govuk-heading-m">Prisoner details</h2>
+      <p><span class="govuk-body govuk-!-font-weight-bold">----</span><br>Male, -- years old</p>
+
+      <h2 class="govuk-heading-m">Task</h2>
+      <p>----</p>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Start task
+      </button>
+
+      </div>
+      </form>
+    </div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<form action="/v13/1/dps-home" method="post" novalidate>
+<div class="govuk-form-group">
+
+  <h2 class="govuk-heading-l">Scenario 3</h2>
+
+  <h2 class="govuk-heading-m">Prisoner details</h2>
+  <p><span class="govuk-body govuk-!-font-weight-bold">Kevin Hall</span><br>Male, 42 years old</p>
+
+  <h2 class="govuk-heading-m">Task</h2>
+  <p>----</p>
+
+  <button class="govuk-button" data-module="govuk-button">
+    Start task
+  </button>
+
+  </div>
+  </form>
+
+
+</div>
+</div>
+
+
+
+{% endblock %}

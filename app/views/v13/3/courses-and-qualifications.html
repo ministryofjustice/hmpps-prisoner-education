@@ -1,0 +1,368 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+      <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+        <div class="prisoner-profile-breadcrumbs">
+
+    <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+      <div class="govuk-breadcrumbs ">
+        <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Digital Prison Services</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/v13/profile#tab-6">Jackson, Desmond</a></li>
+        </ol>
+        </div>
+    </div>
+
+  </div>
+
+</div>
+    </div>
+
+    <main class="govuk-main-wrapper">
+
+      <h1 class="govuk-heading-l govuk-!-padding-bottom-4">Desmond Jackson's courses and qualifications</h1>
+
+      <div style="text-align: right">
+        <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
+          Print this page
+        </a>
+      </div>
+
+      <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+    <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+    <ul class="moj-pagination__list"></ul>
+    <p class="moj-pagination__results">Showing <b>12</b> results</p>
+    </nav>
+
+        <!-- table body -->
+        <table class="govuk-table" data-module="moj-sortable-table" id="learningTable">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Type</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Course name</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="ascending">Dates</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Outcome</th>
+              <th scope="col" class="govuk-table__header app-custom-class" style="white-space:no-wrap; width:20%">Outcome details</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body" id="tableBody">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Menu Planning & Costs
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                03/09/2021
+                <br>
+                to 01/10/2021
+              </td>
+              <td class="govuk-table__cell">
+                  In progress
+              </td>
+              <td class="govuk-table__cell">
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                English E3 U2 Reading
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                07/09/2021
+                <br>
+                to 26/10/2021
+              </td>
+              <td class="govuk-table__cell">
+                  Temporarily withdrawn
+                </td>
+              <td class="govuk-table__cell">
+                Any other reasons where the Buyer and Supplier agree that the Learner leaving the course was outside the Supplier's control
+              </td>
+            </tr>
+            <!-- Row 3 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Award in Health and Safety in the Workplace
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                28/10/2020
+                <br>
+                to 04/11/2020
+              </td>
+              <td class="govuk-table__cell">
+                  Pass
+              </td>
+              <td class="govuk-table__cell">
+                Achieved
+              </td>
+            </tr>
+            <!-- Row 4 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Award in Food Safety in Catering
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                07/12/2020
+                <br>
+                to 11/12/2020
+              </td>
+              <td class="govuk-table__cell">
+                Learning activities are complete but the outcome is not yet known
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+            </tr>
+                <!-- Row 5 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Non-accredited
+                </td>
+                <td class="govuk-table__cell">
+                  Award in Cleaning Principles
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  20/01/2020
+                  <br>
+                  to 29/01/2020
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Achieved
+                </td>
+              </tr>
+          <!-- Row 6 -->
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              Accredited
+            </td>
+            <td class="govuk-table__cell">
+              English E3 U3 Writing
+            </td>
+            <td class="govuk-table__cell">
+              Leeds (HMP)
+            </td>
+            <td class="govuk-table__cell">
+              20/11/2019
+              <br>
+              to 02/12/2019
+            </td>
+            <td class="govuk-table__cell">
+              Withdrawn
+            </td>
+            <td class="govuk-table__cell">
+              Movement to another Establishment or release
+            </td>
+          </tr>
+            <!-- Row 7 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Certificate in Construction skills (Plastering)
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                18/06/2019
+                <br>
+                to 01/08/2019
+              </td>
+              <td class="govuk-table__cell">
+                  Pass
+              </td>
+              <td class="govuk-table__cell">
+                Achieved
+              </td>
+            </tr>
+            <!-- Row 8 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Award in in Individual Capital Development (RQF)
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                13/09/2019
+                <br>
+                to 20/11/2019
+              </td>
+              <td class="govuk-table__cell">
+                No achievement
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+            </tr>
+            <!-- Row 9 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Engagement Construction
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                08/09/2019
+                <br>
+                to 17/09/2019
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+              <td class="govuk-table__cell">
+                Achieved
+              </td>
+            </tr>
+
+            <!-- Row 10 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Certificate in Cleaning and Support Services
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                03/06/2019
+                <br>
+                to 29/06/2019
+              </td>
+              <td class="govuk-table__cell">
+                  No achievement
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+            </tr>
+            <!-- Row 11 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Accredited
+              </td>
+              <td class="govuk-table__cell">
+                Customer Service
+              </td>
+              <td class="govuk-table__cell">
+                Leeds (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                02/04/2019
+                <br>
+                to 15/04/2019
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+              <td class="govuk-table__cell">
+                Achieved
+              </td>
+            </tr>
+            <!-- Row 12 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Non-accredited
+              </td>
+              <td class="govuk-table__cell">
+                Numeracy skills
+              </td>
+              <td class="govuk-table__cell">
+                Liverpool (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                19/02/2019
+                <br>
+                to 03/03/2019
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+              <td class="govuk-table__cell">
+                Achieved
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="govuk-body">
+        <a href="/v13/profile#tab-6" class="govuk-link govuk-link--no-visited-state" data-test="recent-search-link">
+          Return to prisoner profile
+        </a>
+        </p>
+
+        <!-- <p class="govuk-body">
+        <a href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing" class="govuk-link govuk-link--no-visited-state" target="_blank" data-test="recent-search-link">
+          Give feedback on this page (opens in a new tab)
+        </a>
+        </p> -->
+
+        <div class="app-contact-panel">
+
+  <h2 class="app-contact-panel__heading">This is a new page
+  </h2>
+
+  <p class="govuk-body app-contact-panel__body">
+  <a class="govuk-link govuk-link--no-visited-state" target="_blank" href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing"> Give feedback to help us improve it (opens in a new tab)</a>.
+  </p>
+  </div>
+      </div>
+  </div>
+
+  <div class="feedback-banner" data-test="feedback-banner">
+  <a href="#" class="govuk-link govuk-link--inverse" target="_blank" rel="noopener noreferrer">
+  Give feedback on Digital Prison Services (opens in a new tab)
+  </a>
+</div>
+
+    </main>
+</div>
+
+{% endblock %}
