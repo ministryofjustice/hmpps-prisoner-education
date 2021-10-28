@@ -1,0 +1,626 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+      <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+        <div class="prisoner-profile-breadcrumbs">
+
+    <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+      <div class="govuk-breadcrumbs ">
+        <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Digital Prison Services</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/v15/1/profile#tab-6">Eku, Tyler</a></li>
+        </ol>
+        </div>
+    </div>
+
+  </div>
+
+  </div>
+    </div>
+
+      <!-- <div class="prisoner-profile-breadcrumbs">
+
+  <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+    <div class="govuk-breadcrumbs ">
+      <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/dps-home">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/v2/scenario-1/profile-kevin-hall">Jackson, Desmond</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Work history in prison</li>
+      </ol>
+      </div>
+  </div>
+
+  </div> -->
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+
+       <h1 class="govuk-heading-l govuk-!-padding-bottom-4">Tyler Eku's work and activities for the last 12 months</h1>
+
+         <!-- <p class="govuk-body govuk-!-margin-bottom-3">
+
+         </p> -->
+
+       <!-- <p class="govuk-body">
+         <a data-test="govuk-link govuk-link--no-visited-state" href="#" class="govuk-link"> View last 12 months (page will reload)</a>
+       </p> -->
+
+       <div style="text-align: right">
+         <a href="javascript:window.print()" class="govuk-link print-link govuk-!-display-none-print">
+           Print this page
+         </a>
+       </div>
+
+        <!-- <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list"></ul>
+    <p class="moj-pagination__results">Showing <b>23</b> results</p>
+  </nav> -->
+
+  <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+<ul class="moj-pagination__list">
+<li class="moj-pagination__item  moj-pagination__item--prev">
+<a class="moj-pagination__link" href="#">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+</li>
+
+<li class="moj-pagination__item moj-pagination__item--active">1</li>
+
+<li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+<li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+<li class="moj-pagination__item"><a class="moj-pagination__link" href="#">4</a></li>
+
+<li class="moj-pagination__item"><a class="moj-pagination__link" href="#">5</a></li>
+
+
+<li class="moj-pagination__item  moj-pagination__item--next">
+<a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+</li>
+</ul>
+<p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>100</b> results</p>
+</nav>
+
+<!-- <p class="govuk-body">
+  <a data-test="govuk-link govuk-link--no-visited-state" href="#" class="govuk-link govuk-!-padding-bottom-4" style="float:right"> View last 12 months</a>
+</p> -->
+
+        <!-- table body -->
+
+        <table class="govuk-table" data-module="moj-sortable-table" id="learningTable">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class">Activity</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Location</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="none">Start date</th>
+              <th scope="col" class="govuk-table__header app-custom-class" aria-sort="ascending">End date</th>
+              <th scope="col" class="govuk-table__header app-custom-class">End reason</th>
+              <th scope="col" class="govuk-table__header app-custom-class">End comment</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body" id="tableBody">
+            <!-- Row 1 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Level 3 COVID Unemployed
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                13/08/2021
+              </td>
+              <td class="govuk-table__cell">
+                Ongoing
+              </td>
+              <td class="govuk-table__cell">
+
+              </td>
+              <td class="govuk-table__cell">
+
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Workshop 7 HB1 & 3 Single Portions
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                05/06/2021
+              </td>
+              <td class="govuk-table__cell">
+                Ongoing
+              </td>
+              <td class="govuk-table__cell">
+
+              </td>
+              <td class="govuk-table__cell">
+
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Part Time Worker - PM
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                02/07/2021
+              </td>
+              <td class="govuk-table__cell">
+                01/08/2021
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Compulsory iPLOY WS29-NOVUSInduction(Z2)
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                20/07/2021
+              </td>
+              <td class="govuk-table__cell">
+                10/08/2021
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                INCLUSION WORKSHOP
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                10/06/2021
+              </td>
+              <td class="govuk-table__cell">
+                10/06/2021
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+            </tr>
+
+            <!-- Row 6 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Kitchen AM
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                20/04/2021
+              </td>
+              <td class="govuk-table__cell">
+                01/07/2021
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+            </tr>
+
+            <!-- Row 7 -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Kitchen PM
+              </td>
+              <td class="govuk-table__cell">
+                Ranby (HMP)
+              </td>
+              <td class="govuk-table__cell">
+                20/04/2021
+              </td>
+              <td class="govuk-table__cell">
+                01/07/2021
+              </td>
+              <td class="govuk-table__cell">
+                Unacceptable behaviour
+              </td>
+              <td class="govuk-table__cell">
+                Not entered
+              </td>
+
+              <!-- Row 8 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  HB1 & 3 Catering
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  08/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  26/06/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  conflict
+                </td>
+
+              <!-- Row 9 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Getting It Right CRC AM
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  18/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  18/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Course ended
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+              </tr>
+
+              <!-- Row 10 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Unemployed - Temp
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  11/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  18/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  CSIP under investigation
+                </td>
+              </tr>
+
+              <!-- Row 11 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  VP Workshop
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  01/04/2021
+                </td>
+                <td class="govuk-table__cell">
+                  22/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+              </tr>
+
+              <!-- Row 12 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Cleaner HB1 - AM
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  02/04/2021
+                </td>
+                <td class="govuk-table__cell">
+                  08/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+              </tr>
+
+              <!-- Row 13 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Cleaner HB1 - PM
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  02/04/2021
+                </td>
+                <td class="govuk-table__cell">
+                  08/05/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Approved by S. Smith - moved wings
+                </td>
+              </tr>
+
+              <!-- Row 14 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  EDU - Painting and Decorating AM
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  01/04/2021
+                </td>
+                <td class="govuk-table__cell">
+                  24/03/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+              </tr>
+
+              <!-- Row 15 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  A EDU -  In cell Friday Homework
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  15/03/2021
+                </td>
+                <td class="govuk-table__cell">
+                  15/03/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+              </tr>
+
+              <!-- Row 16 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Under Threat/Self Segregating
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  16/03/2021
+                </td>
+                <td class="govuk-table__cell">
+                  19/04/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+              </tr>
+
+              <!-- Row 17 -->
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Unemployed - Basic AM
+                </td>
+                <td class="govuk-table__cell">
+                  Ranby (HMP)
+                </td>
+                <td class="govuk-table__cell">
+                  23/02/2019
+                </td>
+                <td class="govuk-table__cell">
+                  19/03/2021
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+                <td class="govuk-table__cell">
+                  Not entered
+                </td>
+              </tr>
+
+                  <!-- Row 18 -->
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">
+                      Unemployed Full Time
+                    </td>
+                    <td class="govuk-table__cell">
+                      Ranby (HMP)
+                    </td>
+                    <td class="govuk-table__cell">
+                      03/02/2021
+                    </td>
+                    <td class="govuk-table__cell">
+                      17/02/2021
+                    </td>
+                    <td class="govuk-table__cell">
+                      Not entered
+                    </td>
+                    <td class="govuk-table__cell">
+                      Not entered
+                    </td>
+                  </tr>
+
+                  <!-- Row 19 -->
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">
+                      Workshop 4 PM
+                    </td>
+                    <td class="govuk-table__cell">
+                      Ranby (HMP)
+                    </td>
+                    <td class="govuk-table__cell">
+                      29/12/2020
+                    </td>
+                    <td class="govuk-table__cell">
+                      11/01/2021
+                    </td>
+                    <td class="govuk-table__cell">
+                      Not entered
+                    </td>
+                    <td class="govuk-table__cell">
+                      swapped to PM
+                    </td>
+                  </tr>
+
+                  <!-- Row 20 -->
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">
+                      Cleaner HB1 - AM
+                    </td>
+                    <td class="govuk-table__cell">
+                      Ranby (HMP)
+                    </td>
+                    <td class="govuk-table__cell">
+                      18/10/2020
+                    </td>
+                    <td class="govuk-table__cell">
+                      22/12/2020
+                    </td>
+                    <td class="govuk-table__cell">
+                      Not entered
+                    </td>
+                    <td class="govuk-table__cell">
+                      Conflict of interest with a staff member in CES.- CH
+                    </td>
+                  </tr>
+
+
+          </tbody>
+        </table>
+
+        <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+
+      <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+      <ul class="moj-pagination__list">
+      <li class="moj-pagination__item  moj-pagination__item--prev">
+      <a class="moj-pagination__link" href="#">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+      </li>
+
+      <li class="moj-pagination__item moj-pagination__item--active">1</li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">4</a></li>
+
+      <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">5</a></li>
+
+
+      <li class="moj-pagination__item  moj-pagination__item--next">
+      <a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+      </li>
+      </ul>
+      <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>100</b> results</p>
+      </nav>
+
+        <p class="govuk-body">
+        <a href="/v15/1/profile#tab-6" class="govuk-link govuk-link--no-visited-state" data-test="recent-search-link">
+          Return to prisoner profile
+        </a>
+        </p>
+
+        <!-- <p class="govuk-body">
+        <a href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing" class="govuk-link govuk-link--no-visited-state" target="_blank" data-test="recent-search-link">
+          Give feedback on this page (opens in a new tab)
+        </a>
+        </p> -->
+
+        <div class="app-contact-panel">
+
+  <h2 class="app-contact-panel__heading">This is a new page
+</h2>
+
+  <p class="govuk-body app-contact-panel__body">
+  <a class="govuk-link govuk-link--no-visited-state" target="_blank" href="https://docs.google.com/document/d/11fHM5-jdHOqkEH4m2F5Rgalhh--tHAcYm50IyDFJ-aM/edit?usp=sharing"> Give feedback to help us improve it (opens in a new tab)</a>.
+  </p>
+</div>
+
+      </div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="feedback-banner" data-test="feedback-banner">
+<a href="#" class="govuk-link govuk-link--inverse" target="_blank" rel="noopener noreferrer">
+  Give feedback on Digital Prison Services (opens in a new tab)
+</a>
+</div>
+    </main>
+
+{% endblock %}
