@@ -1,0 +1,177 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+          <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+            <div class="prisoner-profile-breadcrumbs">
+
+          <div class="prisoner-profile-breadcrumbs__search">
+            <a href="/v3/our-service/prisoner-first/search-results" class="govuk-link govuk-link--no-visited-state" data-test="recent-search-link">
+              View most recent search
+            </a>
+          </div>
+
+        <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+          <div class="govuk-breadcrumbs ">
+            <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="/v3/our-service/prisoner-first/home">Get someone work ready</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="page">Hall, Kevin</li>
+            </ol>
+            </div>
+        </div>
+
+      </div>
+
+          </div>
+          <main class="govuk-main-wrapper">
+
+              <div class="header-with-link">
+                  <span class="govuk-caption-m">Prisoner number: G2911GD</span>
+                  <h1 class="govuk-heading-l">Hall, Kevin</h1>
+
+              </div>
+
+              <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+                <ul class="moj-sub-navigation__list">
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" aria-current="page" href="/v16/assessment">Assessment</a>
+                  </li>
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="/v16/case-overview">Overview</a>
+                  </li>
+
+                </ul>
+
+              </nav>
+
+                  <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Assessment</h1>
+
+                  <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                  <div class="govuk-notification-banner__header">
+                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                      Important
+                    </h2>
+                  </div>
+                  <div class="govuk-notification-banner__content">
+                    <h3 class="govuk-notification-banner__heading">
+                   Help Kevin get work ready
+                 </h3>
+                    <p class="govuk-body app-contact-panel__body">
+                      <ul class="govuk-list">
+                        <li>
+                          <a class="govuk-link" href="#">Update their ID information</a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Update their bank account information</a>
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+
+
+                <section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
+                  <header class="app-summary-card__header">
+
+                    <h2 class="app-summary-card__title">
+                      ID
+                    </h2>
+
+                    <div class="app-summary-card__actions">
+                        <a class="govuk-link" href="/cases/R000101/schedule">
+                          Update ID information</a>
+                    </div>
+
+                  </header>
+                    <div class="app-summary-card__body">
+                      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Do they have ID?
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> ID</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Comment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> comment</span>
+              </a>
+            </dd>
+          </div>
+
+        </dl>
+                    </div>
+                  </section>
+
+
+                  <section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
+                    <header class="app-summary-card__header">
+
+                      <h2 class="app-summary-card__title">
+                        Driving licence
+                      </h2>
+
+                      <div class="app-summary-card__actions">
+                          <a class="govuk-link" href="/cases/R000101/schedule">
+                            Update driving licence information</a>
+                      </div>
+
+                    </header>
+                      <div class="app-summary-card__body">
+                        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Do they have a valid driving licence?
+              </dt>
+              <dd class="govuk-summary-list__value">
+                No
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> ID</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Comment
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> comment</span>
+                </a>
+              </dd>
+            </div>
+
+          </dl>
+                      </div>
+                    </section>
+
+
+          </main>
+    </div>
+
+{% endblock %}

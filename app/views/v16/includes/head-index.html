@@ -1,0 +1,28 @@
+<!--[if lte IE 8]><link href="/public/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!-->
+<link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+
+{% for stylesheetUrl in extensionConfig.stylesheets %}
+<link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+{% endfor %}
+
+
+
+<section class="app-masthead" aria-label="head">
+
+<div class="app-masthead">
+
+<div class="govuk-width-container">
+
+  <h1 class="govuk-heading-xl app-masthead__title">Prisoner education, skills, work and employment</h1>
+  <h2 class="app-masthead__subtitle govuk-heading-l">Prototypes</h2>
+  <p class="app-masthead__description">This site contains the design prototypes for the HMPPS Prisoner education, skills, work and employment (ESWE) team.</p>
+  <p>GOV prototype kit version {{releaseVersion}}.
+
+
+
+</div>
+
+</div>
+</section>
