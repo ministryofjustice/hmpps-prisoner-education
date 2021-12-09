@@ -1,0 +1,90 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="/v16/start-page" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/form-handler" method="post" novalidate>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Does Kevin Hall have ID?
+              </h1>
+            </legend>
+
+            <p>
+              This includes things like a:
+              <ul class="govuk-list govuk-list--bullet">
+                <li>passport</li>
+                <li>driving licence</li>
+                <li>birth certificate</li>
+              </ul>
+            </p>
+
+            <div class="govuk-radios govuk-!-padding-bottom-6">
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="id-1" name="id" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="id-1">
+                  Yes
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="id-2" name="id" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="id-2">
+                  No
+                </label>
+              </div>
+
+            </div>
+
+            <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+            <div class="govuk-form-group">
+              <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="with-hint">
+                  Add a comment
+                </label>
+              </h1>
+              <div id="with-hint-hint" class="govuk-hint">
+                You’ll need to include any actions you or the prisoner may take.
+              </div>
+              <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+            </div>
+
+            <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+              You can enter up to 200 characters
+            </div>
+
+          </div>
+
+
+
+
+          </fieldset>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  </fieldset>
+</div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
+</div>
+
+{% endblock %}
