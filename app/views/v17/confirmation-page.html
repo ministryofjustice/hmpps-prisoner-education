@@ -1,0 +1,41 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="/v17/start-page" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Assessment saved
+          </h1>
+        </div>
+
+        <!-- <p class="govuk-body">We have sent you a confirmation email.</p> -->
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+
+        <p class="govuk-body">
+          You'll be able to edit and view these answers.
+        </p>
+
+        <!-- <p class="govuk-body">
+          <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+        </p> -->
+
+        <p class="govuk-body">
+          <a href="/v17/assessment" class="govuk-link">View Kevin Hall's work readiness profile</a>
+        </p>
+
+        <p class="govuk-body">
+          <a href="/v17/home" class="govuk-link">Search for a prisoner to start a new assessment</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
