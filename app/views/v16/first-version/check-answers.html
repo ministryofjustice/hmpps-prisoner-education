@@ -1,0 +1,145 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="/v16/start-page" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <h1 class="govuk-heading-l">Check your answers</h1>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              ID
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">No</p>
+              <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Valid driving licence
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">No</p>
+              <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> date of birth</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Bank account
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">No</p>
+              <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Accommodation status
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">No fixed abode</p>
+              <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Last job outside of prison
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            CV
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">No</p>
+              <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Disclosure letter
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">No</p>
+              <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Work related certificates or qualifications
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">Heavy goods vehicle (HGV) licence</p>
+              <p class="govuk-body">CSCS</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <p class="govuk-body govuk-!-padding-bottom-4">You'll be able to edit and view these answers after you've saved this assessment.</p>
+
+        <form action="/v16/confirmation-page" method="post" novalidate>
+
+          <input type="hidden" name="answers-checked" value="true">
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save assessment
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

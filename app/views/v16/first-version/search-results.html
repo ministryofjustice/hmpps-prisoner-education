@@ -1,0 +1,144 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+        <ol class="govuk-breadcrumbs__list">
+
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="/v16/home">Get someone work ready</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                Prisoner search results
+            </li>
+        </ol>
+    </div>
+    <main class="govuk-main-wrapper">
+
+        <div class="header-with-link">
+            <h1 class="govuk-heading-l">Prisoner search results</h1>
+        </div>
+
+<div class="govuk-width-container govuk-!-padding-3 govuk-!-margin-bottom-5 form-background">
+
+<form novalidate="novalidate" class="prisoner-search__form" data-test="prisoner-search-form">
+  <div class="horizontal-form govuk-!-margin-bottom-3">
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="keywords">
+    Enter name or prison number
+  </label>
+
+<input class="govuk-input govuk-!-width-full" id="keywords" name="keywords" type="text" data-test="prisoner-search-keywords">
+</div>
+
+<button type="submit" class="govuk-button" data-module="govuk-button">
+  Search
+</button>
+
+  </div>
+
+</form>
+</div>
+
+<div class="prisoner-search__results-options">
+
+
+<form method="POST" class="horizontal-form" data-test="prisoner-search-order-form">
+  <input type="hidden" name="_csrf" value="AZ4vlAO8-gPOHc7L4BGtQDS_OqLv1Mtda-IM">
+
+</form>
+
+<nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+
+    <p class="moj-pagination__results" style="float:right">Showing <b>1</b> to <b>1</b> of <b>1</b> results</p>
+  </nav>
+
+  <div class="prisoner-search__results-list">
+  <table class="govuk-table" data-test="prisoner-search-results-table">
+
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+
+      <th scope="col" class="govuk-table__header"><span class="govuk-visually-hidden">Picture</span></th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="1">Name</button></th>
+
+      <th scope="col" class="govuk-table__header">Prison number</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="3">Location</button></th>
+
+      <!-- <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="4">Incentive level</button></th> -->
+
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" data-index="5">Age</button></th>
+
+      <th scope="col" class="govuk-table__header">Relevant alerts</th>
+
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
+
+        <tr class="govuk-table__row">
+
+          <td class="govuk-table__cell"><img src="/public/images/kevin-photo.jpg" alt="Picture of Kevin" class="prisoner-search__results-list__image"></td>
+
+          <td class="govuk-table__cell" data-sort-value="Kevin Hall"><a href="/v16/start-page" class="govuk-link govuk-link--no-visited-state">Hall, Kevin</a></td>
+
+          <td class="govuk-table__cell">G2911GD</td>
+
+          <td class="govuk-table__cell">C-1-004</td>
+
+          <!-- <td class="govuk-table__cell">Enhanced</td> -->
+
+          <td class="govuk-table__cell">42</td>
+
+          <td class="govuk-table__cell">
+
+          <!-- <ul class="alerts-list-no-flex">
+                <li class="alert-status alert-status--tact">
+                  TACT
+                </li><br>
+
+            </ul> -->
+
+
+
+
+
+  <span class="">
+
+
+
+
+
+
+
+  </span>
+</td>
+
+
+        </tr>
+
+
+  </tbody>
+</table>
+
+<div aria-live="polite" role="status" aria-atomic="true" class="govuk-visually-hidden"></div></div>
+
+    </div>
+  </div>
+
+
+
+
+    </main>
+</div>
+
+{% endblock %}
