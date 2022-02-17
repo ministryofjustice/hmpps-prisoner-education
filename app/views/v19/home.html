@@ -1,0 +1,90 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+      <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+        <a href="/v19/dps-home" class="govuk-back-link">Digital Prison Services</a>
+
+      </div>
+
+
+        <h1 class="govuk-heading-l govuk-!-margin-top-7">Get someone work ready</h1>
+
+    </div>
+
+
+    <!-- <div class="homepage-search">
+        <div class="govuk-width-container">
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Search for a prisoner</h2>
+
+            <form class="horizontal-form" data-test="homepage-search-form" action="/v19/search-results" method="post" novalidate>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="keywords">Name or prison number</label> <input class="govuk-input" data-test="homepage-search-keywords" id="keywords" name="keywords" type="text">
+
+                </div><button class="govuk-button" data-module="govuk-button" type="submit" onclick="showAlert()">Search</button>
+            </form>
+
+            <p class="govuk-body govuk-!-margin-top-6 ">Use this service to:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>create a work readiness profile for someone</li>
+              <li>view and update a prisoner's work readiness profile</li>
+              <li>view a list of prisoner's who are ready for work</li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div class="homepage-content">
+        <div class="govuk-width-container">
+            <ul class="govuk-grid-row card-group">
+
+                <li class="govuk-grid-column-one-third card-group__item">
+
+                    <div class="card card--clickable" data-test="view-statistics">
+                        <h2 class="govuk-heading-m card__heading">
+                            <a class="govuk-link card__link govuk-link--no-visited-state" href="#">Create a work readiness profile for someone</a>
+                        </h2>
+                        <p class="govuk-body card__description">Record what support a prisoner needs to get into work on release and what they have set up already.</p>
+                    </div>
+                  </li>
+
+                  <li class="govuk-grid-column-one-third card-group__item">
+
+                    <div class="card card--clickable" data-test="view-statistics">
+                        <h2 class="govuk-heading-m card__heading">
+                            <a class="govuk-link card__link govuk-link--no-visited-state" href="/v19/list-support-needed">View prisoners who need support</a>
+                        </h2>
+                        <p class="govuk-body card__description">View and update information about prisoners who need support to get ready to work on release.</p>
+                    </div>
+
+                </li>
+
+                <li class="govuk-grid-column-one-third card-group__item">
+
+                  <div class="card card--clickable" data-test="view-statistics">
+                      <h2 class="govuk-heading-m card__heading">
+                          <a class="govuk-link card__link govuk-link--no-visited-state" href="list-declined-support">View prisoners who don't want support</a>
+                      </h2>
+                      <p class="govuk-body card__description">See which prisoners have declined support to get work on release and their reasons for this decision.</p>
+                  </div>
+
+              </li>
+
+                <li class="govuk-grid-column-one-third card-group__item">
+
+                  <div class="card card--clickable" data-test="view-statistics">
+                      <h2 class="govuk-heading-m card__heading">
+                          <a class="govuk-link card__link govuk-link--no-visited-state" href="#">View prisoners who are ready for work</a>
+                      </h2>
+                      <p class="govuk-body card__description">View a list of prisoners who have been assessed as ready to get work.</p>
+                  </div>
+
+              </li>
+
+            </ul>
+        </div>
+    </div>
+{% endblock %}
