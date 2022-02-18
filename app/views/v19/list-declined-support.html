@@ -25,7 +25,7 @@
 
         </div>
 
-        <div class="homepage-search">
+        <!-- <div class="homepage-search">
             <div class="govuk-width-container">
                 <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Find a prisoner</h2>
 
@@ -46,12 +46,45 @@
                     Search
                   </button>
             </div>
-        </div>
+        </div> -->
 
 
         <div class="govuk-width-container">
 
-          <nav class="moj-sub-navigation govuk-!-margin-top-7" aria-label="Sub navigation">
+          <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+
+
+      <div class="moj-search govuk-!-margin-bottom-7 govuk-!-margin-top-5">
+
+        <form action="/search/pom/results" method="post">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+              Find a prisoner
+            </label>
+            <label class="govuk-label moj-search__label" for="search">
+              Search by prisoner name or number
+            </label>
+
+            <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+            </div>
+
+            <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+          </div>
+
+          <button class="govuk-button moj-search__button" data-module="govuk-button">
+            Search
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+          <nav class="moj-sub-navigation" aria-label="Sub navigation">
 
     <ul class="moj-sub-navigation__list">
 
@@ -72,11 +105,11 @@
 
 </nav>
 
-<h1 class="govuk-heading-l govuk-!-margin-bottom-1 govuk-!-margin-top-7">
+<h1 class="govuk-heading-l govuk-!-margin-bottom-7 govuk-!-margin-top-7">
   Prisoners who do not want support
 </h1>
 
-          <div class="govuk-form-group">
+          <!-- <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h3 class="govuk-heading-m govuk-!-margin-top-7" style="margin-bottom: -5px;">
@@ -104,7 +137,7 @@
           </div>
 
         </fieldset>
-      </div>
+      </div> -->
 
       <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
 
@@ -134,7 +167,7 @@
       <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
       <th scope="col" class="govuk-table__header" aria-sort="none">Earliest release date</th>
       <th scope="col" class="govuk-table__header" aria-sort="none">Declined support on</th>
-      <th scope="col" class="govuk-table__header">Reasons for decision</th>
+      <th scope="col" class="govuk-table__header">Reasons for their decision</th>
       <th scope="col" class="govuk-table__header">Action</th>
   </thead>
   <tbody class="govuk-table__body">
