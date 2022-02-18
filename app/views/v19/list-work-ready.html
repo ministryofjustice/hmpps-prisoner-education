@@ -13,31 +13,76 @@
             <li class="govuk-breadcrumbs__list-item">
               <a class="govuk-breadcrumbs__link" href="/v19/home">Get someone work ready</a>
             </li>
-            <li class="govuk-breadcrumbs__list-item" aria-current="page">Prisoners who are work ready</li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="page">View prisoners</li>
             </ol>
             </div>
+          </div>
+
         </div>
 
-      </div>
+            </div>
 
           </div>
 
 
 
-          <h1 class="govuk-heading-l govuk-!-margin-bottom-6 govuk-!-margin-top-7">
-            Prisoners who are work ready
-          </h1>
+          <div class="homepage-search">
+              <div class="govuk-width-container">
+                  <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Find a prisoner</h2>
+
+                  <form class="horizontal-form" data-test="homepage-search-form" action="/v19/search-results" method="post" novalidate>
+
+                    <div class="govuk-form-group">
+
+                      <label class="govuk-label" for="keywords">Name or prison number</label>
+
+                      <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+                      </div>
+
+                      <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+                    </div>
+
+                    <button class="govuk-button moj-search__button" data-module="govuk-button">
+                      Search
+                    </button>
+              </div>
+          </div>
 
         </div>
 
         <div class="govuk-width-container">
 
+          <nav class="moj-sub-navigation govuk-!-margin-top-7" aria-label="Sub navigation">
+
+    <ul class="moj-sub-navigation__list">
+
+      <li class="moj-sub-navigation__item">
+        <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="/v19/list-support-needed">Support needed (53)</a>
+      </li>
+
+
+      <li class="moj-sub-navigation__item">
+        <a class="moj-sub-navigation__link govuk-link--no-visited-state" aria-current="page">Work ready (10)</a>
+      </li>
+
+      <li class="moj-sub-navigation__item">
+        <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="/v19/list-declined-support">Does not want support (30)</a>
+      </li>
+
+    </ul>
+
+</nav>
+
+<h1 class="govuk-heading-l govuk-!-margin-bottom-1 govuk-!-margin-top-7">
+  Prisoners who are work ready
+</h1>
+
           <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <h3 class="govuk-heading-m" style="margin-bottom: -5px;">
-             Choose who you want to see
-            </h3>
+            <h3 class="govuk-heading-m govuk-!-margin-top-7" style="margin-bottom: -5px;">
+              Choose who you want to see</h3>
           </legend>
 
           <div class="govuk-radios govuk-radios--inline govuk-radios govuk-radios--small">
@@ -89,9 +134,9 @@
     <tr class="govuk-table__row">
       <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
       <th scope="col" class="govuk-table__header" aria-sort="none">Earliest release date</th>
-      <th scope="col" class="govuk-table__header" aria-sort="none">Assessed as ready on</th>
-      <th scope="col" class="govuk-table__header">Has CV</th>
-      <th scope="col" class="govuk-table__header">Has disclosure letter</th>
+      <th scope="col" class="govuk-table__header">Assessed as ready on</th>
+      <!-- <th scope="col" class="govuk-table__header">Has CV</th>
+      <th scope="col" class="govuk-table__header">Has disclosure letter</th> -->
       <th scope="col" class="govuk-table__header">Job sectors of interest</th>
   </thead>
   <tbody class="govuk-table__body">
@@ -101,8 +146,8 @@
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Adams" href="#">Bradshaw, Alex</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
       <td class="govuk-table__cell" data-sort-value="2024.06.01">HDC:</br>01 Jun 2022</td>
       <td class="govuk-table__cell" data-sort-value="2024.02.17">17 Feb 2022</td>
-      <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-      <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
+      <td class="govuk-table__cell" data-sort-value="Yes">Yes</td> -->
       <td class="govuk-table__cell" data-sort-value="Construction and trade">Construction and trade</td>
     </tr>
 
