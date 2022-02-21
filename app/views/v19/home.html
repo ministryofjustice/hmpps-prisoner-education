@@ -15,27 +15,40 @@
     </div>
 
 
-    <!-- <div class="homepage-search">
+    <div class="homepage-search">
         <div class="govuk-width-container">
-            <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Search for a prisoner</h2>
+          <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
 
-            <form class="horizontal-form" data-test="homepage-search-form" action="/v19/search-results" method="post" novalidate>
+            <div class="moj-search">
+
+              <form action="/v19/search-results" method="post">
 
                 <div class="govuk-form-group">
-                    <label class="govuk-label" for="keywords">Name or prison number</label> <input class="govuk-input" data-test="homepage-search-keywords" id="keywords" name="keywords" type="text">
+                  <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+                    Find a prisoner
+                  </label>
+                  <label class="govuk-label moj-search__label" for="search">
+                    Search by prisoner name or number
+                  </label>
 
-                </div><button class="govuk-button" data-module="govuk-button" type="submit" onclick="showAlert()">Search</button>
-            </form>
+                  <div id="search-hint" class="govuk-hint moj-search__hint ">
 
-            <p class="govuk-body govuk-!-margin-top-6 ">Use this service to:</p>
+                  </div>
 
-            <ul class="govuk-list govuk-list--bullet">
-              <li>create a work readiness profile for someone</li>
-              <li>view and update a prisoner's work readiness profile</li>
-              <li>view a list of prisoner's who are ready for work</li>
-            </ul>
+                  <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+                </div>
+
+                <button class="govuk-button moj-search__button" data-module="govuk-button">
+                  Search
+                </button>
+
+              </form>
+            </div>
         </div>
-    </div> -->
+      </div>
+    </div>
+    </div>
 
     <div class="homepage-content">
         <div class="govuk-width-container">
