@@ -1,0 +1,41 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <a href="/v19/case-work-readiness" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+      <form method="post" action="/v19/case-work-readiness-ready-for-work">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Confirm that Kevin Hall is ready for work</h1>
+
+        <p class="govuk-body">The Prison Employment Lead will start matching Kevin Hall with job vacancies.</p>
+
+        <p class="govuk-body">Kevin Hall will be added to the ready for work list. They will no longer appear in the support needed list.</p>
+
+
+        <div class="govuk-button-group govuk-!-margin-top-6">
+
+        <button class="govuk-button" data-module="govuk-button" href="/v19/case-work-readiness">
+          Confirm and add to list
+        </button>
+
+        <a class="govuk-link" href="/v19/case-work-readiness">Cancel</a>
+
+      </div>
+
+
+    </div>
+
+  </form>
+  </main>
+
+</div>
+
+</div>
+
+{% endblock %}
