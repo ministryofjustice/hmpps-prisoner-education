@@ -111,10 +111,9 @@
   Get ready
 </h2>
 
-        <form action="/v19/list-support-needed-releases" method="post">
+          <form action="/v19/list-support-needed" method="post">
 
           <div class="govuk-form-group">
-
         <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h3 class="govuk-heading-m govuk-!-margin-top-7" style="margin-bottom: -5px;">
@@ -124,7 +123,7 @@
 
           <div class="govuk-radios govuk-radios--inline govuk-radios govuk-radios--small">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter" name="simple-filter" type="radio" value="yes" checked="true">
+              <input class="govuk-radios__input" id="simple-filter" name="simple-filter" type="radio" value="no">
               <label class="govuk-label govuk-radios__label" for="simple-filter">
                 <a href="#" style="color:black; text-decoration:none">Everyone (53)</a>
               </label>
@@ -132,9 +131,9 @@
 
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
+              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="yes" checked="true">
               <label class="govuk-label govuk-radios__label" for="simple-filter-2">
-                <a href="/v19/list-support-needed-releases" style="color:black; text-decoration:none">Releases in next 12 weeks (8)</a>
+                <a href="#" style="color:black; text-decoration:none">Releases in next 12 weeks (8)</a>
               </label>
             </div>
 
@@ -166,6 +165,7 @@
               </label>
             </div>
 
+
           </div>
 
         </fieldset>
@@ -176,29 +176,14 @@
 
       </div>
 
-      </form>
+    </form>
 
+    <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
-      <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
-
-    <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
-
-    <ul class="moj-pagination__list">
-
-
-    <li class="moj-pagination__item moj-pagination__item--active">1</li>
-
-    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
-
-    <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
-
-
-    <li class="moj-pagination__item  moj-pagination__item--next">
-    <a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
-    </li>
-    </ul>
-    <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>53</b> results</p>
-    </nav>
+  <ul class="moj-pagination__list"></ul>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>8</b> of <b>8</b> results</p>
+  </nav>
 
 
 <!-- add table of people  -->
@@ -243,50 +228,50 @@
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
     </tr>
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Bahringer" href="#">Bahringer, Darin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3989UN</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.12.13">13 Dec 2022</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Baron" href="#">Baron, Lee</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3757UN</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.11.11">11 Nov 2022</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Bruce" href="#">Bruce, John</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3757UN</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.10.03">03 Oct 2022</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Charles" href="#">Charles, Jermaine</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3892UH</span></td>
-      <td class="govuk-table__cell" data-sort-value="2022.01.03">03 May 2022</td>
+      <td class="govuk-table__cell" data-sort-value="2022.03.05">03 May 2022</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
     </tr>
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Daniels" href="#">Daniels, Robert</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3933UL</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.12.06">06 Dec 2022</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Davies" href="#">Davies, Daniel</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8152UC</span></td>
@@ -297,59 +282,59 @@
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
     </tr>
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Edwards" href="#">Edwards, Andrei</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> H678512</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.08.07">07 Aug 2022</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Eku" href="#">Eku, Tyler</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8012UH</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.11.20">20 Nov 2022</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Gavella" href="#">Gavella, Gustavo</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G6531GT</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.08.18">18 Aug 2022</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Hatton" href="#">Hatton, Mark</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G1318GN</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.09.06">06 Sep 2022</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Hall" href="/v19/case-work-readiness">Hall, Kevin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
       <td class="govuk-table__cell" data-sort-value="2022.09.01">01 Sep 2022</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
-    </tr>
+    </tr> -->
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Marvin" href="#">Lee, Marvin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8232UP</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.10.01">HDC:</br>01 Oct 2022</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="McLaughlin" href="#">McLaughlin, Ross</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G0143VW</span></td>
@@ -360,14 +345,14 @@
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
     </tr>
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Mraz" href="#">Mraz, Leland</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> W172699</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.08.28">28 Aug 2022</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Nowak" href="#">Nowak, Sokol</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G4724UC</span></td>
@@ -378,14 +363,14 @@
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
     </tr>
 
-    <tr class="govuk-table__row">
+    <!-- <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Osborne" href="#">Osborne, Jamie</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5511UP</span></td>
       <td class="govuk-table__cell" data-sort-value="2022.07.19">HDC:</br>19 Jul 2022</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="No">No</td>
       <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
-    </tr>
+    </tr> -->
 
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Petrs" href="#">Petrs, Vasil</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5511UP</span></td>
@@ -397,31 +382,14 @@
     </tr>
 
 
-
-
 </table>
 
-    <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+<nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
-  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
-
-  <ul class="moj-pagination__list">
-
-
-  <li class="moj-pagination__item moj-pagination__item--active">1</li>
-
-  <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
-
-  <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
-
-
-  <li class="moj-pagination__item  moj-pagination__item--next">
-  <a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
-  </li>
-  </ul>
-  <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>53</b> results</p>
-  </nav>
-
+<ul class="moj-pagination__list"></ul>
+<p class="moj-pagination__results">Showing <b>1</b> to <b>8</b> of <b>8</b> results</p>
+</nav>
 
 
 </div>
