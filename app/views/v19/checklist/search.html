@@ -1,0 +1,62 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="/v19/checklist/start-page" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full-width">
+
+        <h1 class="govuk-heading-l">Who are you doing this for?</h1>
+
+        <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-!-padding-4 govuk-!-padding-top-6 govuk-!-padding-bottom-7 form-background">
+
+
+<div class="moj-search govuk-!-width-one-half">
+
+  <form action="/v19/checklist/search-results" method="post">
+
+
+<div class="govuk-form-group">
+
+  <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+    Search for a prisoner
+  </label>
+
+  <label class="govuk-label moj-search__label " for="search">
+    Enter name or prison number
+  </label>
+
+<input class="govuk-input moj-search__input " id="search" name="search" type="search">
+</div>
+
+
+
+<button class="govuk-button moj-search__button " data-module="govuk-button">
+  Search
+</button>
+
+  </form>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+
+</div>
+  </main>
+
+</div>
+
+{% endblock %}
