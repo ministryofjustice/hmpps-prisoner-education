@@ -1,0 +1,68 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="/v19/checklist/q2a-reason-for-decline" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/v19/checklist/exit-page-does-not-want-support" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="change-needed-got-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                What changes need to happen before Kevin Hall will want to get work on release?
+                </h1>
+              </legend>
+              <div id="change-needed-got-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="change-needed-1" name="change-needed" type="checkbox" value="housing">
+                  <label class="govuk-label govuk-checkboxes__label" for="change-needed-1">
+                    Housing sorted for release
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="change-needed-2" name="change-needed-got" type="checkbox" value="ID">
+                  <label class="govuk-label govuk-checkboxes__label" for="change-needed-2">
+                    ID
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="change-needed-3" name="change-needed" type="checkbox" value="motivation">
+                  <label class="govuk-label govuk-checkboxes__label" for="change-needed-3">
+                    Support to manage a drugs or alcohol dependency
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="change-needed-4" name="change-needed" type="checkbox" value="motivation">
+                  <label class="govuk-label govuk-checkboxes__label" for="change-needed-4">
+                    Support to manage a mental health condition or diagnoses
+                  </label>
+                </div>
+
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

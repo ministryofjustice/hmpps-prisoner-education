@@ -1,0 +1,51 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="#" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          Describe the current status of how Kevin Hall is managing their mental health
+        </h1>
+
+        <form action="/work-goals" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="opt-in-for-support-1" name="opt-in-for-support" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="opt-in-for-support">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="opt-in-for-support-2" name="opt-in-for-support" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="opt-in-for-support-2">
+                    No
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
