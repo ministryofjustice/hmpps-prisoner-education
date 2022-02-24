@@ -47,12 +47,12 @@ router.post("/reason-for-decline-answer", function (req, res) {
   var reasonForDecline = req.session.data['reason-for-decline-answer']
 
   // Check whether the variable matches a condition
-  if (reasonForDecline == "confidence","motivation"){
+  if (reasonForDecline == "confidence", "motivation"){
     // Send user to next page
     res.redirect("/v19/checklist/q2b-what-needs-to-change")
   } else {
     // Send user to ineligible page
-    res.redirect("/v19/checklist/exit-page-does-not-want-support")
+    res.redirect("/v19/checklist/check-answers-does-not-want-support-2")
   }
 
 })

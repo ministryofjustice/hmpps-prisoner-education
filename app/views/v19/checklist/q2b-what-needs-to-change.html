@@ -10,13 +10,13 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <form action="/v19/checklist/exit-page-does-not-want-support" method="post" novalidate>
+        <form action="/v19/checklist/check-answers-does-not-want-support" method="post" novalidate>
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="change-needed-got-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                What changes need to happen before Kevin Hall will want to get work on release?
+                What change in circumstances would make Daniel Hall want to get work on release?
                 </h1>
               </legend>
               <div id="change-needed-got-hint" class="govuk-hint">
@@ -47,6 +47,27 @@
                     Support to manage a mental health condition or diagnoses
                   </label>
                 </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="change-needed-5" name="change-needed" type="checkbox" value="other-details" data-aria-controls="conditional-change-needed">
+                  <label class="govuk-label govuk-checkboxes__label" for="change-needed-5">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-change-needed">
+                  <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="change-needed-5">
+                      Give details (mandatory)
+                    </label>
+                    </h1>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                  </div>
+                  <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 200 characters
+                  </div>
+
+                </div>
+              </div>
 
               </div>
 
