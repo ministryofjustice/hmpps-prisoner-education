@@ -69,6 +69,22 @@ router.post("/1-might-be-impacted-by-answer", function (req, res) {
   if (impact == " Reliant on drugs or alcohol"){
     // Send user to next page
     res.redirect("/v19/checklist/scenario-1/q4a-management-of-dependency")
+
+ //  // Check whether the variable matches a condition
+ // or (impact == " Mental health conditions or diagnoses"){
+ //    // Send user to next page
+ //    res.redirect("/v19/checklist/scenario-1/q4b-management-of-mental-health")
+ //
+ //    // Check whether the variable matches a condition
+ //    if (impact == " Family issues"){
+ //      // Send user to next page
+ //      res.redirect("/v19/checklist/scenario-1/q5-work-goals")
+ //
+ //      // Check whether the variable matches a condition
+ //      if (impact == " Family issues"){
+ //        // Send user to next page
+ //        res.redirect("/v19/checklist/scenario-1/q5-work-goals")
+
   } else {
     // Send user to ineligible page
     res.redirect("/v19/checklist/scenario-1/q5-work-goals")
