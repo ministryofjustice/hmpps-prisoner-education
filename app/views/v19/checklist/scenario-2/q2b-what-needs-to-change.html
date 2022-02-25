@@ -1,0 +1,89 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="/v19/checklist/scenario-2/q2a-reason-for-decline" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/v19/checklist/scenario-2/check-answers-does-not-want-support" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="2-change-needed-got-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                What change in circumstances would make Daniel Hall want to get work on release?
+                </h1>
+              </legend>
+              <div id="change-needed-got-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="2-change-needed-1" name="2-change-needed" type="checkbox" value="Housing sorted for release">
+                  <label class="govuk-label govuk-checkboxes__label" for="2-change-needed-1">
+                    Housing sorted for release
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="2-change-needed-2" name="2-change-needed" type="checkbox" value=" ID">
+                  <label class="govuk-label govuk-checkboxes__label" for="2-change-needed-2">
+                    ID
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="2-change-needed-3" name="2-change-needed" type="checkbox" value=" Support to manage a drugs or alcohol dependency">
+                  <label class="govuk-label govuk-checkboxes__label" for="2-change-needed-3">
+                    Support to manage a drugs or alcohol dependency
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="change-needed-4" name="2-change-needed" type="checkbox" value=" Support to manage a mental health condition or diagnoses">
+                  <label class="govuk-label govuk-checkboxes__label" for="2-change-needed-4">
+                    Support to manage a mental health condition or diagnoses
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="change-needed-5" name="2-change-needed" type="checkbox" value="Other" data-aria-controls="conditional-2-change-needed">
+                  <label class="govuk-label govuk-checkboxes__label" for="2-change-needed-5">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-2-change-needed">
+                  <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="2-change-needed-5">
+                      Give details (mandatory)
+                    </label>
+                    </h1>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                  </div>
+                  <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 200 characters
+                  </div>
+
+                </div>
+              </div>
+
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
