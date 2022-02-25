@@ -10,7 +10,7 @@ router.post("/1-right-to-work-answer", function (req, res) {
   var rightToWork = req.session.data['1-right-to-work']
 
   // Check whether the variable matches a condition
-  if (rightToWork == "1-yes"){
+  if (rightToWork == "Yes"){
     // Send user to next page
     res.redirect("/v19/checklist/scenario-1/q2-opt-in-for-support")
   } else {
@@ -29,7 +29,7 @@ router.post("/1-opt-in-for-support-answer", function (req, res) {
   var optIn = req.session.data['1-opt-in-for-support']
 
   // Check whether the variable matches a condition
-  if (optIn == "1-yes"){
+  if (optIn == "Yes"){
     // Send user to next page
     res.redirect("/v19/checklist/scenario-1/q3-has-already-got")
   } else {
@@ -47,7 +47,7 @@ router.post("/1-reason-for-decline-answer", function (req, res) {
   var reasonForDecline = req.session.data['1-reason-for-decline-answer']
 
   // Check whether the variable matches a condition
-  if (reasonForDecline == "1-confidence", "1-motivation"){
+  if (reasonForDecline == " Lacks confidence in their ability to get a job", " Lacks motivation to get a job"){
     // Send user to next page
     res.redirect("/v19/checklist/scenario-1/q2b-what-needs-to-change")
   } else {
@@ -66,7 +66,7 @@ router.post("/1-might-be-impacted-by-answer", function (req, res) {
   var impact = req.session.data['1-might-be-impacted-by']
 
   // Check whether the variable matches a condition
-  if (impact == "1-drugs-or-alcohol"){
+  if (impact == " Reliant on drugs or alcohol"){
     // Send user to next page
     res.redirect("/v19/checklist/scenario-1/q4a-management-of-dependency")
   } else {
