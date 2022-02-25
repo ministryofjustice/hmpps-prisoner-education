@@ -1,0 +1,116 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="/v19/checklist/scenario-1/q2-opt-in-for-support" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/1-reason-for-decline-answer" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="1-reason-for-decline-got-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                Why doesn't Kevin Hall want support?
+                </h1>
+              </legend>
+              <div id="reason-for-decline-got-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline" name="1-reason-for-decline" type="checkbox" value="1-caring">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline">
+                    Has full-time caring responsibilities
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline-1" name="1-reason-for-decline-got" type="checkbox" value="1-confidence">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline-1">
+                    Lacks confidence in their ability to get a job
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline-2" name="1-reason-for-decline" type="checkbox" value="1-motivation">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline-2">
+                    Lacks motivation to get a job
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline-3" name="1-reason-for-decline" type="checkbox" value="1-health">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline-3">
+                    Not able to work due to a health condition or illness
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline-" name="1-reason-for-decline" type="checkbox" value="1-retired">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline-4">
+                    Retired
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline-5" name="1-reason-for-decline" type="checkbox" value="1-returning to job">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline-5">
+                    Returning to a job they had before prison
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline-6" name="1-reason-for-decline" type="checkbox" value="1-self-employed">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline-6">
+                    Self-employed
+                  </label>
+                </div>
+                <!-- <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-7" name="reason-for-decline" type="checkbox" value="other">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-7">
+                    Other
+                  </label>
+                </div> -->
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-reason-for-decline-7" name="1-reason-for-decline" type="checkbox" value="1-other-details" data-aria-controls="conditional-1-reason-for-decline">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-reason-for-decline-7">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-1-reason-for-decline">
+                  <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="1-reason-for-decline-7">
+                      Give details (mandatory)
+                    </label>
+                    </h1>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                  </div>
+                  <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 200 characters
+                  </div>
+
+                </div>
+              </div>
+
+
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

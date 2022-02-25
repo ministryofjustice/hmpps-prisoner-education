@@ -1,0 +1,108 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="/v19/checklist/scenario-1/q3-has-already-got" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/1-might-be-impacted-by-answer" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="1-might-impact-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What might impact Kevin Hall's ability to work?
+                </h1>
+              </legend>
+              <div id="1-might-impact-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-might-impact" name="1-might-impact" type="checkbox" value="1-caring-responsibilities" data-aria-controls="conditional-1-caring-responsibilities">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-caring-responsibilities">
+                    Caring responsibilities
+                  </label>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-1-caring-responsibilities">
+                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="1-caring-responsibilities-by-email">
+                        Enter details like whether caring responsibilities are full time or if they will be receiving a carers allowance (optional)
+                      </label>
+                      </h1>
+                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                    </div>
+
+                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                      You can enter up to 200 characters
+                    </div>
+
+                  </div>
+
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-might-impact-2" name="1-might-impact" type="checkbox" value="1-family issues">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-might-impact-2">
+                    Family issues
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-might-impact-3" name="1-might-impact" type="checkbox" value="1-mental health">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-might-impact-3">
+                    Mental health conditions or diagnoses
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-might-impact-4" name="1-might-impact" type="checkbox" value="1-physical-health" data-aria-controls="conditional-1-physical-health">
+                  <label class="govuk-label govuk-checkboxes__label" for="physical-health">
+                    Physical health conditions or illnesses
+                  </label>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-1-physical-health">
+                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="1-caring-responsibilities-by-email">
+                        Enter details like whether their GP has signed them off as not fit for work (optional)
+                      </label>
+                      </h1>
+                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                    </div>
+
+                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                      You can enter up to 200 characters
+                    </div>
+
+                  </div>
+
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-might-impact-5" name="1-might-impact" type="checkbox" value="1-drugs-or-alcohol">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-might-impact-5">
+                    Reliant on drugs or alcohol
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
