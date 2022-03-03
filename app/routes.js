@@ -183,5 +183,27 @@ router.post("/2-might-be-impacted-by-answer", function (req, res) {
 
 })
 
+// Run this code when a form is submitted to 'reason-for-decline-answer'
+router.post("/getReady-list-filter", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var filter = req.session.data['/getReady-list-filter']
+
+  // Check whether the variable matches a condition
+  if (filter == "everyone"){
+    // Send user to next page
+    res.redirect("/v19/list-support-needed")
+
+  } if (filter == "releases"){
+    // Send user to next page
+    res.redirect("/v19/list-support-needed-releases")
+
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v19/checklist/scenario-2/check-answers-does-not-want-support-2")
+  }
+
+})
+
 
 module.exports = router

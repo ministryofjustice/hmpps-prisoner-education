@@ -111,10 +111,10 @@
   Get ready
 </h2>
 
-          <form action="/v19/list-support-needed" method="post">
+          <form action="/getReady-list-filter" method="post">
 
           <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
+        <fieldset class="govuk-fieldset" aria-describedby="getReady-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h3 class="govuk-heading-m govuk-!-margin-top-6" style="margin-bottom: -5px;">
              Choose who you want to see
@@ -123,44 +123,44 @@
 
           <div class="govuk-radios govuk-radios--inline govuk-radios govuk-radios--small">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter" name="simple-filter" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="simple-filter">
+              <input class="govuk-radios__input" id="getReady-1" name="getReady" type="radio" value="everyone">
+              <label class="govuk-label govuk-radios__label" for="getReady-1">
                 <a href="#" style="color:black; text-decoration:none">Everyone (53)</a>
               </label>
             </div>
 
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+              <input class="govuk-radios__input" id="getReady-2" name="getReady" type="radio" value="releases">
+              <label class="govuk-label govuk-radios__label" for="getReady-2">
                 <a href="#" style="color:black; text-decoration:none">Releases in next 12 weeks (8)</a>
               </label>
             </div>
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="yes" checked="true">
-              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
-                <a href="#" style="color:black; text-decoration:none">Bank account needed (20)</a>
+              <input class="govuk-radios__input" id="getReady-3" name="getReady" type="radio" value="bank account" checked="true">
+              <label class="govuk-label govuk-radios__label" for="getReady-3">
+                <a href="#" style="color:black; text-decoration:none">Bank account needed (12)</a>
               </label>
             </div>
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+              <input class="govuk-radios__input" id="getReady-4" name="getReady" type="radio" value="ID">
+              <label class="govuk-label govuk-radios__label" for="getReady-4">
                 <a href="#" style="color:black; text-decoration:none">ID needed (8)</a>
               </label>
             </div>
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+              <input class="govuk-radios__input" id="getReady-5" name="getReady" type="radio" value="CV">
+              <label class="govuk-label govuk-radios__label" for="getReady-5">
                 <a href="#" style="color:black; text-decoration:none">CV needed (45)</a>
               </label>
             </div>
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+              <input class="govuk-radios__input" id="getReady-6" name="getReady" type="radio" value="disclosure letter">
+              <label class="govuk-label govuk-radios__label" for="getReady-6">
                 <a href="#" style="color:black; text-decoration:none">Disclosure letter needed (18)</a>
               </label>
             </div>
@@ -182,7 +182,7 @@
   <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
   <ul class="moj-pagination__list"></ul>
-  <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>20</b> results</p>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>12</b> of <b>12</b> results</p>
   </nav>
 
 
@@ -302,6 +302,15 @@
       <td class="govuk-table__cell" data-sort-value="No">No</td>
     </tr>
 
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Swindon" href="#">Swindon, Frederick</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5511UP</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.11.03">03 Nov 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
+      <td class="govuk-table__cell" data-sort-value="No">No</td>
+      <td class="govuk-table__cell" data-sort-value="Yes">Yes</td>
+      <td class="govuk-table__cell" data-sort-value="No">No</td>
+    </tr>
+
 
 </table>
 
@@ -309,7 +318,7 @@
 <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
 <ul class="moj-pagination__list"></ul>
-<p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>20</b> results</p>
+<p class="moj-pagination__results">Showing <b>1</b> to <b>12</b> of <b>12</b> results</p>
 </nav>
 
 
