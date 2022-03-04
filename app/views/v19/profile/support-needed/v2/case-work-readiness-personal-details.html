@@ -5,41 +5,44 @@
 
           <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
 
-            <a href="/v19/list-declined-support" class="govuk-back-link">Back to 'Do not want support' list</a>
+              <a href="/v19/list-support-needed" class="govuk-back-link">Back to 'Get ready' list</a>
 
-        </div>
-        <main class="govuk-main-wrapper">
+          </div>
+          <main class="govuk-main-wrapper">
 
+              <form method="post" action="/v19/confirm-work-ready-decision">
 
-            <div class="header-with-link">
-                <span class="govuk-caption-m">Prisoner number: AB124BD</span>
-                <h1 class="govuk-heading-l">Daniel Hall's work readiness profile </h1>
+              <div class="header-with-link">
+                  <span class="govuk-caption-m">Prisoner number: G2911GD</span>
+                  <h1 class="govuk-heading-l">Kevin Hall's work readiness profile </h1>
 
-                <strong class="govuk-tag govuk-tag--red">
-                declined support
-                </strong>
+                  <button class="govuk-button" data-module="govuk-button">
+                    Add to ready to work list
+                  </button>
 
-                <!-- <p class="govuk-body govuk-!-margin-top-2"><a href="/v19/confirm-change-status" class="govuk-link govuk-link--no-visited-state">Change status</a></p> -->
+              </div>
 
-            </div>
-
-            <nav class="moj-sub-navigation govuk-!-margin-top-6" aria-label="Sub navigation">
+              <nav class="moj-sub-navigation" aria-label="Sub navigation">
 
                 <ul class="moj-sub-navigation__list">
                   <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" href="/v19/profile/declined-support/case-work-readiness">Overview</a>
+                    <a class="moj-sub-navigation__link" href="/v19/profile/support-needed/v2/case-work-readiness">Overview</a>
                   </li>
 
                   <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" aria-current="page" href="/v19/profile/declined-support/case-work-readiness-personal-details">Personal details</a>
+                    <a class="moj-sub-navigation__link" href="/v19/profile/support-needed/v2/case-work-readiness-to-do-list">To-do list</a>
                   </li>
 
                   <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" href="/v19/profile/declined-support/case-work-readiness-skills">Skills and activities</a>
+                    <a class="moj-sub-navigation__link" aria-current="page" href="/v19/profile/support-needed/v2/case-work-readiness-personal-details">Personal details</a>
                   </li>
 
                   <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" href="/v19/profile/declined-support/case-work-readiness-contacts">Contacts</a>
+                    <a class="moj-sub-navigation__link" href="/v19/profile/support-needed/v2/case-work-readiness-skills">Skills and activities</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="/v19/profile/support-needed/v2/case-work-readiness-contacts">Contacts</a>
                   </li>
 
 
@@ -85,7 +88,7 @@
               Name
             </dt>
             <dd class="govuk-summary-list__value">
-              Daniel Hall
+              Kevin Hall
             </dd>
           </div>
 
@@ -103,7 +106,7 @@
               Cell location
             </dt>
             <dd class="govuk-summary-list__value">
-              E-1-005
+              C-1-004
             </dd>
           </div>
 
@@ -112,7 +115,7 @@
               Release area
             </dt>
             <dd class="govuk-summary-list__value">
-              Manchester
+              Leeds
             </dd>
           </div>
         </dl>
@@ -141,6 +144,8 @@
                           Support needed
                         </dt>
                         <dd class="govuk-summary-list__value">
+                          Memory support
+                          <br>
                           Writing support
                           <p class="govuk-!-margin-bottom-0 govuk-!-margin-top-4 govuk-body-s govuk-hint-s">
                               Recorded on 2 January 2022
