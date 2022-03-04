@@ -1,0 +1,53 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="#" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/v19/checklist/scenario-1/q4a-management-of-dependency" method="post" novalidate>
+
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="unfit-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Has Kevin Hall's GP signed them off as not fit for work?
+      </h1>
+    </legend>
+    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="unfit" name="unfit" type="radio" value="Yes">
+        <label class="govuk-label govuk-radios__label" for="unfit">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="unfit-2" name="unfit" type="radio" value="No">
+        <label class="govuk-label govuk-radios__label" for="unfit-2">
+          No
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
