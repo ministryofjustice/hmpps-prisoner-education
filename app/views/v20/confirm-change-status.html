@@ -1,0 +1,39 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <a href="/v19/profile/ready-to-work/case-work-readiness" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+      <form method="post" action="/v19/profile/support-needed/case-work-readiness">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">You are removing Kevin Hall from the ready to work list</h1>
+
+        <p class="govuk-body">Kevin Hall will appear in the get ready list.</p>
+
+
+        <div class="govuk-button-group govuk-!-margin-top-6">
+
+        <button class="govuk-button" data-module="govuk-button">
+          Confirm and remove from list
+        </button>
+
+        <a class="govuk-link" href="/v19/case-work-readiness-ready-for-work">Cancel</a>
+
+      </div>
+
+
+    </div>
+
+  </form>
+  </main>
+
+</div>
+
+</div>
+
+{% endblock %}

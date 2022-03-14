@@ -1,0 +1,88 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="/v19/checklist/scenario-1/q2-opt-in-for-support" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/v19/checklist/scenario-1/q4-might-be-impacted-by" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="1-has-already-got-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What does Kevin Hall have set up already?
+                </h1>
+              </legend>
+              <div id="1-has-already-got-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-has-already-got" name="1-has-already-got" type="checkbox" value="Bank account">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-has-already-got">
+                    Bank account
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-has-already-got-2" name="1-has-already-got" type="checkbox" value="CV and covering letter">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-has-already-got-2">
+                    CV and covering letter
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-has-already-got-3" name="1-has-already-got" type="checkbox" value="Disclosure letter">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-has-already-got-3">
+                    Disclosure letter
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-has-already-got-4" name="1-has-already-got" type="checkbox" value="Email address or phone number">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-has-already-got-4">
+                    Email address or phone number
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-has-already-got-5" name="1-has-already-got" type="checkbox" value="Housing for their release">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-has-already-got-5">
+                    Housing for their release
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-has-already-got-6" name="1-has-already-got" type="checkbox" value="ID">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-has-already-got-6">
+                    ID
+                  </label>
+                  <div id="id-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    including things like a passport, driving licence or birth certificate
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="1-has-already-got-7" name="1-has-already-got" type="checkbox" value="Interview clothes">
+                  <label class="govuk-label govuk-checkboxes__label" for="1-has-already-got-7">
+                    Interview clothes
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}
