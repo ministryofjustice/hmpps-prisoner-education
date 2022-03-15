@@ -1,0 +1,105 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+      <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+        <a href="/v20/dps-home" class="govuk-back-link">Digital Prison Services</a>
+
+      </div>
+
+
+        <h1 class="govuk-heading-l govuk-!-margin-top-7">Get someone work ready</h1>
+
+    </div>
+
+
+    <div class="homepage-search">
+        <div class="govuk-width-container">
+          <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+
+            <div class="moj-search">
+
+              <form action="/v20/search-results" method="post">
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+                    Find a prisoner
+                  </label>
+                  <label class="govuk-label moj-search__label" for="search">
+                    Search by prisoner name or number
+                  </label>
+
+                  <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+                  </div>
+
+                  <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+                </div>
+
+                <button class="govuk-button moj-search__button" data-module="govuk-button">
+                  Search
+                </button>
+
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="homepage-content">
+        <div class="govuk-width-container">
+            <ul class="govuk-grid-row card-group">
+
+                <li class="govuk-grid-column-one-third card-group__item">
+
+                    <div class="card card--clickable" data-test="view-statistics">
+                        <h2 class="govuk-heading-m card__heading">
+                            <a class="govuk-link card__link govuk-link--no-visited-state" href="/v20/checklist/start-page">Create a work readiness profile for a prisoner</a>
+                        </h2>
+                        <p class="govuk-body card__description">Record what support a prisoner needs to get into work on release and what they have set up already.</p>
+                    </div>
+                  </li>
+
+                  <li class="govuk-grid-column-one-third card-group__item">
+
+                    <div class="card card--clickable" data-test="view-statistics">
+                        <h2 class="govuk-heading-m card__heading">
+                            <a class="govuk-link card__link govuk-link--no-visited-state" href="/v20/list-support-needed">View prisoners who need to get ready to work</a>
+                        </h2>
+                        <p class="govuk-body card__description">View and update information about prisoners who need support to get ready to work on release.</p>
+                    </div>
+
+                </li>
+
+                <li class="govuk-grid-column-one-third card-group__item">
+
+                  <div class="card card--clickable" data-test="view-statistics">
+                      <h2 class="govuk-heading-m card__heading">
+                          <a class="govuk-link card__link govuk-link--no-visited-state" href="/v20/list-work-ready">View prisoners who are ready to work</a>
+                      </h2>
+                      <p class="govuk-body card__description">View a list of prisoners who have been assessed as ready to get work.</p>
+                  </div>
+
+              </li>
+
+                <li class="govuk-grid-column-one-third card-group__item">
+
+                  <div class="card card--clickable" data-test="view-statistics">
+                      <h2 class="govuk-heading-m card__heading">
+                          <a class="govuk-link card__link govuk-link--no-visited-state" href="list-declined-support">View prisoners who do not want support</a>
+                      </h2>
+                      <p class="govuk-body card__description">View which prisoners have declined support to get work on release and their reasons for this decision.</p>
+                  </div>
+
+              </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+{% endblock %}

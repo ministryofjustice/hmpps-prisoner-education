@@ -1,0 +1,135 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+          <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+            <!-- <div class="prisoner-profile-breadcrumbs">
+
+
+        <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+          <div class="govuk-breadcrumbs ">
+            <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="/v19/home">Get someone work ready</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="page">View cases</li>
+            </ol>
+            </div>
+          </div>
+
+        </div> -->
+
+          <a href="/v19/home" class="govuk-back-link">Back</a>
+
+            </div>
+
+          </div>
+
+        <div class="govuk-width-container">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-7 govuk-!-margin-top-7">
+    Search results for Hall
+  </h1>
+<!-- </div>
+
+  <div class="homepage-search">
+      <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+
+          <div class="moj-search">
+
+            <form action="/search/pom/results" method="post">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+                  Find a prisoner
+                </label>
+                <label class="govuk-label moj-search__label" for="search">
+                  Search by prisoner name or number
+                </label>
+
+                <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+                </div>
+
+                <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+              </div>
+
+              <button class="govuk-button moj-search__button" data-module="govuk-button">
+                Search
+              </button>
+
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div> -->
+
+
+  <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list"></ul>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>2</b> of <b>2</b> results</p>
+  </nav>
+
+
+<!-- add table of people  -->
+
+<table class="govuk-table govuk-!-margin-top-6" data-module="moj-sortable-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
+      <th scope="col" class="govuk-table__header">Earliest release date</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Action</th>
+  </thead>
+  <tbody class="govuk-table__body">
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Hall, Daniel</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2024.06.01">HDC:</br>01 Jun 2022</td>
+      <td class="govuk-table__cell" data-sort-value="2024.02.17">Missing work readiness information</td>
+      <td class="govuk-table__cell" data-sort-value="View"><a class="govuk-link  govuk-link--no-visited-state" href="/v19/checklist/start-page">Create profile</a></td>
+    </tr>
+
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Hall, Kevin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> AB124BD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2024.06.01">HDC:</br>01 Sep 2022</td>
+      <td class="govuk-table__cell" data-sort-value="2024.02.17">Missing work readiness information</td>
+      <td class="govuk-table__cell" data-sort-value="Create profile"><a class="govuk-link  govuk-link--no-visited-state" href="/v19/checklist/start-page">Create profile</a></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Hall, Simon</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GX </span></td>
+      <td class="govuk-table__cell" data-sort-value="2024.06.01">01 Oct 2023</td>
+      <td class="govuk-table__cell" data-sort-value="2024.02.17">Does not want support</td>
+      <td class="govuk-table__cell" data-sort-value="View"><a class="govuk-link  govuk-link--no-visited-state" href="#">View</a></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Hall, Terence</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GA </span></td>
+      <td class="govuk-table__cell" data-sort-value="2024.06.01">17 Nov 2023</td>
+      <td class="govuk-table__cell" data-sort-value="2024.02.17">Needs support</td>
+      <td class="govuk-table__cell" data-sort-value="View"><a class="govuk-link  govuk-link--no-visited-state" href="#">View</a></td>
+    </tr>
+
+
+</table>
+
+<nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+<ul class="moj-pagination__list"></ul>
+<p class="moj-pagination__results">Showing <b>1</b> to <b>2</b> of <b>2</b> results</p>
+</nav>
+
+        </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <a href="/v20/checklist/scenario-1/q3-has-already-got" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form action="/v20/checklist/scenario-1/q4a-caring-responsibilities" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="v20-might-impact-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What might impact Kevin Hall's ability to work?
+                </h1>
+              </legend>
+              <div id="v20-might-impact-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v20-might-impact" name="v20-might-impact" type="checkbox" value="Caring responsibilities" data-aria-controls="conditional-v20-caring-responsibilities">
+                  <label class="govuk-label govuk-checkboxes__label" for="v20-caring-responsibilities">
+                    Caring responsibilities
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v20-might-impact-2" name="v20-might-impact" type="checkbox" value="Enrollment in education or training in the community">
+                  <label class="govuk-label govuk-checkboxes__label" for="v20-might-impact-2">
+                    Enrollment in education or training in the community
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v20-might-impact-3" name="v20-might-impact" type="checkbox" value="Family issues">
+                  <label class="govuk-label govuk-checkboxes__label" for="v20-might-impact-3">
+                    Family issues
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v20-might-impact-4" name="v20-might-impact" type="checkbox" value=" Mental health conditions or diagnoses">
+                  <label class="govuk-label govuk-checkboxes__label" for="v20-might-impact-4">
+                    Mental health conditions or diagnoses
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v20-might-impact-5" name="v20-might-impact" type="checkbox" value=" Physical health conditions or illnesses">
+                  <label class="govuk-label govuk-checkboxes__label" for="v20-might-impact-5">
+                    Physical health conditions or illnesses
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="v20-might-impact-6" name="v20-might-impact" type="checkbox" value=" Reliant on drugs or alcohol">
+                  <label class="govuk-label govuk-checkboxes__label" for="v20-might-impact-6">
+                    Reliant on drugs or alcohol
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

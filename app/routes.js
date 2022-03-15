@@ -3,6 +3,8 @@ const router = express.Router()
 
 // Add your routes here - above the module.exports line
 
+//v19
+
 // Run this code when a form is submitted to 'right-to-work-answer'
 router.post("/1-right-to-work-answer", function (req, res) {
 
@@ -201,6 +203,182 @@ router.post("/getReady-list-filter", function (req, res) {
   } else {
     // Send user to ineligible page
     res.redirect("/v19/checklist/scenario-2/check-answers-does-not-want-support-2")
+  }
+
+})
+
+//v20
+
+
+// Run this code when a form is submitted to 'right-to-work-answer'
+router.post("/v20-right-to-work-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20rightToWork = req.session.data['v20-right-to-work']
+
+  // Check whether the variable matches a condition
+  if (v20rightToWork == "Yes"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-1/q2-opt-in-for-support")
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-1/exit-page-ineligible")
+  }
+
+})
+
+
+
+// Run this code when a form is submitted to 'opt-in-for-support-answer'
+router.post("/v20-opt-in-for-support-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20optIn = req.session.data['v20-opt-in-for-support']
+
+  // Check whether the variable matches a condition
+  if (v20optIn == "Yes"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-1/q3-has-already-got")
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-1/q2a-reason-for-decline")
+  }
+
+})
+
+
+// Run this code when a form is submitted to 'reason-for-decline-answer'
+router.post("/v20-reason-for-decline-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20reasonForDecline = req.session.data['v20-reason-for-decline-answer']
+
+  // Check whether the variable matches a condition
+  if (v20reasonForDecline == " Lacks confidence in their ability to get a job", " Lacks motivation to get a job"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-1/q2b-what-needs-to-change")
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-1/check-answers-does-not-want-support-2")
+  }
+
+})
+
+
+
+// Run this code when a form is submitted to 'might-be-impacted-by-answer'
+router.post("/v20-might-be-impacted-by-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20impact = req.session.data['v20-might-be-impacted-by']
+
+  // Check whether the variable matches a condition
+  if (v20impact == " Reliant on drugs or alcohol"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-1/q4a-management-of-dependency")
+
+
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-1/q5-work-goals")
+  }
+
+  })
+
+//for scenario-2
+
+// Run this code when a form is submitted to 'right-to-work-answer'
+router.post("/v20-2-right-to-work-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20_2_rightToWork = req.session.data['v20-2-right-to-work']
+
+  // Check whether the variable matches a condition
+  if (v20_2_rightToWork == "Yes"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-2/q2-opt-in-for-support")
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-2/exit-page-ineligible")
+  }
+
+})
+
+
+
+// Run this code when a form is submitted to 'opt-in-for-support-answer'
+router.post("/v20-2-opt-in-for-support-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20_2_optIn = req.session.data['2-opt-in-for-support']
+
+  // Check whether the variable matches a condition
+  if (v20_2_optIn == "Yes"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-2/q3-has-already-got")
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-2/q2a-reason-for-decline")
+  }
+
+})
+
+
+// Run this code when a form is submitted to 'reason-for-decline-answer'
+router.post("/v20-2-reason-for-decline-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20_2_reasonForDecline = req.session.data['v20-2-reason-for-decline-answer']
+
+  // Check whether the variable matches a condition
+  if (v20_2_reasonForDecline == " Lacks confidence in their ability to get a job", " Lacks motivation to get a job"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-2/q2b-what-needs-to-change")
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-2/check-answers-does-not-want-support-2")
+  }
+
+})
+
+
+
+// Run this code when a form is submitted to 'might-be-impacted-by-answer'
+router.post("/v20-2-might-be-impacted-by-answer", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var v20_2_impact = req.session.data['v20-2-might-be-impacted-by']
+
+  // Check whether the variable matches a condition
+  if (v20_2_impact == " Reliant on drugs or alcohol"){
+    // Send user to next page
+    res.redirect("/v20/checklist/scenario-2/q4a-management-of-dependency")
+
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-2/q5-work-goals")
+  }
+
+})
+
+// Run this code when a form is submitted to 'reason-for-decline-answer'
+router.post("/v20-getReady-list-filter", function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var filter = req.session.data['/v20-getReady-list-filter']
+
+  // Check whether the variable matches a condition
+  if (filter == "everyone"){
+    // Send user to next page
+    res.redirect("/v20/list-support-needed")
+
+  } if (filter == "releases"){
+    // Send user to next page
+    res.redirect("/v20/list-support-needed-releases")
+
+  } else {
+    // Send user to ineligible page
+    res.redirect("/v20/checklist/scenario-2/check-answers-does-not-want-support-2")
   }
 
 })
