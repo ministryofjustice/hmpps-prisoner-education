@@ -81,6 +81,7 @@ Prisoner Education prototype
     <a class="location-bar__link govuk-link--no-visited-state" href="#" onclick="showAlert()" data-test="change-location-link">Change your location</a>
 
 </div>
+
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
@@ -88,7 +89,8 @@ Prisoner Education prototype
 {% block main %}
 
 {% block beforeContent %}{% endblock %}
-{% block content %}{% endblock %}
+{% block content %}
+{% endblock %}
 {% endblock %}
 
 {% if useAutoStoreData %}
@@ -103,10 +105,6 @@ text: "GOV.UK Prototype Kit " + releaseVersion
 {
 href: "/prototype-admin/clear-data",
 text: "Clear data"
-},
-{
-href: "/v3/our-service/prisoner-first/dps-home",
-text: "Restart journey"
 }
 ]
 }
