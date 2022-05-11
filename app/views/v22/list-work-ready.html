@@ -1,0 +1,254 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+          <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+            <div class="prisoner-profile-breadcrumbs">
+
+
+        <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+          <div class="govuk-breadcrumbs ">
+            <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="./home">Get someone ready to work</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="page">View cases</li>
+            </ol>
+            </div>
+          </div>
+
+        </div>
+
+            </div>
+
+          </div>
+
+          <!-- <div class="homepage-search">
+              <div class="govuk-width-container">
+                  <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Find a prisoner</h2>
+
+                  <form class="horizontal-form" data-test="homepage-search-form" action="/v20/search-results" method="post" novalidate>
+
+                    <div class="govuk-form-group">
+
+                      <label class="govuk-label" for="keywords">Name or prison number</label>
+
+                      <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+                      </div>
+
+                      <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+                    </div>
+
+                    <button class="govuk-button moj-search__button" data-module="govuk-button">
+                      Search
+                    </button>
+              </div>
+          </div>
+
+        </div> -->
+
+        <div class="govuk-width-container">
+
+          <div class="govuk-grid-row">
+    <!-- <div class="govuk-grid-column-one-half">
+
+
+      <div class="moj-search govuk-!-margin-bottom-7 govuk-!-margin-top-5">
+
+        <form action="/search/pom/results" method="post">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+              Find a prisoner
+            </label>
+            <label class="govuk-label moj-search__label" for="search">
+              Search by prisoner name or number
+            </label>
+
+            <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+            </div>
+
+            <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+          </div>
+
+          <button class="govuk-button moj-search__button" data-module="govuk-button">
+            Search
+          </button>
+
+        </form>
+      </div>
+
+    </div> -->
+  </div>
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-7 govuk-!-margin-top-7">
+    View cases
+  </h1>
+
+          <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+    <ul class="moj-sub-navigation__list">
+
+      <li class="moj-sub-navigation__item">
+        <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="/v20/list-support-needed">Get ready (53)</a>
+      </li>
+
+
+      <li class="moj-sub-navigation__item">
+        <a class="moj-sub-navigation__link govuk-link--no-visited-state" aria-current="page">Ready to work (8)</a>
+      </li>
+
+      <li class="moj-sub-navigation__item">
+        <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="/v20/list-declined-support">Do not want support (30)</a>
+      </li>
+
+    </ul>
+
+</nav>
+
+<h2 class="govuk-heading-l govuk-!-margin-bottom-1 govuk-!-margin-top-7">
+  Ready to work
+</h2>
+
+<form action="#" method="post">
+
+          <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h3 class="govuk-heading-m govuk-!-margin-top-6" style="margin-bottom: -5px;">
+              Choose who you want to see</h3>
+          </legend>
+
+          <div class="govuk-radios govuk-radios--inline govuk-radios govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter" name="simple-filter" type="radio" value="yes" checked="true">
+              <label class="govuk-label govuk-radios__label" for="simple-filter">
+                <a href="#" style="color:black; text-decoration:none">Everyone (8)</a>
+              </label>
+            </div>
+
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+                <a href="#" style="color:black; text-decoration:none">Releases in next 12 weeks (7)</a>
+              </label>
+            </div>
+
+
+          </div>
+
+        </fieldset>
+
+        <button class="govuk-button govuk-!-margin-top-4 govuk-!-margin-bottom-0" data-module="govuk-button">
+            Apply
+          </button>
+
+      </div>
+
+    </form>
+
+    <nav class="moj-pagination govuk-!-font-size-19 govuk-!-margin-top-0" id="pagination-label">
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list"></ul>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>8</b> of <b>8</b> results</p>
+  </nav>
+
+
+<!-- add table of people  -->
+
+<table class="govuk-table govuk-!-margin-top-6" data-module="moj-sortable-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
+      <th scope="col" class="govuk-table__header" aria-sort="none">Earliest release date</th>
+      <!-- <th scope="col" class="govuk-table__header">Assessed as ready on</th> -->
+      <!-- <th scope="col" class="govuk-table__header">Has CV</th>
+      <th scope="col" class="govuk-table__header">Has disclosure letter</th> -->
+      <th scope="col" class="govuk-table__header">Job types of interest</th>
+  </thead>
+  <tbody class="govuk-table__body">
+
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Andrews" href="#">Andrews, Graham</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8998VP </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.07.17">17 Jul 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.02.22">22 Feb 2022</td> -->
+      <td class="govuk-table__cell">Any job</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Bradshaw" href="#">Bradshaw, Alex</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2397UE </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.01">HDC:</br>01 Jun 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td> -->
+      <td class="govuk-table__cell">Construction and trade</td>
+    </tr>
+
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Kelvores" href="#">Kelvores, Pedro</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8335UD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.27">HDC:</br>27 Apr 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.03.01">01 Mar 2022</td> -->
+      <td class="govuk-table__cell" data-sort-value="Construction and trade">Office or desk-based<br>Retail</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#">Martin, Robert</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.10.09">09 Oct 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td> -->
+      <td class="govuk-table__cell">Construction and trade</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Kelvores" href="#">Nyugen, Benjamin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3989UN </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.27">27 Jun 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.02.05">05 Feb 2022</td> -->
+      <td class="govuk-table__cell">Driving <br>Outdoors <br>Sport and fitness</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Kelvores" href="#">O'Reilly, Cillian</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G4807VQ </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.02">02 May 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.02.06">06 Feb 2022</td> -->
+      <td class="govuk-table__cell">Construction and trade <br> Sport and fitness</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Patel" href="#">Patel, Nish</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5270UP </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.17">17 May 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.01.01">01 Jan 2022</td> -->
+      <td class="govuk-table__cell">Any job</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Williamson" href="#">Williamson, David</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G6831VA </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.01">01 Jun 2022</td>
+      <!-- <td class="govuk-table__cell" data-sort-value="2022.02.01">01 Feb 2022</td> -->
+      <td class="govuk-table__cell">Driving <br>Outdoors</td>
+    </tr>
+
+
+</table>
+
+<nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+<ul class="moj-pagination__list"></ul>
+<p class="moj-pagination__results">Showing <b>1</b> to <b>8</b> of <b>8</b> results</p>
+</nav>
+
+
+
+
+
+
+
+        </div>
+
+
+
+{% endblock %}

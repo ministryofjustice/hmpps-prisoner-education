@@ -1,0 +1,63 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+    <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Right to work in the UK</h1>
+
+        <p class="govuk-body">All British and Irish citizens have the right to work in the UK.</p>
+
+        <p class="govuk-body">Non-British and Irish citizens have the right to work if they have:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>valid settled status in the UK</li>
+          <li>a work visa</li>
+          <li>indefinite enter or remain in the UK</li>
+          <li>right of abode in the UK</li>
+        </ul>
+
+        <!-- <form class="form" action="/right-to-work-answer" method="post" novalidate> -->
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Does Kevin Hall have the right to work in the UK?
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="right-to-work-yes" name="right-to-work" type="radio" value="Yes">
+                  <label class="govuk-label govuk-radios__label" for="right-to-work-yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="right-to-work-no" name="right-to-work" type="radio" value="No">
+                  <label class="govuk-label govuk-radios__label" for="right-to-work-no">
+                    No
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

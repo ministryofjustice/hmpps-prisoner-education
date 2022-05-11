@@ -1,0 +1,89 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+      <div class="govuk-breadcrumbs">
+        <a href="./dps-home" class="govuk-back-link">Digital Prison Services</a>
+      </div>
+
+        <h1 class="govuk-heading-l govuk-!-margin-top-7">Get someone ready to work</h1>
+
+        <div class="govuk-width-container">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+
+                <div class="moj-search govuk-!-margin-bottom-7">
+
+                  <form action="./search-results" method="post">
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+                        Quick search
+                      </label>
+                      <label class="govuk-label moj-search__label" for="search">
+                        Find a prisoner by prisoner name or number
+                      </label>
+
+                      <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+                      </div>
+
+                      <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+                    </div>
+
+                    <button class="govuk-button moj-search__button" data-module="govuk-button">
+                      Search
+                    </button>
+
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="homepage-content">
+        <div class="govuk-width-container">
+            <ul class="govuk-grid-row card-group">
+
+                <li class="govuk-grid-column-one-third card-group__item">
+
+                    <div class="card card--clickable" data-test="view-statistics">
+                        <h2 class="govuk-heading-m card__heading">
+                            <a class="govuk-link card__link govuk-link--no-visited-state" href="./checklist/start-page">Create a new work readiness profile</a>
+                        </h2>
+                        <p class="govuk-body card__description">Record whether a prisoner wants support, what help they need get into work on release and what things they already have set up.</p>
+                    </div>
+                  </li>
+
+                  <li class="govuk-grid-column-one-third card-group__item">
+                    <div class="card card--clickable" data-test="view-statistics">
+                        <h2 class="govuk-heading-m card__heading">
+                            <a class="govuk-link card__link govuk-link--no-visited-state" href="./list-support-needed">View a list of prisoners with work readiness profiles</a>
+                        </h2>
+                        <p class="govuk-body card__description">View prisoners work readiness information and update any progress towards getting work on release.</p>
+                    </div>
+                  </li>
+
+                <!-- <li class="govuk-grid-column-one-third card-group__item">
+                  <div class="card card--clickable" data-test="view-statistics">
+                      <h2 class="govuk-heading-m card__heading">
+                          <a class="govuk-link card__link govuk-link--no-visited-state" href="./list-work-ready">View prisoners who are ready to work</a>
+                      </h2>
+                      <p class="govuk-body card__description">View a list of prisoners who have been assessed as ready to get work.</p>
+                  </div>
+                </li>
+
+                <li class="govuk-grid-column-one-third card-group__item">
+                  <div class="card card--clickable" data-test="view-statistics">
+                      <h2 class="govuk-heading-m card__heading">
+                          <a class="govuk-link card__link govuk-link--no-visited-state" href="list-declined-support">View prisoners who do not want support</a>
+                      </h2>
+                      <p class="govuk-body card__description">View which prisoners have declined support to get work on release and their reasons for this decision.</p>
+                  </div>
+                </li> -->
+
+            </ul>
+        </div>
+    </div>
+{% endblock %}

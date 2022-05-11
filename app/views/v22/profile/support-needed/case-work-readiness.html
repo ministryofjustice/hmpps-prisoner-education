@@ -1,0 +1,477 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+          <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+
+              <a href="/v20/list-support-needed" class="govuk-back-link">Back to 'Get ready' list</a>
+
+          </div>
+          <main class="govuk-main-wrapper">
+
+              <form method="post" action="/v20/confirm-work-ready-decision">
+
+              <div class="header-with-link">
+                  <span class="govuk-caption-m">Prisoner number: G2911GD</span>
+                  <h1 class="govuk-heading-l">Kevin Hall's work readiness profile </h1>
+
+                  <button class="govuk-button" data-module="govuk-button">
+                    Add to ready to work list
+                  </button>
+
+              </div>
+
+              <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+                <ul class="moj-sub-navigation__list">
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" aria-current="page" href="#">Overview</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="/v20/profile/support-needed/case-work-readiness-to-do-list">To-do list</a>
+                  </li>
+
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="/v20/profile/support-needed/case-work-readiness-personal-details">Personal details</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="/v20/profile/support-needed/case-work-readiness-skills">Skills and activities</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="/v20/profile/support-needed/case-work-readiness-contacts">Contacts</a>
+                  </li>
+
+                  <!-- <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="#">Sentence and release</a>
+                  </li> -->
+
+
+                </ul>
+
+              </nav>
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+
+                  <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Overview</h1>
+
+                  </div>
+                </div>
+
+                  <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+
+                      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Support needed
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+
+
+        <p class="govuk-body">Kevin needs help with:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>writing a CV and covering letter</li>
+            <li>getting housing for release</li>
+            <li>getting ID</li>
+          </ul>
+
+          <a class="govuk-link govuk-link--no-visited-state" href="/v20/profile/support-needed/case-work-readiness-to-do-list">
+            Record progress</a>
+
+
+      </div>
+    </div>
+
+
+
+    <!-- <ol class="app-task-list">
+
+
+<h2 class="app-task-list__section">
+<span class="app-task-list__section-number"> </span> To-do list
+</h2>
+<ul class="app-task-list__items">
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="bank-account-status">
+    Get a bank account
+  </a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="bank-account-status">Completed</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="CV-status">
+    Write a CV and covering letter
+  </a>
+</span>
+<strong class="govuk-tag  govuk-tag--grey  app-task-list__tag" id="CV-status">Not started</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="disclosure-letter-status">
+  Write a disclosure letter
+  </a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="disclosure-letter-status">Completed</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="contact-details-status">
+    Get an email address or phone number
+  </a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="contact-details-status">Completed</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="housing-status">
+    Get housing for release
+  </a>
+</span>
+<strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="housing-status">Not started</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="ID-status">
+  Get ID
+</a>
+</span>
+<strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="ID-status">In progress</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="interview-clothes-status">
+  Get interview clothes
+</a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="interview-clothes-status">Completed</strong>
+</li>
+
+</ul>
+</li>
+
+
+</ol> -->
+
+<section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
+  <header class="app-summary-card__header">
+
+    <h2 class="app-summary-card__title">
+      Things they have set up already
+    </h2>
+
+    <div class="app-summary-card__actions">
+        <a class="govuk-link govuk-link--no-visited-state" href="#">
+          Change</a>
+    </div>
+
+  </header>
+  <div class="app-summary-card__body">
+
+    <p class="govuk-body">Kevin has:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a bank account</li>
+        <li>a disclosure letter</li>
+        <li>an email address or phone number</li>
+        <li>interview clothes</li>
+      </ul>
+
+    <!-- <dl class="govuk-summary-list">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Bank account
+        </dt>
+
+      </div>
+
+
+
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Disclosure letter
+</dt>
+
+</div>
+
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+ID
+</dt>
+
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Interview clothes
+</dt>
+
+</div>
+
+
+
+</dl> -->
+
+<p class="govuk-!-margin-bottom-0 govuk-!-margin-top-4 govuk-body-s govuk-hint-s">
+Last updated on 1 March 2022
+</p>
+
+
+  </div>
+</section>
+
+                  <section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
+                    <header class="app-summary-card__header">
+
+                      <h2 class="app-summary-card__title">
+                        Things that might impact their ability to work
+                      </h2>
+
+                      <div class="app-summary-card__actions">
+                          <a class="govuk-link govuk-link--no-visited-state" href="#">
+                            Change</a>
+                      </div>
+
+                    </header>
+                    <div class="app-summary-card__body">
+
+                      <dl class="govuk-summary-list">
+
+                        <div class="govuk-summary-list__row">
+                          <dt class="govuk-summary-list__key">
+                            Caring responsibilities
+                          </dt>
+                          <dd class="govuk-summary-list__value">
+                            They are not a full-time carer
+                          </dd>
+                        </div>
+
+
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Drug or alcohol dependency
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Not able to manage this yet
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Mental health
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Able to manage this with support they are currently receiving
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Physical health conditions or illnesses
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+          </div>
+
+        </dl>
+
+        <p class="govuk-!-margin-bottom-0 govuk-!-margin-top-4 govuk-body-s govuk-hint-s">
+            Last updated on 1 March 2022
+          </p>
+                    </div>
+                  </section>
+
+
+
+                  <section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
+                    <header class="app-summary-card__header">
+
+                      <h2 class="app-summary-card__title">
+                        Employment information
+                      </h2>
+
+
+
+                    </header>
+                    <div class="app-summary-card__body">
+
+                      <dl class="govuk-summary-list">
+
+
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Job types of interest
+            </dt>
+
+            <dd class="govuk-summary-list__value">
+              Any job
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Specific job role of interest
+            </dt>
+
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Work or volunteering experience
+            </dt>
+
+            <dd class="govuk-summary-list__value">
+              Yes <br><br>
+              Details: Worked at his uncle's construction firm for 6 months prior to custody.
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Work-related qualifications
+            </dt>
+
+            <dd class="govuk-summary-list__value">
+              CSCS card <br>
+              Manual handling
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+
+          </div>
+
+        </dl>
+
+                    </div>
+                  </section>
+
+                  <section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
+                    <header class="app-summary-card__header">
+
+                      <h2 class="app-summary-card__title">
+                        Eligibility for support
+                      </h2>
+
+                    </header>
+                    <div class="app-summary-card__body">
+
+                      <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Has the right to work in the UK
+            </dt>
+
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Wants support to get work on release
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link govuk-link--no-visited-state" href="#">
+                Change<span class="govuk-visually-hidden"> licence type</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+                    </div>
+                  </section>
+
+
+
+
+                </div>
+
+                <div class="govuk-grid-column-one-third">
+
+                  <aside class="app-related-items" role="complementary">
+                    <h2 class="govuk-heading-m" id="subsection-title">
+                    Expected release date
+                    </h2>
+
+
+                  <!-- <div class="app-card--grey">
+                  <h3 class="govuk-heading-s app-card--grey" style="padding-top: 10px; padding-left:10px;">Expected release date</h3>
+                  <p class="govuk-body app-card--grey" style="padding-left:10px; padding-bottom:10px;">1 September 2022</p>
+                </div> -->
+
+                <!-- <h3 class="govuk-heading-s">Expected release date</h3> -->
+                <p class="govuk-body">1 September 2022</p>
+
+                <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">View sentence and release details (opens in a new tab)</a></p>
+
+                <h2 class="govuk-heading-m" id="subsection-title">
+                Release area
+                </h2>
+
+                <p class="govuk-body">Leeds</p>
+
+                  <!-- <h3 class="govuk-heading-s">Release area</h3>
+                  <p class="govuk-body">Leeds</p> -->
+
+                  <h3 class="govuk-heading-m">
+                    Job types of interest
+                  </h3>
+                  <p class="govuk-body">Any job</p>
+                  <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></p>
+
+                </aside>
+              </div>
+
+
+        </div>
+    </div>
+  </form>
+      </main>
+
+{% endblock %}
