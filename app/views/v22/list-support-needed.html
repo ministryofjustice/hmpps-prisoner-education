@@ -1,28 +1,24 @@
 {% extends "./includes/template.html" %}
 
 {% block content %}
-    <div class="govuk-width-container">
+  <div class="govuk-width-container">
+      <div class="govuk-breadcrumbs">
 
-          <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
-            <div class="prisoner-profile-breadcrumbs">
-
-
-        <div class="prisoner-profile-breadcrumbs__breadcrumbs">
-          <div class="govuk-breadcrumbs ">
-            <ol class="govuk-breadcrumbs__list">
-            <li class="govuk-breadcrumbs__list-item">
-              <a class="govuk-breadcrumbs__link" href="./home">Get someone ready to work</a>
-            </li>
-            <li class="govuk-breadcrumbs__list-item" aria-current="page">Prisoners with work readiness profiles</li>
-            </ol>
+          <div class="prisoner-profile-breadcrumbs">
+            <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+              <div class="govuk-breadcrumbs ">
+                <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="./home">Get someone ready to work</a>
+                </li>
+                <li class="govuk-breadcrumbs__list-item" aria-current="page">Prisoners with work readiness profiles</li>
+                </ol>
+                </div>
             </div>
-        </div>
-
-      </div>
-
           </div>
 
-        </div>
+      </div>
+    </div>
 
         <!-- <div class="homepage-search">
             <div class="govuk-width-container">
@@ -47,40 +43,7 @@
             </div>
         </div> -->
 
-        <div class="govuk-width-container">
-
-          <div class="govuk-grid-row">
-    <!-- <div class="govuk-grid-column-one-half">
-
-
-      <div class="moj-search govuk-!-margin-bottom-7 govuk-!-margin-top-5">
-
-        <form action="/search/pom/results" method="post">
-
-          <div class="govuk-form-group">
-            <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
-              Find a prisoner
-            </label>
-            <label class="govuk-label moj-search__label" for="search">
-              Search by prisoner name or number
-            </label>
-
-            <div id="search-hint" class="govuk-hint moj-search__hint ">
-
-            </div>
-
-            <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
-          </div>
-
-          <button class="govuk-button moj-search__button" data-module="govuk-button">
-            Search
-          </button>
-
-        </form>
-      </div>
-
-    </div> -->
-  </div>
+  <div class="govuk-width-container">
 
     <h1 class="govuk-heading-l govuk-!-margin-bottom-7 govuk-!-margin-top-7">
       Prisoners with work readiness profiles
@@ -98,7 +61,7 @@
           <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-declined-support">Doesn't want support (30)</a>
         </li>
         <li class="moj-sub-navigation__item">
-          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-declined-support">Ineligible (18)</a>
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-ineligible">Ineligible (18)</a>
         </li>
       </ul>
     </nav>
@@ -201,7 +164,6 @@
       <th scope="col" class="govuk-table__header" aria-sort="none">Release date</th>
       <th scope="col" class="govuk-table__header">Needs help with</th>
       <th scope="col" class="govuk-table__header" aria-sort="none">Profile last updated</th>
-
   </thead>
   <tbody class="govuk-table__body">
 
@@ -213,6 +175,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Housing on release</li>
           <li>ID</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.05.01">1 May 2022</td>
     </tr>
@@ -229,6 +192,7 @@
           <li>Housing on release</li>
           <li>ID</li>
           <li>Interview clothes</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.01.17">17 Jan 2022</td>
     </tr>
@@ -239,6 +203,7 @@
       <td class="govuk-table__cell">
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.01.27">27 Jan 2022</td>
     </tr>
@@ -250,6 +215,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
           <li>CV and covering letter</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.02.02">2 Feb 2022</td>
     </tr>
@@ -261,6 +227,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
           <li>Interview clothes</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2021.05.6">6 May 2021</td>
     </tr>
@@ -272,6 +239,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Email address or phone number</li>
           <li>Housing on release</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2021.12.20">20 Dec 2021</td>
     </tr>
@@ -285,6 +253,7 @@
           <li>Disclosure letter</li>
           <li>ID</li>
           <li>Interview clothes</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.04.11">11 Apr 2022</td>
     </tr>
@@ -295,6 +264,7 @@
       <td class="govuk-table__cell">
         <ul class="govuk-list govuk-list--bullet">
           <li>Housing on release</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.05.01">1 May 2022</td>
     </tr>
@@ -306,6 +276,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
           <li>CV and covering letter</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.05.05">5 May 2022</td>
     </tr>
@@ -319,6 +290,7 @@
           <li>Housing on release</li>
           <li>ID</li>
           <li>Interview clothes</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.05.05">5 May 2022</td>
     </tr>
@@ -329,6 +301,7 @@
       <td class="govuk-table__cell">
         <ul class="govuk-list govuk-list--bullet">
           <li>Disclosure letter</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
     </tr>
@@ -343,6 +316,7 @@
           <li>Housing on release</li>
           <li>ID</li>
           <li>Interview clothes</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
     </tr>
@@ -354,6 +328,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
           <li>ID</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
     </tr>
@@ -365,6 +340,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
           <li>Disclosure letter</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.04.26">26 Apr 2022</td>
     </tr>
@@ -376,6 +352,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Disclosure letter</li>
           <li>Interview clothes</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.04.26">28 Apr 2022</td>
     </tr>
@@ -387,6 +364,7 @@
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
           <li>Disclosure letter</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.04.09">9 Apr 2022</td>
     </tr>
@@ -403,6 +381,7 @@
           <li>Housing on release</li>
           <li>ID</li>
           <li>Interview clothes</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.02.26">26 Feb 2022</td>
     </tr>
@@ -417,6 +396,7 @@
           <li>Email address or phone number</li>
           <li>Housing on release</li>
           <li>ID</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.01.26">26 Jan 2022</td>
     </tr>
@@ -430,6 +410,7 @@
           <li>CV and covering letter</li>
           <li>Email address or phone number</li>
           <li>Housing on release</li>
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.02.11">11 Feb 2022</td>
     </tr>
@@ -440,7 +421,7 @@
       <td class="govuk-table__cell">
         <ul class="govuk-list govuk-list--bullet">
           <li>Bank account</li>
-
+        </ul>
       </td>
       <td class="govuk-table__cell" data-sort-value="2022.05.11">11 May 2022</td>
     </tr>
