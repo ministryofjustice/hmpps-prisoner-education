@@ -19,6 +19,11 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.filter-box {
+    background-color: govuk-colour("light-grey");
+    padding: 30px 10px 30px 10px;
+}
+
 .index-box {
   padding:35px 20px 35px 20px;
   background-color: govuk-colour("light-grey");
