@@ -108,6 +108,8 @@
 
             </li> -->
 
+      {% if data['scenario'] == '1' %}
+
             <li class="govuk-grid-column-one-third card-group__item">
 
                 <div class="card card--clickable" data-test="education-work-skills">
@@ -118,6 +120,19 @@
                 </div>
 
             </li>
+      {% else %}
+            <li class="govuk-grid-column-one-third card-group__item">
+
+                <div class="card card--clickable" data-test="education-work-skills">
+                    <h2 class="govuk-heading-m card__heading">
+                        <a class="govuk-link card__link govuk-link--no-visited-state" href="./list-all">Get someone ready to work</a>
+                    </h2>
+                    <p class="govuk-body card__description">Record what support a prisoner needs to get work on release. View who has been assessed as ready to work.</p>
+                </div>
+
+            </li>
+      {% endif %}
+
 
         </ul>
     </div>

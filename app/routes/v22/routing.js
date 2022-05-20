@@ -5,6 +5,11 @@ var checklist = "checklist/";
 
 module.exports = function(router) {
 
+  // SETUP
+  router.post(version + 'setup', function (req, res) {
+      res.redirect(version + 'dps-home')
+  })
+
 
   // RIGHT TO WORK
   router.post(version + checklist + 'q1-right-to-work', function (req, res) {
