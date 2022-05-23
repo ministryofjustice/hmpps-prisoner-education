@@ -10,6 +10,12 @@ module.exports = function(router) {
       res.redirect(version + 'dps-home')
   })
 
+  // SEARCH
+  router.post(version + checklist + 'search', function (req, res) {
+      res.redirect(version + checklist + 'search-results')
+  })
+
+
 
   // RIGHT TO WORK
   router.post(version + checklist + 'q1-right-to-work', function (req, res) {
