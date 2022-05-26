@@ -1,6 +1,7 @@
 
 var version = "/v22/";
 var checklist = "checklist/";
+var profile = "profile/";
 
 
 module.exports = function(router) {
@@ -109,7 +110,10 @@ module.exports = function(router) {
   })
 
 
-
+  // CHECK-ANSWERS
+  router.post(version + checklist + 'check-answers', function (req, res) {
+      res.redirect(version + profile + 'support-needed/case-work-readiness')
+  })
 
 
 

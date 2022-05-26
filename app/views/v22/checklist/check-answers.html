@@ -25,7 +25,7 @@
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Prisoner number
+              Prison number
             </dt>
             <dd class="govuk-summary-list__value">
               G2911GD
@@ -45,27 +45,27 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
+                Change<span class="govuk-visually-hidden"> right to work</span>
               </a>
             </dd>
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Wants support getting work on release
+              Wants support to get work on release
             </dt>
             <dd class="govuk-summary-list__value">
               {{ data['opt-in-for-support'] }}
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> date of birth</span>
+                Change<span class="govuk-visually-hidden"> whether they want support on release</span>
               </a>
             </dd>
           </div>
 
         </dl>
 
-        <h2 class="govuk-heading-m">Things they have set up already</h2>
+        <h2 class="govuk-heading-m">Things they have in place already</h2>
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
@@ -77,14 +77,14 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
+                Change<span class="govuk-visually-hidden"> things they have in place already</span>
               </a>
             </dd>
           </div>
 
         </dl>
 
-        <h2 class="govuk-heading-m">Things that might impact their ability to work</h2>
+        <h2 class="govuk-heading-m">Things that may affect their ability to work</h2>
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
@@ -96,7 +96,7 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
+                Change<span class="govuk-visually-hidden"> </span>
               </a>
             </dd>
           </div>
@@ -110,7 +110,7 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
+                Change<span class="govuk-visually-hidden"> </span>
               </a>
             </dd>
           </div>
@@ -124,7 +124,7 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
+                Change<span class="govuk-visually-hidden"> </span>
               </a>
             </dd>
           </div>
@@ -138,7 +138,7 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
+                Change<span class="govuk-visually-hidden"> </span>
               </a>
             </dd>
           </div>
@@ -151,27 +151,27 @@
 
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Job types of interest
+              Work types of interest
             </dt>
             <dd class="govuk-summary-list__value">
               {{ data['job-sectors'] }}
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> licence type</span>
+                Change<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Specific job role of interest
+              Particular job of interest
             </dt>
             <dd class="govuk-summary-list__value">
               {{ data['work-goals'] }}
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> previous application number</span>
+                Change<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
@@ -184,7 +184,7 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> home address</span>
+                Change<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
@@ -197,18 +197,18 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> licence period</span>
+                Change<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
         </dl>
 
-        <form action="confirmation-page" method="post" novalidate>
+        <form method="post" novalidate>
 
           <input type="hidden" name="answers-checked" value="true">
 
           <button class="govuk-button" data-module="govuk-button">
-            Submit answers
+            Save to profile
           </button>
 
         </form>
