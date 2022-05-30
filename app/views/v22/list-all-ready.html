@@ -66,7 +66,7 @@
               <label class="govuk-label govuk-!-font-weight-bold moj-search__label" for="search">
                 Filter by prisoner's name
               </label>
-              <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+              <input class="govuk-input moj-search__input " onkeyup="myFunction()" id="filterName" name="filterName" type="text" aria-describedby="search-hint">
             </div>
 
             <!-- <button class="govuk-button moj-search__button" data-module="govuk-button">
@@ -83,7 +83,7 @@
 
 <!-- add table of people  -->
 
-<table class="govuk-table govuk-!-margin-top-6" data-module="moj-sortable-table">
+<table class="govuk-table govuk-!-margin-top-6" data-module="moj-sortable-table" id="prisonerTable">
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
@@ -375,7 +375,29 @@
 </div>
 
 
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("filterName");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("prisonerTable");
+    tr = table.getElementsByTagName("tr");
 
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>
 
 
 {% endblock %}
