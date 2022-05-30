@@ -17,7 +17,11 @@
             <fieldset class="govuk-fieldset" aria-describedby="reason-for-decline-got-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                Why doesn't Kevin Hall want support?
+                  {% if data['scenario'] == '2' %}
+                    Why doesn't Damien Adams want support?
+                  {% else %}
+                    Why doesn't Kevin Hall want support?
+                  {% endif %}
                 </h1>
               </legend>
               <div id="reason-for-decline-got-hint" class="govuk-hint">

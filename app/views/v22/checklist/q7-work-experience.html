@@ -10,7 +10,11 @@
       <div class="govuk-grid-column-two-thirds">
 
         <h1 class="govuk-heading-l">
-          Does Kevin Hall have any previous work or volunteering experience?
+          {% if data['scenario'] == '2' %}
+            Does Damien Adams have any previous work or volunteering experience?
+          {% else %}
+            Does Kevin Hall have any previous work or volunteering experience?
+          {% endif %}
         </h1>
 
         <!-- <form action="/v20/checklist/scenario-1/q8-qualifications" method="post" novalidate> -->

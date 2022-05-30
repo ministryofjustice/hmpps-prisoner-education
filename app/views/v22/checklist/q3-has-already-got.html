@@ -17,7 +17,11 @@
             <fieldset class="govuk-fieldset" aria-describedby="has-already-got-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  What does Kevin Hall have in place already?
+                  {% if data['scenario'] == '2' %}
+                    What does Damien Adams have in place already?
+                  {% else %}
+                    What does Kevin Hall have in place already?
+                  {% endif %}
                 </h1>
               </legend>
               <div id="has-already-got-hint" class="govuk-hint">

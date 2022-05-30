@@ -11,7 +11,11 @@
       <div class="govuk-grid-column-two-thirds">
 
         <h1 class="govuk-heading-l">
-          What type of work is Kevin Hall interested in?
+          {% if data['scenario'] == '2' %}
+            What type of work is Damien Adams interested in?
+          {% else %}
+            What type of work is Kevin Hall interested in?
+          {% endif %}
         </h1>
 
         <!-- <p class="govuk-body">
@@ -126,7 +130,7 @@
                     <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="job-sectors">
-                        Give details 
+                        Give details
                       </label>
                       </h1>
                       <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>

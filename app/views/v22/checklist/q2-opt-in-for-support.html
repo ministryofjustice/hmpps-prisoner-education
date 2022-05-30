@@ -10,7 +10,13 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-l">Does Kevin Hall want support to get work on release?</h1>
+        <h1 class="govuk-heading-l">
+          {% if data['scenario'] == '2' %}
+            Does Damien Adams want support to get work on release?
+          {% else %}
+            Does Kevin Hall want support to get work on release?
+          {% endif %}
+        </h1>
 
         <form class="form" method="post" novalidate>
 

@@ -17,7 +17,11 @@
             <fieldset class="govuk-fieldset" aria-describedby="might-impact-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  What might impact Kevin Hall's ability to work?
+                  {% if data['scenario'] == '2' %}
+                    What might impact Damien Adams's ability to work?
+                  {% else %}
+                    What `might impact Kevin Hall's ability to work?
+                  {% endif %}
                 </h1>
               </legend>
               <div id="might-impact-hint" class="govuk-hint">

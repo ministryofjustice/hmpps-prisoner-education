@@ -11,7 +11,11 @@
       <div class="govuk-grid-column-two-thirds">
 
         <h1 class="govuk-heading-l">
-          Is Kevin Hall currently able to manage their drug or alcohol dependency?
+          {% if data['scenario'] == '2' %}
+            Is Damien Adams currently able to manage their drug or alcohol dependency?
+          {% else %}
+            Is Kevin Hall currently able to manage their drug or alcohol dependency?
+          {% endif %}
         </h1>
 
         <!-- <form action="/v20/checklist/scenario-1/q5-job-sectors" method="post" novalidate> -->

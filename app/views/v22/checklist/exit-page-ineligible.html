@@ -9,13 +9,16 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-
         <h1 class="govuk-heading-l">
-          Kevin Hall is not allowed to work in the UK
+          {% if data['scenario'] == '2' %}
+            Damien Adams is not allowed to work in the UK
+          {% else %}
+            Kevin Hall is not allowed to work in the UK
+          {% endif %}
         </h1>
 
         <p class="govuk-body">
-          The prison is unable to support Kevin Hall into work on release. 
+          The prison is unable to support {% if data['scenario'] == '2' %}Damien Adams{% else %}Kevin Hall{% endif %} into work on release.
         </p>
 
         <p class="govuk-body">

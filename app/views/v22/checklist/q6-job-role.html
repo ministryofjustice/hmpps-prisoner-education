@@ -11,7 +11,12 @@
       <div class="govuk-grid-column-two-thirds">
 
         <h1 class="govuk-heading-l">
-          Is Kevin Hall interested in a particular job?
+          {% if data['scenario'] == '2' %}
+            Is Damien Adams interested in a particular job?
+          {% else %}
+            Is Kevin Hall interested in a particular job?
+          {% endif %}
+
         </h1>
 
         <!-- <form action="/v20/checklist/scenario-1/q7-work-experience" method="post" novalidate> -->

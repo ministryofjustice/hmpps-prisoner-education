@@ -11,7 +11,11 @@
       <div class="govuk-grid-column-two-thirds">
 
         <h1 class="govuk-heading-l">
-          Is Kevin Hall currently able to manage their mental health?
+          {% if data['scenario'] == '2' %}
+            Is Damien Adams currently able to manage their mental health?
+          {% else %}
+            Is Kevin Hall currently able to manage their mental health?
+          {% endif %}
         </h1>
 
         <!-- <form action="/v20/checklist/scenario-1/q4c-dependency" method="post" novalidate> -->

@@ -16,7 +16,11 @@
             <fieldset class="govuk-fieldset" aria-describedby="change-needed-got-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                What change in circumstances would make Kevin Hall want to get work on release?
+                  {% if data['scenario'] == '2' %}
+                    What change in circumstances would make Damien Adams want to get work on release?
+                  {% else %}
+                    What change in circumstances would make Kevin Hall want to get work on release?
+                  {% endif %}
                 </h1>
               </legend>
               <div id="change-needed-got-hint" class="govuk-hint">
