@@ -1,0 +1,106 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!-- <form action="/v20/checklist/scenario-1/q4-might-be-impacted-by" method="post" novalidate> -->
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="has-already-got-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  {% if data['scenario'] == '2' %}
+                    What does Damien Adams have in place already?
+                  {% else %}
+                    What does Kevin Hall have in place already?
+                  {% endif %}
+                </h1>
+              </legend>
+              <div id="has-already-got-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-bank" name="has-already-got" type="checkbox" value="Bank account">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-bank">
+                    Bank account
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-cv" name="has-already-got" type="checkbox" value="CV and covering letter">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-cv">
+                    CV and covering letter
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-disclosure" name="has-already-got" type="checkbox" value="Disclosure letter">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-disclosure">
+                    Disclosure letter
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-email" name="has-already-got" type="checkbox" value="Email address or phone number">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-email">
+                    Email address or phone number
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-housing" name="has-already-got" type="checkbox" value="Housing for their release">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-housing">
+                    Housing
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-id" name="has-already-got" type="checkbox" value="ID">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-id">
+                    ID
+                  </label>
+                  <div id="id-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    including things like a passport, UK driving licence or birth certificate
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-interviewClothes" name="has-already-got" type="checkbox" value="Interview clothes">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-interviewClothes">
+                    Interview clothes
+                  </label>
+                </div>
+                <!-- <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-driversLicense" name="has-already-got" type="checkbox" value="Valid UK drivers license">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-driversLicense">
+                    UK driving licence
+                  </label>
+                </div> -->
+                <div class="govuk-checkboxes__divider">or</div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="has-already-got-none" name="has-already-got" type="checkbox" value="None of these" data-behaviour="exclusive">
+                  <label class="govuk-label govuk-checkboxes__label" for="has-already-got-none">
+                    None of these
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

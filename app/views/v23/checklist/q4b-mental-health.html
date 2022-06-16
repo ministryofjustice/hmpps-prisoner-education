@@ -1,0 +1,60 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          {% if data['scenario'] == '2' %}
+            Is Damien Adams currently able to manage their mental health?
+          {% else %}
+            Is Kevin Hall currently able to manage their mental health?
+          {% endif %}
+        </h1>
+
+        <!-- <form action="/v20/checklist/scenario-1/q4c-dependency" method="post" novalidate> -->
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="mental-health-1" name="mental-health" type="radio" value="Able to manage this with the support they are currently receiving">
+                  <label class="govuk-label govuk-radios__label" for="mental-health">
+                    Yes, able to manage this with the support they are currently receiving
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="mental-health-3" name="mental-health" type="radio" value="Not able to manage this yet">
+                  <label class="govuk-label govuk-radios__label" for="mental-health-3">
+                    Not able to manage this yet
+                  </label>
+                  <div id="mental-health-item-hint" class="govuk-hint govuk-radios__hint">
+                    You might need to make a referral to the wellbeing service in your prison to get them the support they need.
+                  </div>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

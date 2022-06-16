@@ -1,0 +1,466 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+  <div class="govuk-width-container">
+      <div class="govuk-breadcrumbs">
+
+          <div class="prisoner-profile-breadcrumbs">
+            <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+              <div class="govuk-breadcrumbs ">
+                <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="./home">Get someone ready to work</a>
+                </li>
+                <li class="govuk-breadcrumbs__list-item" aria-current="page">Prisoners with a work profile</li>
+                </ol>
+                </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+        <!-- <div class="homepage-search">
+            <div class="govuk-width-container">
+                <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Find a prisoner</h2>
+
+                <form class="horizontal-form" data-test="homepage-search-form" action="./search-results" method="post" novalidate>
+
+                  <div class="govuk-form-group">
+
+                    <label class="govuk-label" for="keywords">Name or prison number</label>
+
+                    <div id="search-hint" class="govuk-hint moj-search__hint ">
+
+                    </div>
+
+                    <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+                  </div>
+
+                  <button class="govuk-button moj-search__button" data-module="govuk-button">
+                    Search
+                  </button>
+            </div>
+        </div> -->
+
+  <div class="govuk-width-container">
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-7 govuk-!-margin-top-7">
+      Prisoners with a work profile
+    </h1>
+
+    <nav class="moj-sub-navigation" aria-label="Sub navigation">
+      <ul class="moj-sub-navigation__list">
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" aria-current="page">Needs support (53)</a>
+        </li>
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-work-ready">Ready to work (8)</a>
+        </li>
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-declined-support">Does not want support (30)</a>
+        </li>
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-ineligible">No right to work (18)</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-1 govuk-!-margin-top-7">
+      Needs support
+    </h2>
+
+        <!-- <form action="./list-support-needed-releases" method="post">
+
+          <div class="govuk-form-group">
+
+          <!-- <div class="govuk-form-group form-background govuk-!-margin-top-4"> -->
+
+        <!-- <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h3 class="govuk-heading-m govuk-!-margin-top-6" style="margin-bottom: -5px;">
+             Choose who you want to see
+            </h3>
+          </legend>
+
+          <div class="govuk-radios govuk-radios--inline govuk-radios govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter" name="simple-filter" type="radio" value="yes" checked="true">
+              <label class="govuk-label govuk-radios__label" for="simple-filter">
+                <a href="#" style="color:black; text-decoration:none">Everyone (53)</a>
+              </label>
+            </div>
+
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+                <a href="./list-support-needed-releases" style="color:black; text-decoration:none">Releases in next 12 weeks (8)</a>
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+                <a href="#" style="color:black; text-decoration:none">Bank account needed (12)</a>
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+                <a href="#" style="color:black; text-decoration:none">ID needed (8)</a>
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+                <a href="#" style="color:black; text-decoration:none">CV needed (45)</a>
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-2">
+                <a href="#" style="color:black; text-decoration:none">Disclosure letter needed (18)</a>
+              </label>
+            </div>
+
+          </div>
+
+        </fieldset>
+
+        <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
+            Apply
+          </button>
+
+      </div>
+
+      </form> -->
+
+
+      <!-- <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+        <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+        <ul class="moj-pagination__list">
+          <li class="moj-pagination__item moj-pagination__item--active">1</li>
+          <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+          <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+          <li class="moj-pagination__item  moj-pagination__item--next">
+            <a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+          </li>
+        </ul>
+        <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>53</b> results</p>
+      </nav> -->
+
+
+<!-- add table of people  -->
+
+<table class="govuk-table govuk-!-margin-top-6" data-module="moj-sortable-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
+      <th scope="col" class="govuk-table__header" aria-sort="none">Release type and date</th>
+      <th scope="col" class="govuk-table__header">Needs support with</th>
+      <th scope="col" class="govuk-table__header" aria-sort="none">Updated on</th>
+  </thead>
+  <tbody class="govuk-table__body">
+
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Adams" href="#">Adams, Damien</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.28">HDC:</br>28 May 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Housing</li>
+          <li>ID</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.01">1 May 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Ahmed" href="#">Ahmed, Adam</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5823GP </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.07.04">04 Jul 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>CV and covering letter</li>
+          <li>Disclosure letter</li>
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+          <li>ID</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.17">17 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Atkins" href="#">Atkins, Joel</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3902GW </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.03">HDC:</br>03 Jun 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.27">27 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Bahringer" href="#">Bahringer, Darin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3989UN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.12.13">13 Dec 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>CV and covering letter</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.02.02">2 Feb 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Baron" href="#">Baron, Lee</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3757UN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.11.11">11 Nov 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2021.05.6">6 May 2021</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Bruce" href="#">Bruce, John</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3757UN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.10.03">03 Oct 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2021.12.20">20 Dec 2021</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Charles" href="#">Charles, Jermaine</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3892UH</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.03">03 May 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Housing</li>
+          <li>Disclosure letter</li>
+          <li>ID</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.11">11 Apr 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Daniels" href="#">Daniels, Robert</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3933UL</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.12.06">06 Dec 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Housing</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.01">1 May 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Davies" href="#">Davies, Daniel</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8152UC</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.20">HDC:</br>20 Jun 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>CV and covering letter</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.05">5 May 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Edwards" href="#">Edwards, Andrei</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> H678512</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.07">07 Aug 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+          <li>ID</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.05">5 May 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Eku" href="#">Eku, Tyler</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8012UH</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.11.20">20 Nov 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Disclosure letter</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Gavella" href="#">Gavella, Gustavo</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G6531GT</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.18">18 Aug 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+          <li>ID</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Hatton" href="#">Hatton, Mark</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G1318GN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.09.06">06 Sep 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>ID</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Hall" href="./profile/support-needed/case-work-readiness">Hall, Kevin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.09.01">01 Sep 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>Disclosure letter</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.26">26 Apr 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Marvin" href="#">Lee, Marvin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8232UP</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.10.01">HDC:</br>01 Oct 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Disclosure letter</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.26">28 Apr 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="McLaughlin" href="#">McLaughlin, Ross</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G0143VW</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.11">11 Jun 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>Disclosure letter</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.09">9 Apr 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Mraz" href="#">Mraz, Leland</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> W172699</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.28">28 Aug 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>CV and covering letter</li>
+          <li>Disclosure letter</li>
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+          <li>ID</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.02.26">26 Feb 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Nowak" href="#">Nowak, Sokol</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G4724UC</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.27">27 Jun 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>CV and covering letter</li>
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+          <li>ID</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.26">26 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Osborne" href="#">Osborne, Jamie</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5511UP</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.07.19">HDC:</br>19 Jul 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>CV and covering letter</li>
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.02.11">11 Feb 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Petrs" href="#">Petrs, Vasil</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5511UP</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.02">02 Jun 2022</td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.11">11 May 2022</td>
+    </tr>
+
+
+
+
+</table>
+
+    <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+
+  <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+  <ul class="moj-pagination__list">
+
+
+  <li class="moj-pagination__item moj-pagination__item--active">1</li>
+
+  <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+
+  <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">3</a></li>
+
+
+  <li class="moj-pagination__item  moj-pagination__item--next">
+  <a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+  </li>
+  </ul>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>53</b> results</p>
+  </nav>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+{% endblock %}

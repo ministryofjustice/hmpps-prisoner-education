@@ -16,6 +16,7 @@
 
   .app-summary-card__title {
     @include govuk-font($size: 19);
+    font-weight: bold;
     margin: 0;
   }
 
@@ -54,6 +55,12 @@
   .app-summary-card__body {
     @include govuk-font($size: 19);
     padding: govuk-spacing(3);
+  }
+
+  .app-summary-card__hint {
+    @include govuk-font($size: 16);
+    margin: 30px 0 10px 0;
+    color:  $govuk-secondary-text-colour;
   }
 
   .govuk-table,

@@ -10,6 +10,7 @@ router.get('/', function (req, res) {
 require('./routes/v19/routing.js')(router);
 require('./routes/v20/routing.js')(router);
 require('./routes/v22/routing.js')(router);
+require('./routes/v23/routing.js')(router);
 
 
 module.exports = router

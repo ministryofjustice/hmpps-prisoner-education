@@ -1,0 +1,314 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+  <div class="govuk-width-container">
+      <div class="govuk-breadcrumbs">
+
+          <div class="prisoner-profile-breadcrumbs">
+            <div class="prisoner-profile-breadcrumbs__breadcrumbs">
+              <div class="govuk-breadcrumbs ">
+                <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="./home">Get someone ready to work</a>
+                </li>
+                <li class="govuk-breadcrumbs__list-item" aria-current="page">Prisoners with a work profile</li>
+                </ol>
+                </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+  <div class="govuk-width-container">
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-7 govuk-!-margin-top-7">
+      Prisoners with a work profile
+    </h1>
+
+    <nav class="moj-sub-navigation" aria-label="Sub navigation">
+      <ul class="moj-sub-navigation__list">
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-support-needed">Needs support (53)</a>
+        </li>
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-work-ready">Ready to work (8)</a>
+        </li>
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" aria-current="page">Does not want support (30)</a>
+        </li>
+        <li class="moj-sub-navigation__item">
+          <a class="moj-sub-navigation__link govuk-link--no-visited-state" href="./list-ineligible">No right to work (18)</a>
+        </li>
+      </ul>
+    </nav>
+
+  <h2 class="govuk-heading-m govuk-!-margin-bottom-7 govuk-!-margin-top-7">
+    Does not want support
+  </h2>
+
+
+
+<!-- add table of people  -->
+
+  <table class="govuk-table govuk-!-margin-top-6" data-module="moj-sortable-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
+        <th scope="col" class="govuk-table__header" aria-sort="none">Release type and date</th>
+        <th scope="col" class="govuk-table__header">Reason for not wanting support</th>
+        <th scope="col" class="govuk-table__header" aria-sort="none">Updated on</th>
+    </thead>
+    <tbody class="govuk-table__body">
+
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Adams">Adams-Armstrong, George</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G1807GJ </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.11.22">22 Nov 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks motivation</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.04">04 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Andrews">Andrews, Sebastian</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G4633GU </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.06.01">HDC:</br>01 Jun 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks confidence</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Barker">Barker, Joseph</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5463UL </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.10.12">12 Oct 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Self-employed</li>
+            <li>Returning to work they had before prison</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Collins">Collins, Martin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G1154GI </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.05.02">02 May 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Has caring responsibilities</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.22">22 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Daniels">Daniels, Justin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G9879GE </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.12.18">18 Dec 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Has caring responsibilities</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.22">22 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="De'Angelis">De'Angelis, Simone</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5738UP </span></td>
+        <td class="govuk-table__cell" data-sort-value="2024.01.18">18 Jan 2024</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Above retirement age</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.03.01">01 Mar 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Grantham">Grantham, Oliver</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8022UD </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.05.21">21 May 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks motivation</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.23">23 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Hall" href="/v20/profile/declined-support/case-work-readiness">Hall, Daniel</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> AB124BD </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.06.01">01 Jun 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks confidence</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.01.11">11 Jan 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Hanson">Hanson, Leo</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3499UN </span></td>
+        <td class="govuk-table__cell" data-sort-value="2023.09.16">16 Sep 2023</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Self-employed</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.03.11">11 Mar 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Henry">Henry, Xavier</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2628UE </span></td>
+        <td class="govuk-table__cell" data-sort-value="2023.01.16">16 Jan 2023</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks confidence</li>
+            <li>Lacks motivation</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.03">03 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Hong">Hong, Ben</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G7223UH </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.07.01">01 Jul 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks confidence</li>
+            <li>Lacks motivation</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Monk">Monk, Kyle</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8689VD </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.08.12">12 Aug 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks motivation</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Mooney">Mooney, Frederick</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G9407UN </span></td>
+        <td class="govuk-table__cell" data-sort-value="2023.05.02">02 May 2023</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Returning to work they had before prison</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.01.27">27 Jan 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Nahar">Nahar, Bodrul</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G1774GN </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.11.13">HDC:</br>13 Nov 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks confidence</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.21">21 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Oxley">Oxley, Robin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5074UH </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.09.01">01 Sep 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Returning to work they had before prison</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.01.05">05 Jan 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Parsons">Parsons, Craig</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5180UP </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.06.01">01 Jun 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Above retirement age</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Patel">Patel, Kirit</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G1018UO </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.11.03">03 Nov 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks motivation</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.06">06 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Simpson">Simpson, Stuart</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> A5176DY </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.10.18">19 Oct 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks confidence</li>
+            <li>Has caring responsibilities</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.17">17 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Smith">Smith, Vincent</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> A5176DY </span></td>
+        <td class="govuk-table__cell" data-sort-value="2023.04.02">02 Apr 2023</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Above retirement age</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.02.06">06 Feb 2022</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Martin" href="#" data-sort-value="Wójcik">Wójcik, Pietr</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> A5176DY </span></td>
+        <td class="govuk-table__cell" data-sort-value="2022.10.16">16 Sep 2022</td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Lacks motivation</li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell" data-sort-value="2022.03.06">06 Mar 2022</td>
+      </tr>
+
+
+  </table>
+
+    <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+      <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+        <ul class="moj-pagination__list">
+          <li class="moj-pagination__item moj-pagination__item--active">1</li>
+          <li class="moj-pagination__item"><a class="moj-pagination__link" href="#">2</a></li>
+          <li class="moj-pagination__item  moj-pagination__item--next">
+          <a class="moj-pagination__link" href="#">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+          </li>
+        </ul>
+      <p class="moj-pagination__results">Showing <b>1</b> to <b>20</b> of <b>30</b> results</p>
+    </nav>
+
+
+
+
+
+
+
+        </div>
+
+
+
+{% endblock %}

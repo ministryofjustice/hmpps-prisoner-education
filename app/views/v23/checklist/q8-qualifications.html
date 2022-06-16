@@ -1,0 +1,182 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          {% if data['scenario'] == '2' %}
+            Does Damien Adams have any qualifications or training?
+          {% else %}
+            Does Kevin Hall have any qualifications or training?
+          {% endif %}
+
+        </h1>
+
+        <!-- <form action="/v20/checklist/scenario-1/check-answers" method="post" novalidate> -->
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="qualifications-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              </legend>
+              <div id="qualifications-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications" name="qualifications" type="checkbox" value="Advanced school level qualification">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications">
+                    Advanced school level qualification
+                  </label>
+                  <div id="school-level-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    including things like A Levels, BTECs, and the International Baccalaureate Diploma
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-2" name="qualifications" type="checkbox" value="CSCS card">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-2">
+                    CSCS card
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-3" name="qualifications" type="checkbox" value="Driving licence">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-3">
+                    UK driving licence
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-4" name="qualifications" type="checkbox" value="First aid certificate">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-4">
+                    First aid certificate
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-5" name="qualifications" type="checkbox" value="Food hygiene certificate">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-5">
+                  Food hygiene certificate
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-6" name="qualifications" type="checkbox" value="Health and safety">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-6">
+                    Health and safety
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-7" name="qualifications" type="checkbox" value="HGV licence">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-7">
+                    HGV licence
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-8" name="qualifications" type="checkbox" value="Higher education qualification">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-8">
+                    Higher education qualification
+                  </label>
+                  <div id="qualifications-hint" class="govuk-hint govuk-checkboxes__hint">
+                    including things like university foundation, bachelor and postgraduate degrees
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-9" name="qualifications" type="checkbox" value="Machinery tickets">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-9">
+                    Machinery tickets
+                  </label>
+                  <div id="qualifications-hint" class="govuk-hint govuk-checkboxes__hint">
+                    including things like forklift, digger and dumper
+                  </div>
+                </div>
+
+                <!-- <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-9" name="machinery" type="checkbox" value="machinery" data-aria-controls="conditional-qualifications">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-9">
+                    Machinery tickets
+                  </label>
+                  <div id="qualifications-hint" class="govuk-hint govuk-checkboxes__hint">
+                    including things like forklift, digger and dumper
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="machinery">
+                  <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="machinery">
+                      Give details (optional)
+                    </label>
+                    </h1>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                  </div>
+                  <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 200 characters
+                  </div>
+
+                </div>
+              </div> -->
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-10" name="qualifications" type="checkbox" value="Manual handling">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-10">
+                    Manual handling
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-11" name="qualifications" type="checkbox" value="Trade course">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-11">
+                  Trade course
+                  </label>
+                  <div id="qualifications-hint" class="govuk-hint govuk-checkboxes__hint">
+                  including things like bricklaying, painting and decorating and carpentry
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-12" name="qualifications" type="checkbox" value="School level qualification">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-12">
+                    School level qualification
+                  </label>
+                  <div id="school-level-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    including things like GCSE’s
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="qualifications-13" name="qualifications" type="checkbox" value="Other" data-aria-controls="conditional-qualifications">
+                  <label class="govuk-label govuk-checkboxes__label" for="qualifications-13">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-qualifications">
+                  <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="work-goals-by-email">
+                      Give details
+                    </label>
+                    </h1>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                  </div>
+                  <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 200 characters
+                  </div>
+
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

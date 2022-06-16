@@ -1,0 +1,48 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Who are you creating a profile for?</h1>
+
+        <div class="moj-search govuk-!-width-two-thirds govuk-!-margin-bottom-9">
+
+          <form method="post">
+          <div class="govuk-form-group">
+
+            <!-- <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+              Search for a prisoner
+            </label> -->
+
+            <label class="govuk-label moj-search__label " for="search">
+              Enter a name or prison number
+            </label>
+
+            <input class="govuk-input moj-search__input " id="search" name="search" type="search">
+          </div>
+
+          <button class="govuk-button moj-search__button" data-module="govuk-button">
+            Search
+          </button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+{% endblock %}
