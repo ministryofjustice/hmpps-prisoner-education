@@ -116,11 +116,28 @@ module.exports = function(router) {
   })
 
 
+//////////////           PROFILE         /////////////////////////
 
 
+// TO DO LIST TASK - NOT STARTED
+router.post(version + 'todo-not-started', function (req, res) {
+    res.redirect(version + profile + 'support-needed/case-work-readiness')
+})
 
+// TO DO LIST TASK - IN PROGRESS
+router.post(version + 'todo-in-progress', function (req, res) {
+    res.redirect(version + profile + 'support-needed/case-work-readiness')
+})
 
+// TO DO LIST TASK - IN PROGRESS, ADD NOTES
+router.post(version + 'todo-in-progress-add-note', function (req, res) {
+    res.redirect(version + profile + 'support-needed/case-work-readiness')
+})
 
+// TO DO LIST TASK - COMPLETE, BLANK
+router.post(version + 'todo-complete-blank', function (req, res) {
+    res.redirect(version + profile + 'support-needed/case-work-readiness')
+})
 
 
     module.exports = router
