@@ -3,182 +3,208 @@
 {% block content %}
     <div class="govuk-width-container">
 
-      <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+      <!-- Breadcrumb -->
 
-          <main class="govuk-main-wrapper">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="../../dps-home">Digital Prison Services</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="../../list-all">Get someone ready to work</a>
+          </li>
+        </ol>
+      </div>
 
-              <!-- <form method="post" action="/v20/confirm-work-ready-decision"> -->
+      <!-- Main page -->
 
-              <div class="header-with-link">
-                  <span class="govuk-caption-m">Prisoner number: G2911GD</span>
-                  <h1 class="govuk-heading-l">Damien Adams's work readiness profile </h1>
+      <main class="govuk-main-wrapper">
 
-                  <!-- <button class="govuk-button" data-module="govuk-button">
-                    Add to ready to work list
-                  </button> -->
+          <form method="post">
 
-              </div>
-
-              <nav class="moj-sub-navigation" aria-label="Sub navigation">
-                <ul class="moj-sub-navigation__list">
-                  <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" href="./damien-adams">Overview</a>
-                  </li>
-
-                  <!-- <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" href="./profile/support-needed/case-work-readiness-to-do-list">To-do list</a>
-                  </li> -->
-
-                  <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" aria-current="page" href="#">Personal details</a>
-                  </li>
-
-                  <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" href="./damien-adams-skills">Skills and activities</a>
-                  </li>
-
-                  <li class="moj-sub-navigation__item">
-                    <a class="moj-sub-navigation__link" href="./damien-adams-contacts">Contacts</a>
-                  </li>
-                </ul>
-              </nav>
-
+            <div class="govuk-grid-row">
               <div class="govuk-grid-row">
-                <div class="govuk-grid-column-two-thirds">
-                  <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Personal details</h1>
+                <div class="govuk-grid-column-full">
+                  <div class="govuk-grid-column-one-quarter">
+                    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Prison number: <span class="govuk-body">G2911GD</span></p>
+                  </div>
+                  <div class="govuk-grid-column-three-quarters">
+                    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Release date: <span class="govuk-body">HDC: 28 May 2022</span></p>
+                  </div>
                 </div>
               </div>
+            </div>
 
-                  <div class="govuk-grid-row">
-                    <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Damien Adams's work profile </h1>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+                <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+                  <ul class="moj-sub-navigation__list">
+                    <li class="moj-sub-navigation__item">
+                      <a class="moj-sub-navigation__link" href="./damien-adams"> Overview</a>
+                    </li>
+
+                    <li class="moj-sub-navigation__item">
+                      <a class="moj-sub-navigation__link" aria-current="page" href="#">Personal details</a>
+                    </li>
+
+                    <!-- <li class="moj-sub-navigation__item">
+                      <a class="moj-sub-navigation__link" href="./case-work-readiness-work">Work interests and experience</a>
+                    </li> -->
+
+                    <li class="moj-sub-navigation__item">
+                      <a class="moj-sub-navigation__link" href="./damien-adams-skills">Training in prison</a>
+                    </li>
+
+                    <li class="moj-sub-navigation__item">
+                      <a class="moj-sub-navigation__link" href="./damien-adams-contacts">Contacts</a>
+                    </li>
+
+                  </ul>
+
+                </nav>
+
+              </div>
+            </div>
 
 
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
 
-                  <section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
-                    <header class="app-summary-card__header">
+                <h1 class="govuk-heading-m govuk-!-margin-bottom-7">Personal details</h1>
 
-                      <h2 class="app-summary-card__title">
-                        Overview
-                      </h2>
+                <section class="app-summary-card govuk-!-margin-bottom-6">
+                  <header class="app-summary-card__header">
+                    <h2 class="app-summary-card__title">
+                      Overview
+                    </h2>
+                  </header>
+                  <div class="app-summary-card__body">
+                    <dl class="govuk-summary-list">
 
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Name
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          Damien Adams
+                        </dd>
+                      </div>
 
-                    <div class="app-summary-card__actions">
-                        <a class="govuk-link govuk-link--no-visited-state" href="#">
-                          View more details (opens in a new tab)</a>
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Date of birth
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          12 December 1966 (26 years old)
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Cell location
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          D-3-011
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Release date
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          HDC: 28 May 2022
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Release area
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          Leeds
+                        </dd>
+                      </div>
+
+                      <div class="govuk-summary-list__row">
+                      </div>
+                    </dl>
+                    <p class="govuk-!-margin-top-5"><a class="govuk-link govuk-link--no-visited-state" href="#">
+                      View more details (opens in a new tab)</a>
+                    </p>
+                  </div>
+                </section>
+
+                <section class="app-summary-card govuk-!-margin-bottom-6">
+                  <header class="app-summary-card__header">
+                    <h2 class="app-summary-card__title">
+                      Neurodiversity
+                    </h2>
+                  </header>
+                  <div class="app-summary-card__body">
+
+                    <div class="govuk-hint">
+                      Information from the local education team not a medical diagnosis.
                     </div>
 
-                            </header>
-                    <div class="app-summary-card__body">
+
+                    <dl class="govuk-summary-list">
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Support needed
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        Writing support
+                        <p class="app-summary-card__hint govuk-!-margin-top-3">
+                            Recorded on 2 January 2022
+                        </p>
+                      </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                      <dt class="govuk-summary-list__key">
+                        Neurodiversity
+                      </dt>
+                      <dd class="govuk-summary-list__value">
+                        <h3 class="govuk-heading-s">From self-assessment</h3>
+                        Dyslexia
+                        <p class="app-summary-card__hint govuk-!-margin-top-3">
+                          Recorded on 2 January 2022
+                        </p>
 
 
-                      <dl class="govuk-summary-list">
+                        <h3 class="govuk-heading-s govuk-!-margin-top-4">From neurodiversity assessment</h3>
+                        Dyslexia
+                          <p class="app-summary-card__hint govuk-!-margin-top-3">
+                            Recorded on 18 January 2022
+                          </p>
+                      </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                    </div>
+                  </dl>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Name
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Damien Adams
-            </dd>
-          </div>
+                  <p class="govuk-!-margin-top-5"><a class="govuk-link govuk-link--no-visited-state" href="#">
+                    View more details (opens in a new tab)</a>
+                  </p>
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date of birth
-            </dt>
-            <dd class="govuk-summary-list__value">
-              12 December 1966 (26 years old)
-            </dd>
-          </div>
+                  <!-- <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        What does neurodiversity mean?
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                      Neurodiversity refers to the range of neurological differences to be recognised and respected as any other human variation. Common differences include dyslexia, autism and ADHD but can include other neurological differences.
+                    </div>
+                  </details> -->
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Cell location
-            </dt>
-            <dd class="govuk-summary-list__value">
-              D-3-011
-            </dd>
-          </div>
-
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Release area
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Leeds
-            </dd>
-          </div>
-        </dl>
-
-      </div>
-    </section>
-
-    <section class="app-summary-card govuk-!-margin-bottom-6 app-summary-card--large-title">
-      <header class="app-summary-card__header">
-
-        <h2 class="app-summary-card__title">
-          Neurodiversity
-        </h2>
-
-      </header>
-      <div class="app-summary-card__body">
-
-        <div class="govuk-hint">
-          Information from the local education team - not a medical diagnosis.
-        </div>
-
-
-        <dl class="govuk-summary-list">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Support needed
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Memory support
-            <br>
-            Writing support
-            <p class="govuk-!-margin-bottom-0 govuk-!-margin-top-4 govuk-body-s govuk-hint-s">
-                Recorded on 2 January 2022
-            </p>
-          </dd>
-        </div>
-
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Neurodiversity
-          </dt>
-          <dd class="govuk-summary-list__value">
-            <h3 class="govuk-heading-s">From self-assessment</h3>
-            Dyslexia
-          </br>
-            ADHD
-            <p class="govuk-!-margin-bottom-0 govuk-!-margin-top-4 govuk-body-s govuk-hint-s">
-              Recorded on 2 January 2022
-            </p>
-
-
-            <h3 class="govuk-heading-s govuk-!-margin-top-4">From neurodiversity assessment</h3>
-            Dyslexia
-              <p class="govuk-!-margin-bottom-4 govuk-!-margin-top-4 govuk-body-s govuk-hint-s">
-                Recorded on 18 January 2022
-              </p>
-          </dd>
-        </div>
-      </dl>
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            What does neurodiversity mean?
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          Neurodiversity refers to the range of neurological differences to be recognised and respected as any other human variation. Common differences include dyslexia, autism and ADHD but can include other neurological differences.
-        </div>
-      </details>
-
-      </div>
-    </section>
+                  </div>
+                </section>
 
 
   </div>

@@ -1,14 +1,23 @@
 {% extends "./includes/template.html" %}
 
 {% block content %}
-  <div class="govuk-width-container">
-    <div class="govuk-breadcrumbs">
-      <a href="./dps-home" class="govuk-back-link">Digital Prison Services</a>
-    </div>
+<div class="govuk-width-container">
 
-  <div class="govuk-width-container">
+  <!-- Breadcrumb -->
 
-    <h1 class="govuk-heading-l govuk-!-margin-bottom-7 govuk-!-margin-top-7">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dps-home">Digital Prison Services</a>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Main page -->
+
+  <main class="govuk-main-wrapper">
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-7">
       Get someone ready to work
     </h1>
 
@@ -89,7 +98,7 @@
       <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
       <th scope="col" class="govuk-table__header" aria-sort="none">Release type and date</th>
       <th scope="col" class="govuk-table__header" aria-sort="none">Status</th>
-      <th scope="col" class="govuk-table__header">Work readiness summary</th>
+      <th scope="col" class="govuk-table__header">Work summary</th>
       <th scope="col" class="govuk-table__header" aria-sort="none">Updated on</th>
   </thead>
   <tbody class="govuk-table__body">
