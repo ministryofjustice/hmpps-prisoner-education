@@ -139,8 +139,13 @@ router.post(version + 'todo-complete-blank', function (req, res) {
     res.redirect(version + profile + 'support-needed/case-work-readiness')
 })
 
+// CHANGE STATUS
+router.post(version + 'confirm-change-status', function (req, res) {
+    res.redirect(version + profile + 'support-needed/case-work-readiness')
+})
 
-    module.exports = router
+
+module.exports = router
 
 
 
