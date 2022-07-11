@@ -97,9 +97,23 @@
                 Current work status
               </dt>
               <dd class="govuk-summary-list__value">
-                <strong class="govuk-tag govuk-tag--yellow">
-                  Needs support
-                </strong>
+                {% if data['status'] == 'Ready to work' %}
+                  <strong class="govuk-tag govuk-tag--green">
+                    Ready to work
+                  </strong>
+                {% elseif data['status'] == 'No right to work' %}
+                  <strong class="govuk-tag govuk-tag--grey">
+                    No right to work
+                  </strong>
+                {% elseif data['status'] == 'Does not want support' %}
+                  <strong class="govuk-tag govuk-tag--grey">
+                    Does not want support
+                  </strong>
+                {% else %}
+                  <strong class="govuk-tag govuk-tag--yellow">
+                    Needs support
+                  </strong>
+                {% endif %}
               </dd>
               <dd class="govuk-summary-list__actions">
                 <a class="govuk-link govuk-link--no-visited-state" href="../../confirm-change-status">
@@ -107,6 +121,35 @@
                 </a>
               </dd>
             </div>
+          {% if data['status'] == 'Does not want support' %}
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Reason
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lacks confidence in their ability to find work
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link govuk-link--no-visited-state" href="../../q2a-reason-for-decline">
+                  Change<span class="govuk-visually-hidden"> status</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Change in circumstance that would help
+              </dt>
+              <dd class="govuk-summary-list__value">
+                ID in place
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link govuk-link--no-visited-state" href="../../q2b-what-needs-to-change">
+                  Change<span class="govuk-visually-hidden"> status</span>
+                </a>
+              </dd>
+            </div>
+          {% else %}
+          {% endif %}
             <div class="govuk-summary-list__row">
             </div>
           </dl>
@@ -117,7 +160,6 @@
 
       </section>
 
-
       <section class="app-summary-card govuk-!-margin-bottom-6">
         <header class="app-summary-card__header">
           <h2 class="app-summary-card__title">
@@ -126,6 +168,26 @@
         </header>
 
         <div class="app-summary-card__body">
+
+        {% if data['status'] == 'No right to work' %}
+        <div class="govuk-warning-text govuk-!-margin-top-2 govuk-!-margin-bottom-4">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Kevin Hall no longer has right to work in the UK. You don't need to do anything until their work status changes.
+          </strong>
+        </div>
+        {% elseif data['status'] == 'Does not want support' %}
+        <div class="govuk-warning-text govuk-!-margin-top-2 govuk-!-margin-bottom-4">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Kevin Hall no longer wants support to get work. You don't need to do anything until their work status changes.
+          </strong>
+        </div>
+        {% else %}
+        {% endif %}
+
 
           <h3 class="govuk-heading-s govuk-!-margin-top-2 govuk-!-margin-bottom-2">To do list</h3>
 
@@ -202,7 +264,6 @@
 
         </div>
       </section>
-
 
 
 
