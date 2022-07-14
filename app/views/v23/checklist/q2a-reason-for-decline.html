@@ -17,7 +17,9 @@
             <fieldset class="govuk-fieldset" aria-describedby="reason-for-decline-got-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  {% if data['scenario'] == '2' %}
+                  {% if data['prisoner-name'] == 'RD' %}
+                    Why does Robert Daniels not want support?
+                  {% elseif data['scenario'] == '2' %}
                     Why does Damien Adams not want support?
                   {% else %}
                     Why does Kevin Hall not want support?

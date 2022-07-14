@@ -141,8 +141,42 @@ router.post(version + 'todo-complete-blank', function (req, res) {
 
 // CHANGE STATUS
 router.post(version + 'confirm-change-status', function (req, res) {
-    res.redirect(version + profile + 'support-needed/case-work-readiness')
+    if ((req.session.data['prisoner-name'] == "RD") && (req.session.data['status'] == "No right to work"))
+    {
+      res.redirect(version + profile + 'no-right-to-work/roberts-daniels')
+    }
+    else if ((req.session.data['prisoner-name'] == "RD") && (req.session.data['status'] == "Does not want support"))
+    {
+      res.redirect(version + checklist + 'q2a-reason-for-decline')
+    }
+    else if ((req.session.data['prisoner-name'] == "LB") && (req.session.data['status'] == "No right to work"))
+    {
+      res.redirect(version + profile + 'does-not-want-support/lee-baron')
+    }
+    else if ((req.session.data['prisoner-name'] == "LB") && (req.session.data['status'] == "Does not want support"))
+    {
+      res.redirect(version + profile + 'does-not-want-support/lee-baron')
+    }
+    else if ((req.session.data['prisoner-name'] == "LB") || (req.session.data['prisoner-name'] == "RD"))
+    {
+      res.redirect(version + 'complete-checklist-haltpage')
+    }
+    else
+    {
+      res.redirect(version + profile + 'support-needed/case-work-readiness')
+    }
 })
+
+// COMPLETE CHECKLIST HALTPAGE
+router.post(version + 'complete-checklist-haltpage', function (req, res) {
+    res.redirect(version + profile + 'complete-checklist-haltpage')
+})
+
+// NO RIGHT TO WORK PROFILE
+router.post(version + profile + 'no-right-to-work/robert-daniels', function (req, res) {
+  res.redirect(version + 'confirm-change-status')
+})
+
 
 
 module.exports = router

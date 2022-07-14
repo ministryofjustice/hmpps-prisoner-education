@@ -3,19 +3,26 @@
 {% block content %}
 <div class="govuk-width-container">
 
-  <a href="profile/support-needed/case-work-readiness" class="govuk-back-link">Back</a>
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
 
-    <main class="govuk-main-wrapper " id="main-content" role="main">
-
-      <form method="post">
-
+  <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <span class="govuk-caption-l">Kevin Hall</span>
+        <span class="govuk-caption-l">
+          {% if data['prisoner-name'] == 'RD' %}
+            Robert Daniels
+          {% elseif data['prisoner-name'] == 'LB' %}
+            Lee Baron
+          {% else %}
+            Kevin Hall
+          {% endif %}
+        </span>
         <h1 class="govuk-heading-l">Change work status</h1>
 
-        <div class="govuk-form-group">
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="status-needsSupport" name="status" type="radio" value="Needs support" >
@@ -45,17 +52,16 @@
         </div>
 
 
-        <button class="govuk-button" data-module="govuk-button">
-          Update status
-        </button>
+          <button class="govuk-button" data-module="govuk-button">
+            Update status
+          </button>
 
+        </form>
 
+      </div>
     </div>
 
-  </form>
   </main>
-
-</div>
 
 </div>
 

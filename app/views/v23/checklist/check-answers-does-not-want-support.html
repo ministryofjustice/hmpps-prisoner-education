@@ -20,7 +20,13 @@
               Name
             </dt>
             <dd class="govuk-summary-list__value">
-              Hall, Kevin
+              {% if data['prisoner-name'] == 'RD' %}
+                Daniels, Robert
+              {% elseif data['scenario'] == '2' %}
+              Adams, Daniel
+              {% else %}
+                Hall, Kevin
+              {% endif %}
             </dd>
           </div>
           <div class="govuk-summary-list__row">

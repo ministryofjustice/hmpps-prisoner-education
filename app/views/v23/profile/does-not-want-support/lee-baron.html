@@ -1,0 +1,159 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+    <!-- Breadcrumb -->
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="../../dps-home">Digital Prison Services</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="../../list-all">Get someone ready to work</a>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Main page -->
+
+    <main class="govuk-main-wrapper">
+
+        <form method="post">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <div class="govuk-grid-column-one-quarter">
+                  <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Prison number: <span class="govuk-body">G3757UN</span></p>
+                </div>
+                <div class="govuk-grid-column-three-quarters">
+                  <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Release date: <span class="govuk-body">11 November 2022</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Lee Baron's work profile </h1>
+
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+              <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+                <ul class="moj-sub-navigation__list">
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" aria-current="page" href="#">Overview</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="#">Personal details</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="#">Training in prison</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="#">Contacts</a>
+                  </li>
+
+                  <!-- <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="#">Sentence and release</a>
+                  </li> -->
+
+
+                </ul>
+
+              </nav>
+
+            </div>
+          </div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-m govuk-!-margin-bottom-7">Overview</h1>
+
+
+      <section class="app-summary-card govuk-!-margin-bottom-6">
+        <header class="app-summary-card__header">
+          <h2 class="app-summary-card__title">
+            Status
+          </h2>
+        </header>
+
+        <div class="app-summary-card__body">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Current work status
+              </dt>
+              <dd class="govuk-summary-list__value">
+                {% if data['status'] == 'No right to work' %}
+                  <strong class="govuk-tag govuk-tag--grey">
+                    No right to work
+                  </strong>
+                {% else %}
+                  <strong class="govuk-tag govuk-tag--grey">
+                    Does not want support
+                  </strong>
+                {% endif %}
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link govuk-link--no-visited-state" href="../../confirm-change-status?prisoner-name=LB">
+                  Change<span class="govuk-visually-hidden"> status</span>
+                </a>
+              </dd>
+            </div>
+            {% if data['status'] == 'No right to work' %}
+            {% else %}
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Reason
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Lacks confidence in their ability to find work
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link govuk-link--no-visited-state" href="../..//checklist/q2a-reason-for-decline">
+                    Change<span class="govuk-visually-hidden"> status</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Change in circumstance that would help
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  ID in place
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link govuk-link--no-visited-state" href="../../checklist/q2b-what-needs-to-change">
+                    Change<span class="govuk-visually-hidden"> status</span>
+                  </a>
+                </dd>
+              </div>
+            {% endif %}
+
+              <div class="govuk-summary-list__row">
+              </div>
+          </dl>
+          <p class="app-summary-card__hint">Last updated 1 August by James Brown</p>
+
+        </div>
+      </section>
+
+
+
+  </div>
+
+        </div>
+    </div>
+  </form>
+      </main>
+
+{% endblock %}

@@ -16,8 +16,10 @@
             <fieldset class="govuk-fieldset" aria-describedby="change-needed-got-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  {% if data['scenario'] == '2' %}
-                    What change in circumstances would make Damien Adams want to get work?
+                  {% if data['prisoner-name'] == 'RD' %}
+                    What change in circumstances would make Robert Daniels want to get work?
+                  {% elseif data['scenario'] == '2' %}
+                  What change in circumstances would make Damien Adams want to get work?
                   {% else %}
                     What change in circumstances would make Kevin Hall want to get work?
                   {% endif %}
