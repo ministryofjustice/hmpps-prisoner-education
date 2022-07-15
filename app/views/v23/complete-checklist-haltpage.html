@@ -23,9 +23,18 @@
 
           <p class="govuk-body">To make sure they get the right support getting into work, the rest of the work assessment must be completed and added to their profile.</p>
 
-          <button class="govuk-button" data-module="govuk-button">
-            Continue
-          </button>
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+            {% if data['prisoner-name'] == 'RD' %}
+            <a class="govuk-link" href="profile/no-right-to-work/robert-daniels">Cancel and return to profile</a>
+            {% elseif data['prisoner-name'] == 'LB' %}
+            <a class="govuk-link" href="profile/does-not-want-support/lee-baron">Cancel and return to profile</a>
+            {% else %}
+            <a class="govuk-link" href="profile/support-needed/case-work-readiness">Cancel and return to profile</a>
+            {% endif %}
+          </div>
 
         </form>
 

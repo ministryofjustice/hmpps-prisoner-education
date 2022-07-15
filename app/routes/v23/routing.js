@@ -169,7 +169,7 @@ router.post(version + 'confirm-change-status', function (req, res) {
 
 // COMPLETE CHECKLIST HALTPAGE
 router.post(version + 'complete-checklist-haltpage', function (req, res) {
-    res.redirect(version + profile + 'complete-checklist-haltpage')
+    res.redirect(version + checklist + 'q3-has-already-got')
 })
 
 // NO RIGHT TO WORK PROFILE
