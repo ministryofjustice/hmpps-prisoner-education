@@ -11,9 +11,40 @@ module.exports = function(router) {
       res.redirect(version + 'dps-home')
   })
 
-  // SEARCH
-  router.post(version + checklist + 'search', function (req, res) {
-      res.redirect(version + checklist + 'search-results')
+  // LIST PAGE
+  router.post(version + 'list-all', function (req, res) {
+    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall"))
+    {
+      res.redirect(version + 'list-all-search')
+    }
+    else
+    {
+      res.redirect(version + 'list-all-no-results')
+    }
+  })
+
+  // LIST PAGE - NO RESULTS
+  router.post(version + 'list-all-no-results', function (req, res) {
+    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall"))
+    {
+      res.redirect(version + 'list-all-search')
+    }
+    else
+    {
+      res.redirect(version + 'list-all-no-results')
+    }
+  })
+
+  // LIST PAGE - SEARCH RESULTS
+  router.post(version + 'list-all-search', function (req, res) {
+    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall"))
+    {
+      res.redirect(version + 'list-all-search')
+    }
+    else
+    {
+      res.redirect(version + 'list-all-no-results')
+    }
   })
 
 
