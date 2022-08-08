@@ -14,18 +14,18 @@
           <h1 class="govuk-heading-l">You must now complete {% if data['prisoner-name'] == 'RD' %}Robert Daniels's {% elseif data['prisoner-name'] == 'LB' %}Lee Baron's {% else %}Kevin Hall’s {% endif %}work assessment</h1>
 
           {% if data['prisoner-name'] == 'RD' %}
-          <p class="govuk-body">You’ve told us Robert Daniels{% if data['status'] == 'Ready to work' %} is now ready to work{% else %} now needs support{% endif %}.</p>
+          <p class="govuk-body">You’ve told us Robert Daniels now{% if data['status'] == 'Ready to work' %} is ready to work{% else %} needs support{% endif %}.</p>
           {% elseif data['prisoner-name'] == 'LB' %}
-          <p class="govuk-body">You’ve told us Lee Baron{% if data['status'] == 'Ready to work' %} is now ready to work{% else %} now needs support{% endif %}.</p>
+          <p class="govuk-body">You’ve told us Lee Baron now{% if data['status'] == 'Ready to work' %} is ready to work{% else %} needs support{% endif %}.</p>
           {% else %}
-          <p class="govuk-body">You’ve told us Kevin Hall{% if data['status'] == 'Ready to work' %} is now ready to work{% else %} now needs support{% endif %}.</p>
+          <p class="govuk-body">You’ve told us Kevin Hall now{% if data['status'] == 'Ready to work' %} is ready to work{% else %} needs support{% endif %}.</p>
           {% endif %}
 
-          <p class="govuk-body">To make sure they get the right support getting into work, the rest of the work assessment must be completed and added to their profile.</p>
+          <p class="govuk-body">To make sure they get the right support to get into work, {% if data['prisoner-name'] == 'RD' %}Robert Daniels {% elseif data['prisoner-name'] == 'LB' %}Lee Baron {% else %}Kevin Hall {% endif %} needs to complete a work assessment.</p>
 
           <div class="govuk-button-group">
             <button class="govuk-button" data-module="govuk-button">
-              Continue
+              Complete assessment
             </button>
             {% if data['prisoner-name'] == 'RD' %}
             <a class="govuk-link" href="profile/no-right-to-work/robert-daniels">Cancel and return to profile</a>
