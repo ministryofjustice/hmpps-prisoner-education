@@ -13,7 +13,7 @@ module.exports = function(router) {
 
   // LIST PAGE
   router.post(version + 'list-all', function (req, res) {
-    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall"))
+    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall") || (req.session.data['search'] == "kevin hall") || (req.session.data['search'] == "Kevin Hall"))
     {
       res.redirect(version + 'list-all-search')
     }
@@ -25,7 +25,7 @@ module.exports = function(router) {
 
   // LIST PAGE - NO RESULTS
   router.post(version + 'list-all-no-results', function (req, res) {
-    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall"))
+    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall") || (req.session.data['search'] == "kevin hall") || (req.session.data['search'] == "Kevin Hall"))
     {
       res.redirect(version + 'list-all-search')
     }
@@ -37,7 +37,7 @@ module.exports = function(router) {
 
   // LIST PAGE - SEARCH RESULTS
   router.post(version + 'list-all-search', function (req, res) {
-    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall"))
+    if ((req.session.data['search'] == "hall") || (req.session.data['search'] == "Hall") || (req.session.data['search'] == "kevin hall") || (req.session.data['search'] == "Kevin Hall"))
     {
       res.redirect(version + 'list-all-search')
     }
