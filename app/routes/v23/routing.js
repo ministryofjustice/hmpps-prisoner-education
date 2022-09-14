@@ -99,20 +99,20 @@ module.exports = function(router) {
   // MIGHT BE IMPACTED BY
   //// needs making dynamic for follow up q's /////
   router.post(version + checklist + 'q4-might-be-impacted-by', function (req, res) {
-      res.redirect(version + checklist + 'q4a-caring-responsibilities')
+      res.redirect(version + checklist + 'q4c-dependency')
   })
 
   // CARING RESPONSIBILITIES
   //// needs making dynamic for follow up q's /////
-  router.post(version + checklist + 'q4a-caring-responsibilities', function (req, res) {
-      res.redirect(version + checklist + 'q4b-mental-health')
-  })
-
-  // MENTAL HEALTH
-  //// needs making dynamic for follow up q's /////
-  router.post(version + checklist + 'q4b-mental-health', function (req, res) {
-      res.redirect(version + checklist + 'q4c-dependency')
-  })
+  // router.post(version + checklist + 'q4a-caring-responsibilities', function (req, res) {
+  //     res.redirect(version + checklist + 'q4b-mental-health')
+  // })
+  // 
+  // // MENTAL HEALTH
+  // //// needs making dynamic for follow up q's /////
+  // router.post(version + checklist + 'q4b-mental-health', function (req, res) {
+  //     res.redirect(version + checklist + 'q4c-dependency')
+  // })
 
   // DEPENDENCY
   //// needs making dynamic for follow up q's /////

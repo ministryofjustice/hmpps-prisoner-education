@@ -17,16 +17,6 @@
             What type of work is Kevin Hall interested in?
           {% endif %}
         </h1>
-
-        <!-- <p class="govuk-body">
-          The Prison Employment Lead will use these preferences to help the prisoner find suitable work.
-        </p>
-
-        <p class="govuk-body">
-          If the choices made now are not suitable (for example because of the risk they present), then alternatives will be discussed with the prisoner later.
-        </p> -->
-
-        <!-- <form action="/v20/checklist/scenario-1/q6-job-role" method="post" novalidate> -->
         <form class="form" method="post" novalidate>
 
           <div class="govuk-form-group">
@@ -37,53 +27,86 @@
                   Select all that apply.
                 </div>
                 <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
+                  <!-- <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="job-sectors" name="job-sectors" type="checkbox" value="Any type of work">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors">
                       Any type of work
                     </label>
+                  </div> -->
+
+                  <!-- <div class="govuk-checkboxes__divider">or</div> -->
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="job-sectors-1" name="job-sectors" type="checkbox" value="Animal care, farming and gardening">
+                    <label class="govuk-label govuk-checkboxes__label" for="job-sectors-1">
+                      Animal care, farming and gardening
+                    </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like kennel worker, groundskeeper and farm work
+                    </div>
                   </div>
-                  <div class="govuk-checkboxes__divider">or</div>
+
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="job-sectors-2" name="job-sectors" type="checkbox" value="Construction and trade">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-2">
                       Construction and trade
                     </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like bricklayer, plumber and site management
+                    </div>
                   </div>
+
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="job-sectors-3" name="job-sectors" type="checkbox" value="Driving and transport">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-3">
                       Driving and transport
                     </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like bus driver and rail or road maintenance
+                    </div>
                   </div>
+
                   <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="job-sectors-4" name="job-sectors" type="checkbox" value="Hair, beauty and barbering">
+                    <input class="govuk-checkboxes__input" id="job-sectors-4" name="job-sectors" type="checkbox" value="Hair, beauty and wellbeing">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-4">
-                      Hair, beauty and barbering
+                      Hair, beauty and wellbeing
                     </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like nail technician, counsellor and barber
+                    </div>
                   </div>
+
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="job-sectors-5" name="job-sectors" type="checkbox" value="Hospitality and catering">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-5">
                       Hospitality and catering
                     </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like chef, mobile catering, hotel porter
+                    </div>
                   </div>
+
                   <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="job-sectors-6" name="job-sectors" type="checkbox" value="Manufacturing">
+                    <input class="govuk-checkboxes__input" id="job-sectors-6" name="job-sectors" type="checkbox" value="Manufacturing and technical">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-6">
-                      Manufacturing
+                      Manufacturing and technical
                     </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like assembly line work, welding and maintenance
+                    </div>
                   </div>
+
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="job-sectors-7" name="job-sectors" type="checkbox" value="Office or desk-based">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-7">
                       Office or desk-based
                     </label>
                     <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
-                      including things like customer service and administration
+                      things like administration, marketing assistant and office manager
                     </div>
                   </div>
-                  <div class="govuk-checkboxes__item">
+
+                  <!-- <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="job-sectors-8" name="job-sectors" type="checkbox" value="Outdoors">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-8">
                       Outdoors
@@ -91,33 +114,56 @@
                     <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
                       including things like gardening and groundskeeping
                     </div>
-                  </div>
+                  </div> -->
+
                   <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="job-sectors-9" name="job-sectors" type="checkbox" value="Retail">
-                    <label class="govuk-label govuk-checkboxes__label" for="job-sectors-9">
-                      Retail
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="job-sectors-10" name="job-sectors" type="checkbox" value="Technical">
-                    <label class="govuk-label govuk-checkboxes__label" for="job-sectors-10">
-                      Technical
+                    <input class="govuk-checkboxes__input" id="job-sectors-8" name="job-sectors" type="checkbox" value="Retail and sales">
+                    <label class="govuk-label govuk-checkboxes__label" for="job-sectors-8">
+                      Retail and sales
                     </label>
                     <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
-                      including things like engineering, maintenance, welding and metalwork
+                      things like sales assistant, customer service and store manager
                     </div>
                   </div>
+
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="job-sectors-9" name="job-sectors" type="checkbox" value="Sport and fitness">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-9">
                       Sport and fitness
                     </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like personal trainer and gym attendant
+                    </div>
                   </div>
+
                   <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="job-sectors-10" name="job-sectors" type="checkbox" value="Warehousing and storage">
+                    <input class="govuk-checkboxes__input" id="job-sectors-10" name="job-sectors" type="checkbox" value="Training, support and education">
                     <label class="govuk-label govuk-checkboxes__label" for="job-sectors-10">
+                      Training, support and education
+                    </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like gardening or welding trainer and welfare rights support
+                    </div>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="job-sectors-11" name="job-sectors" type="checkbox" value="Warehousing and storage">
+                    <label class="govuk-label govuk-checkboxes__label" for="job-sectors-11">
                       Warehousing and storage
                     </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like removals and fork-lift driver
+                    </div>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="job-sectors-12" name="job-sectors" type="checkbox" value="Waste management">
+                    <label class="govuk-label govuk-checkboxes__label" for="job-sectors-12">
+                      Waste management
+                    </label>
+                    <div id="job-sectors-hint" class="govuk-hint govuk-checkboxes__hint">
+                      things like waste collection and recycling management
+                    </div>
                   </div>
 
                   <div class="govuk-checkboxes__item">
@@ -127,20 +173,13 @@
                     </label>
                   </div>
                   <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-job-sectors">
-                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="job-sectors">
+                      <label class="govuk-label" for="job-sectors-11-details">
                         Give details
                       </label>
-                      </h1>
-                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                      <textarea class="govuk-textarea" id="with-hint" name="with-hint" rows="2" aria-describedby="with-hint-info with-hint-hint"></textarea>
                     </div>
-                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                      You can enter up to 200 characters
-                    </div>
-
                   </div>
-                </div>
 
                 </div>
 
