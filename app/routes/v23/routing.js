@@ -85,16 +85,24 @@ module.exports = function(router) {
     }
   })
 
-  // HAS ALREADY GOT
+  // WHAT NEEDS TO CHANGE
   router.post(version + checklist + 'q2b-what-needs-to-change', function (req, res) {
       res.redirect(version + checklist + 'check-answers-does-not-want-support')
   })
 
 
   // HAS ALREADY GOT
+  // goes direct to ID type question, should be dynamic and only if 'ID' selected
   router.post(version + checklist + 'q3-has-already-got', function (req, res) {
+      res.redirect(version + checklist + 'q3a-ID-type')
+  })
+
+
+  // ID TYPE
+  router.post(version + checklist + 'q3a-ID-type', function (req, res) {
       res.redirect(version + checklist + 'q4-might-be-impacted-by')
   })
+
 
   // MIGHT BE IMPACTED BY
   //// needs making dynamic for follow up q's /////
@@ -107,7 +115,7 @@ module.exports = function(router) {
   // router.post(version + checklist + 'q4a-caring-responsibilities', function (req, res) {
   //     res.redirect(version + checklist + 'q4b-mental-health')
   // })
-  // 
+  //
   // // MENTAL HEALTH
   // //// needs making dynamic for follow up q's /////
   // router.post(version + checklist + 'q4b-mental-health', function (req, res) {
@@ -169,6 +177,13 @@ router.post(version + 'todo-in-progress-add-note', function (req, res) {
 router.post(version + 'todo-complete-blank', function (req, res) {
     res.redirect(version + profile + 'support-needed/case-work-readiness')
 })
+
+
+// TO DO LIST TASK - ID new design
+router.post(version + 'todo-not-started-ID', function (req, res) {
+    res.redirect(version + profile + 'support-needed/case-work-readiness')
+})
+
 
 // CHANGE STATUS
 router.post(version + 'confirm-change-status', function (req, res) {
