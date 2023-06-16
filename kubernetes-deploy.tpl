@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/${ECR_NAME}:${IMAGE_TAG}
+        image: ${REGISTRY}/${REPOSITORY}:${IMAGE_TAG}
         env:
           - name: USERNAME
             valueFrom:
@@ -43,7 +43,7 @@ spec:
   selector:
     app: prototype
 ---
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: prototype-ingress
@@ -60,6 +60,9 @@ spec:
     http:
       paths:
       - path: /
+        pathType: ImplementationSpecific
         backend:
-          serviceName: nginx-service
-          servicePort: 3000
+          service:
+            name: nginx-service
+            port:
+              number: 3000
