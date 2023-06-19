@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: moj-prototype
 spec:
+  ingressClassName: default
   replicas: 1
   selector:
     matchLabels:
@@ -48,7 +49,6 @@ kind: Ingress
 metadata:
   name: prototype-ingress
   annotations:
-    kubernetes.io/ingress.class: nginx
     external-dns.alpha.kubernetes.io/set-identifier: prototype-ingress-${PROTOTYPE_NAME}-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
 spec:
