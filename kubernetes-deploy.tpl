@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: moj-prototype
 spec:
-  ingressClassName: default
   replicas: 1
   selector:
     matchLabels:
@@ -52,6 +51,7 @@ metadata:
     external-dns.alpha.kubernetes.io/set-identifier: prototype-ingress-${PROTOTYPE_NAME}-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
 spec:
+  ingressClassName: default
   tls:
   - hosts:
     - ${PROTOTYPE_NAME}.apps.live.cloud-platform.service.justice.gov.uk
