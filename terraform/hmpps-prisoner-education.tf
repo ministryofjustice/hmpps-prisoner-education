@@ -14,3 +14,4 @@ module "hmpps-prisoner-education" {
         review_after = "2021-07-31"
       },
     ]
+}
