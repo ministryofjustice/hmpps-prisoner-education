@@ -1,0 +1,120 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <!-- <a href="/v20/checklist/scenario-1/q2b-what-needs-to-change" class="govuk-back-link">Back</a> -->
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Check your answers before saving this information</h1>
+
+        <h2 class="govuk-heading-m">Prisoner details</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {% if data['prisoner-name'] == 'RD' %}
+                Daniels, Robert
+              {% elseif data['scenario'] == '2' %}
+              Adams, Daniel
+              {% else %}
+                Hall, Kevin
+              {% endif %}
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Prison number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              G2911GD
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Eligibility for support</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Right to work
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['1-right-to-work'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q1-right-to-work">
+                Change<span class="govuk-visually-hidden"> right to work</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Wants support to get work
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['1-opt-in-for-support'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q2-opt-in-for-support">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Reasons for declining support
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['1-reason-for-decline'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q2a-reason-for-decline">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Changes needed to make them want support
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['1-change-needed'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q2b-what-needs-to-change">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+
+        </dl>
+
+
+        <form action="#" method="post" novalidate>
+
+          <input type="hidden" name="answers-checked" value="true">
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save to profile
+          </button>
+
+        </form>
+
+
+
+    </div>
+  </div>
+  </main>
+</div>
+
+{% endblock %}

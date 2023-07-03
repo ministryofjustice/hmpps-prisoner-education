@@ -1,0 +1,75 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Who are you creating a profile for?</h1>
+
+        <div class="moj-search govuk-!-width-two-thirds govuk-!-margin-bottom-7">
+
+          <form method="post">
+            <div class="govuk-form-group">
+
+              <!-- <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+                Search for a prisoner
+              </label> -->
+
+              <label class="govuk-label moj-search__label " for="search">
+                Enter a name or prison number
+              </label>
+
+              <input class="govuk-input moj-search__input " id="search" name="search" type="search" value="hall">
+            </div>
+
+            <button class="govuk-button moj-search__button" data-module="govuk-button">
+              Search
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="govuk-grid-column-full">
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Name</th>
+              <th scope="col" class="govuk-table__header">Prison number</th>
+              <th scope="col" class="govuk-table__header">Date of birth</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell"><a href="#">Hall, Daniel</a></td>
+                    <td class="govuk-table__cell">AB124BD</td>
+                    <td class="govuk-table__cell">19 December 1993 (28 years old)</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell"><a href="./q1-right-to-work">Hall, Kevin</a></td>
+                    <td class="govuk-table__cell">G2911GD</td>
+                    <td class="govuk-table__cell">15 January 1986 (36 years old)</td>
+                  </tr>
+            </tbody>
+        </table>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,130 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!-- <form action="/reason-for-decline-answer" method="post" novalidate> -->
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="reason-for-decline-got-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  {% if data['prisoner-name'] == 'RD' %}
+                    Why does Robert Daniels not want support?
+                  {% elseif data['scenario'] == '2' %}
+                    Why does Damien Adams not want support?
+                  {% else %}
+                    Why does Kevin Hall not want support?
+                  {% endif %}
+                </h1>
+              </legend>
+              <div id="reason-for-decline-got-hint" class="govuk-hint">
+                Select all that apply.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-8" name="reason-for-decline" type="checkbox" value="Feels type of offence will limit their ability to find work">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-8">
+                    Feels type of offence will limit their ability to find work
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline" name="reason-for-decline" type="checkbox" value="Has full-time caring responsibilities">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline">
+                    Has full-time caring responsibilities
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-1" name="reason-for-decline" type="checkbox" value="Lacks confidence in their ability to find work">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-1">
+                    Lacks confidence in their ability to find work
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-2" name="reason-for-decline" type="checkbox" value="Lacks motivation to find work">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-2">
+                    Lacks motivation to find work
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-3" name="reason-for-decline" type="checkbox" value="Not able to work due to a health condition">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-3">
+                    Not able to work due to a health condition
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-9" name="reason-for-decline" type="checkbox" value="Refused support with no reason">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-9">
+                    Refused support with no reason
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-4" name="reason-for-decline" type="checkbox" value="Retired">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-4">
+                    Retired
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-5" name="reason-for-decline" type="checkbox" value="Returning to work they had before prison">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-5">
+                    Returning to work they had before prison
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-6" name="reason-for-decline" type="checkbox" value="Self-employed">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-6">
+                    Self-employed
+                  </label>
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="reason-for-decline-7" name="reason-for-decline" type="checkbox" value="Other" data-aria-controls="conditional-reason-for-decline">
+                  <label class="govuk-label govuk-checkboxes__label" for="reason-for-decline-7">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-reason-for-decline">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="reason-for-decline-details">
+                      Give details
+                    </label>
+                    <textarea class="govuk-textarea" rows="2" id="reason-for-decline-details" name="reason-for-decline-details"></textarea>
+                  </div>
+
+
+              </div>
+
+
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

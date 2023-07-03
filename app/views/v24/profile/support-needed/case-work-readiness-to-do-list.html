@@ -1,0 +1,164 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+      <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+          <main class="govuk-main-wrapper">
+
+              <form method="post" action="./confirm-work-ready-decision">
+
+              <div class="header-with-link">
+                <span class="govuk-caption-m">Prison number: G2911GD</span>
+                <h1 class="govuk-heading-l">Kevin Hall's work profile </h1>
+
+                  <!-- <button class="govuk-button" data-module="govuk-button">
+                    Add to ready to work list
+                  </button> -->
+
+              </div>
+
+              <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+                <ul class="moj-sub-navigation__list">
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link"  href="./case-work-readiness">Overview</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" aria-current="page" href="#">To-do list</a>
+                  </li>
+
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="./case-work-readiness-personal-details">Personal details</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="./case-work-readiness-skills">Training in prison</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="./case-work-readiness-contacts">Contacts</a>
+                  </li>
+
+                  <!-- <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="#">Sentence and release</a>
+                  </li> -->
+
+
+                </ul>
+
+              </nav>
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+
+                  <h1 class="govuk-heading-l govuk-!-margin-bottom-7">To-do list</h1>
+
+                  </div>
+                </div>
+
+                  <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-two-thirds">
+
+
+
+    <ol class="app-task-list">
+
+<ul class="app-task-list__items">
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="bank-account-status">
+    Get a bank account
+  </a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="bank-account-status">Completed</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="CV-status">
+    Write a CV
+  </a>
+</span>
+<strong class="govuk-tag  govuk-tag--grey  app-task-list__tag" id="CV-status">Not started</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="disclosure-letter-status">
+  Write a disclosure letter
+  </a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="disclosure-letter-status">Completed</strong>
+</li>
+<!-- <li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="contact-details-status">
+    Get an email address or phone number
+  </a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="contact-details-status">Completed</strong>
+</li> -->
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="housing-status">
+    Get housing in place
+  </a>
+</span>
+<strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="housing-status">Not started</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="ID-status">
+  Get ID
+</a>
+</span>
+<strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="ID-status">In progress</strong>
+</li>
+<li class="app-task-list__item">
+<span class="app-task-list__task-name">
+  <a href="#" aria-describedby="interview-clothes-status">
+  Get interview clothes
+</a>
+</span>
+<strong class="govuk-tag app-task-list__tag" id="interview-clothes-status">Completed</strong>
+</li>
+
+</ul>
+</li>
+
+
+</ol>
+
+
+
+
+
+
+                </div>
+
+                <!-- <div class="govuk-grid-column-one-third">
+
+                  <aside class="app-related-items" role="complementary">
+                    <h2 class="govuk-heading-m" id="subsection-title">
+                    Expected release date
+                    </h2>
+
+
+                <p class="govuk-body">1 September 2022</p>
+
+                <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">View sentence and release details (opens in a new tab)</a></p>
+
+
+                </aside>
+              </div> -->
+
+
+        </div>
+    </div>
+  </form>
+      </main>
+
+{% endblock %}

@@ -1,0 +1,241 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+    <!-- <a href="/v20/checklist/scenario-1/q8-qualifications" class="govuk-back-link">Back</a> -->
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Check your answers before saving them to {% if data['scenario'] == '2' %}Damien Adams's{% else %}Kevin Hall's{% endif %} profile</h1>
+
+        <h2 class="govuk-heading-m">Prisoner details</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {% if data['scenario'] == '2' %}Adams, Damien{% else %}Hall, Kevin{% endif %}
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Prison number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              G2911GD
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Eligibility for support</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Right to work
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['right-to-work'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q1-right-to-work">
+                Change<span class="govuk-visually-hidden"> right to work</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Wants support to get work
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['opt-in-for-support'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q2-opt-in-for-support">
+                Change<span class="govuk-visually-hidden"> whether they want support</span>
+              </a>
+            </dd>
+          </div>
+
+        </dl>
+
+        <h2 class="govuk-heading-m">Things they have in place already</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Has already got
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['has-already-got'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q3-has-already-got">
+                Change<span class="govuk-visually-hidden"> things they have in place already</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Type of ID
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['ID-type'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q3a-ID-type">
+                Change<span class="govuk-visually-hidden"> type of ID they have</span>
+              </a>
+            </dd>
+          </div>
+
+
+        </dl>
+
+        <h2 class="govuk-heading-m">Things that may affect their ability to work</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Potential affect on ability to work
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['might-impact'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q4-might-be-impacted-by">
+                Change<span class="govuk-visually-hidden"> </span>
+              </a>
+            </dd>
+          </div>
+
+          <!-- <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Full-time caring responsibilities
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['full-time'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q4a-caring-responsibilities">
+                Change<span class="govuk-visually-hidden"> </span>
+              </a>
+            </dd>
+          </div> -->
+
+          <!-- <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Mental health
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['mental-health'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q4b-mental-health">
+                Change<span class="govuk-visually-hidden"> </span>
+              </a>
+            </dd>
+          </div> -->
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Drug or alcohol dependency
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['dependency'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q4c-dependency">
+                Change<span class="govuk-visually-hidden"> </span>
+              </a>
+            </dd>
+          </div>
+
+        </dl>
+
+        <h2 class="govuk-heading-m">Work-related information</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Work types of interest
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['job-sectors'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q5-job-sectors">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Particular job of interest
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['work-goals'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q6-job-role">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Work or volunteering experience
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['work-experience'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q7-work-experience">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Qualifications and training
+            </dt>
+            <dd class="govuk-summary-list__value">
+              {{ data['qualifications'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="q8-qualifications">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <form method="post" novalidate>
+
+          <input type="hidden" name="answers-checked" value="true">
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save to profile
+          </button>
+
+<!-- Jump link for demo -->
+          <br><a href="../list-all" style="color: white">Demo link</a>
+
+        </form>
+
+
+
+    </div>
+  </div>
+  </main>
+</div>
+
+{% endblock %}

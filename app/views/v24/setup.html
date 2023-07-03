@@ -1,0 +1,64 @@
+{% extends "../layout-scenarios.html" %}
+
+{% block content %}
+  <div class="govuk-width-container">
+
+    <form class="form" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="scenario-1" name="scenario" type="radio" value="1">
+              <label class="govuk-label govuk-radios__label" for="scenario-1">
+                Scenario 1
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="scenario-2" name="scenario" type="radio" value="2" checked>
+              <label class="govuk-label govuk-radios__label" for="scenario-2">
+                Scenario 2
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <button class="govuk-button govuk-!-margin-bottom-9" data-module="govuk-button">
+        Start prototype
+      </button>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Prisoner profiles and working scenarios</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Prisoner name</th>
+            <th scope="col" class="govuk-table__header">Details</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Kevin Hall</th>
+            <td class="govuk-table__cell">NEEDS SUPPORT status. <br>Most realistic and complete profile. Can change status forward to Ready to work, and back to either No right to work or Does not want support and profile updates accordingly.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Damien Adams</th>
+            <td class="govuk-table__cell">NOT STARTED status. <br>Use this profile to complete the checklist questions / work assessment.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Lee Baron</th>
+            <td class="govuk-table__cell">DOES NOT WANT SUPPORT status. <br>Can change status to Ready to work or Needs support and the onward journey works, taking the user to complete the work assessment (will not update profile at the end). Also possible to change status to No right to work and profile will update.</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Robert Daniels</th>
+            <td class="govuk-table__cell">NO RIGHT TO WORK status. <br>Can change status to Ready to work or Needs support and the onward journey works, taking the user to complete the work assessment (will not update profile at the end). Also possible to change status to Does not want support, taking the user to these questions (will not update profile at the end).</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </form>
+
+
+  </div>
+{% endblock %}

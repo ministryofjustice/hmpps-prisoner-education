@@ -1,0 +1,55 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          {% if data['scenario'] == '2' %}
+            Does Damien Adams want support to get work?
+          {% else %}
+            Does Kevin Hall want support to get work?
+          {% endif %}
+        </h1>
+
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="opt-in-for-support-yes" name="opt-in-for-support" type="radio" value="Yes">
+                  <label class="govuk-label govuk-radios__label" for="opt-in-for-support-yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="opt-in-for-support-no" name="opt-in-for-support" type="radio" value="No">
+                  <label class="govuk-label govuk-radios__label" for="opt-in-for-support-no">
+                    No
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,476 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <!-- Breadcrumb -->
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dps-home">Digital Prison Services</a>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Main page -->
+
+  <main class="govuk-main-wrapper">
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-7">
+      Get someone ready to work
+    </h1>
+
+      <div class="govuk-form-group">
+        <div class="govuk-form-group filter-box govuk-!-margin-top-4">
+
+        <div class="govuk-grid-column-full govuk-!-margin-bottom-3">
+          <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s govuk-!-margin-bottom-0">
+              Status
+            </legend>
+
+            <div class="govuk-radios govuk-radios--inline govuk-radios govuk-radios--small">
+              <div class="govuk-radios__item">
+                <input onclick="document.location.href='./list-all'" class="govuk-radios__input" id="simple-filter" name="simple-filter" type="radio" value="All">
+                <label class="govuk-label govuk-radios__label" for="simple-filter">All</a>
+                </label>
+              </div>
+
+              <div class="govuk-radios__item">
+                  <input onclick="document.location.href='./list-all-no-profile'" class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="Not started">
+                  <label class="govuk-label govuk-radios__label" for="simple-filter-2">Not started</label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input onclick="document.location.href='./list-all-need-support'" class="govuk-radios__input" id="simple-filter-3" name="simple-filter" type="radio" value="Needs support">
+                <label class="govuk-label govuk-radios__label" for="simple-filter-3">Needs support</label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input onclick="document.location.href='./list-all-ready'" class="govuk-radios__input" id="simple-filter-4" name="simple-filter" type="radio" value="Ready to work">
+                <label class="govuk-label govuk-radios__label" for="simple-filter-4">Ready to work</label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input onclick="document.location.href='./list-all-doesnt-want-support'" class="govuk-radios__input" id="simple-filter-5" name="simple-filter" type="radio" value="Does not want support">
+                <label class="govuk-label govuk-radios__label" for="simple-filter-5">Does not want support</label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="simple-filter-6" name="simple-filter" type="radio" value="No right to work" checked="true">
+                <label class="govuk-label govuk-radios__label" for="simple-filter-6">No right to work</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+
+        <div class="govuk-grid-column-one-third">
+
+          <!-- <div class="moj-search">
+            <form method="post">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-!-font-weight-bold moj-search__label" for="filterName">
+                  Filter by prisoner's name
+                </label>
+                <input class="govuk-input moj-search__input " onkeyup="myFunction()" id="filterName" name="filterName" type="text" aria-describedby="search-hint">
+              </div>
+            </form>
+          </div> -->
+
+          <div class="moj-search">
+            <form method="post">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+                  Search by prisoner's name
+                </label>
+                <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+              </div>
+
+              <button class="govuk-button moj-search__button " data-module="govuk-button">
+                Search
+              </button>
+
+            </form>
+          </div>
+
+
+        </div>
+
+
+    </div>
+  </div>
+
+<!-- add table of people  -->
+
+<table class="govuk-table govuk-!-margin-top-6" data-module="moj-sortable-table" id="prisonerTable">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header" aria-sort="ascending">Prisoner</th>
+      <th scope="col" class="govuk-table__header" aria-sort="none">Release type and date</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Work summary</th>
+      <th scope="col" class="govuk-table__header" aria-sort="none">Updated on</th>
+  </thead>
+  <tbody class="govuk-table__body">
+
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Adams" href="#">Adams, Damien</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.28">HDC:</br>28 May 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Not started"><strong class="govuk-tag govuk-tag--red">Not started</strong></td>
+      <td class="govuk-table__cell">N/A</td>
+      <td class="govuk-table__cell" data-sort-value="1900.01.01">N/A</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Ahmed" href="#">Ahmed, Adam</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5823GP </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.07.04">04 Jul 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Ready to work"><strong class="govuk-tag govuk-tag--green">Ready to work</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Looking for work in:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Construction and trade</li>
+          <li>Driving</li>
+          <li>Outdoors</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.17">17 Jan 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Atkins" href="#">Atkins, Joel</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3902GW </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.03">HDC:</br>03 Jun 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Needs support"><strong class="govuk-tag govuk-tag--yellow">Needs support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Needs help with:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.27">27 Jan 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Bahringer" href="#">Bahringer, Darin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3989UN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.12.13">13 Dec 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Needs support"><strong class="govuk-tag govuk-tag--yellow">Needs support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Needs help with:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Bank account</li>
+          <li>CV</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.02.02">2 Feb 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Baron" href="#">Baron, Lee</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3757UN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.11.11">11 Nov 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Does not want support"><strong class="govuk-tag govuk-tag--grey">Does not want support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Reason:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Lacks confidence</li>
+          <li>Lacks motivation</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.03">03 May 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Bruce" href="#">Bruce, John</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3757UN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.10.03">03 Oct 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Not started"><strong class="govuk-tag govuk-tag--red">Not started</strong></td>
+      <td class="govuk-table__cell">N/A</td>
+      <td class="govuk-table__cell" data-sort-value="1900.01.01">N/A</td> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Charles" href="#">Charles, Jermaine</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3892UH</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.03">03 May 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Ready to work"><strong class="govuk-tag govuk-tag--green">Ready to work</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Looking for work in:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Construction and trade</li>
+          <li>Manufacturing</li>
+          <li>Sport and fitness</li>
+          <li>Warehousing and storage</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.11">11 Apr 2022</td>
+    </tr> -->
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Daniels" href="#">Daniels, Robert</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G3933UL</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.12.06">6 Dec 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.03.05">5 Mar 2022</td>
+    </tr>
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Davies" href="#">Davies, Daniel</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8152UC</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.20">HDC:</br>20 Jun 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Needs support"><strong class="govuk-tag govuk-tag--yellow">Needs support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Needs help with:</p>
+          <li>Bank account</li>
+          <li>CV</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.05">5 May 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Edwards" href="#">Edwards, Andrei</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> H678512</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.07">07 Aug 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Needs support"><strong class="govuk-tag govuk-tag--yellow">Needs support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Needs help with:</p>
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+          <li>ID</li>
+          <li>Interview clothes</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.05">5 May 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Eku" href="#">Eku, Tyler</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8012UH</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.11.20">20 Nov 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Does not want support"><strong class="govuk-tag govuk-tag--grey">Does not want support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Reason:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Has caring responsibilities</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Gavella" href="#">Gavella, Gustavo</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G6531GT</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.18">18 Aug 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Does not want support"><strong class="govuk-tag govuk-tag--grey">Does not want support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Reason:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Above retirement age</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
+    </tr> -->
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Hatton" href="#">Hatton, Mark</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G1318GN</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.09.06">6 Sep 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.31">31 Jan 2022</td>
+    </tr>
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Hall" href="./profile/support-needed/case-work-readiness">Hall, Kevin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G2911GD </span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.09.01">01 Sep 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Needs support"><strong class="govuk-tag govuk-tag--yellow">Needs support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Needs help with:</p>
+          <li>CV</li>
+          <li>Housing</li>
+          <li>ID</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.26">26 Apr 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Marvin" href="#">Lee, Marvin</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G8232UP</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.10.01">HDC:</br>01 Oct 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Not started"><strong class="govuk-tag govuk-tag--red">Not started</strong></td>
+      <td class="govuk-table__cell">N/A</td>
+      <td class="govuk-table__cell" data-sort-value="1900.01.01">N/A</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="McLaughlin" href="#">McLaughlin, Ross</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G0143VW</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.11">11 Jun 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Ready to work"><strong class="govuk-tag govuk-tag--green">Ready to work</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Looking for work in:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Construction and trade</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.09">9 Apr 2022</td>
+    </tr> -->
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Mraz" href="#">Mraz, Leland</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> W172699</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.28">28 Aug 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Needs support"><strong class="govuk-tag govuk-tag--yellow">Needs support</strong></td>
+      <td class="govuk-table__cell">
+        <p class="govuk-body govuk-!-margin-bottom-1">Needs help with:</p>
+          <li>Bank account</li>
+          <li>CV</li>
+          <li>Disclosure letter</li>
+          <li>Email address or phone number</li>
+          <li>Housing</li>
+          <li>ID</li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell" data-sort-value="2022.02.26">26 Feb 2022</td>
+    </tr> -->
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Nowak" href="#">Nowak, Sokol</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G4724UC</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.27">27 Jun 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.26">26 Jan 2022</td>
+    </tr>
+
+    <!-- <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Osborne" href="#">Osborne, Jamie</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5511UP</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.07.19">HDC:</br>19 Jul 2022</td>
+      <td class="govuk-table__cell" data-sort-value="Not started"><strong class="govuk-tag govuk-tag--red">Not started</strong></td>
+      <td class="govuk-table__cell">N/A</td>
+      <td class="govuk-table__cell" data-sort-value="1900.01.01">N/A</td>
+    </tr> -->
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Petrs" href="#">Petrs, Vasil</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5511UP</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.02">2 Jun 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.11">11 May 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Petrs" href="#">Petrs, Dimi</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5312UM</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.02">2 Aug 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.02">2 Apr 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Sabah" href="#">Sabah, Mario</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G5333KL</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.11.13">13 Nov 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.03.30">30 Mar 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Seve" href="#">Seve, Jordan</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> WX3421A</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.11.30">30 Nov 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.03">3 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Sharif" href="#">Sharif, Omar</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> K78631Q</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.12.30">31 Dec 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.10">10 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Storm" href="#">Storm, Trenton</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> GG00921</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.07.02">2 Jul 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.02.21">21 Feb 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Tadesse" href="#">Tadesse, Emilian</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> WX7861S</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.09.17">27 Jul 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.01.05">5 Jan 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Thokozani" href="#">Thokozani, Flick</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> Z12212M</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.09.17">17 Sep 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.11">11 May 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Torin" href="#">Torin, Murtaza</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G27489B</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.08.15">15 Aug 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.18">18 May 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Walker" href="#">Walker, Marjan</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> CW9812J</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.06.02">10 Aug 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.04.21">21 Apr 2022</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" data-sort-value="Zander" href="#">Zander, Bogumił</a><br> <span class="govuk-hint govuk-!-margin-bottom-0"> G11992D</span></td>
+      <td class="govuk-table__cell" data-sort-value="2022.09.17">1 Sep 2022</td>
+      <td class="govuk-table__cell" data-sort-value="No right to work"><strong class="govuk-tag govuk-tag--grey">No right to work</strong></td>
+      <td class="govuk-table__cell">Does not have the right to work in the UK</td>
+      <td class="govuk-table__cell" data-sort-value="2022.05.18">18 May 2022</td>
+    </tr>
+
+
+
+
+</table>
+
+  <nav class="moj-pagination govuk-!-font-size-19" id="pagination-label">
+    <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+    <ul class="moj-pagination__list"></ul>
+    <p class="moj-pagination__results">Showing <b>1</b> to <b>14</b> of <b>14</b> results</p>
+  </nav>
+
+
+</div>
+</div>
+
+</div>
+
+
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("filterName");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("prisonerTable");
+    tr = table.getElementsByTagName("tr");
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>
+
+
+{% endblock %}

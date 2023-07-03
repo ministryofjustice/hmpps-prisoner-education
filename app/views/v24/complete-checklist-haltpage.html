@@ -1,0 +1,49 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <form class="form" method="post" novalidate>
+
+          <h1 class="govuk-heading-l">You must now complete {% if data['prisoner-name'] == 'RD' %}Robert Daniels's {% elseif data['prisoner-name'] == 'LB' %}Lee Baron's {% else %}Kevin Hall’s {% endif %}work assessment</h1>
+
+          {% if data['prisoner-name'] == 'RD' %}
+          <p class="govuk-body">You’ve told us Robert Daniels now{% if data['status'] == 'Ready to work' %} is ready to work{% else %} needs support{% endif %}.</p>
+          {% elseif data['prisoner-name'] == 'LB' %}
+          <p class="govuk-body">You’ve told us Lee Baron now{% if data['status'] == 'Ready to work' %} is ready to work{% else %} needs support{% endif %}.</p>
+          {% else %}
+          <p class="govuk-body">You’ve told us Kevin Hall now{% if data['status'] == 'Ready to work' %} is ready to work{% else %} needs support{% endif %}.</p>
+          {% endif %}
+
+          <p class="govuk-body">To make sure they get the right support to get into work, {% if data['prisoner-name'] == 'RD' %}Robert Daniels {% elseif data['prisoner-name'] == 'LB' %}Lee Baron {% else %}Kevin Hall {% endif %} needs to complete a work assessment.</p>
+
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Complete assessment
+            </button>
+            {% if data['prisoner-name'] == 'RD' %}
+            <a class="govuk-link" href="profile/no-right-to-work/robert-daniels">Return to profile</a>
+            {% elseif data['prisoner-name'] == 'LB' %}
+            <a class="govuk-link" href="profile/does-not-want-support/lee-baron">Return to profile</a>
+            {% else %}
+            <a class="govuk-link" href="profile/support-needed/case-work-readiness">Return to profile</a>
+            {% endif %}
+          </div>
+
+        </form>
+
+       </div>
+
+  </main>
+
+</div>
+
+</div>
+
+{% endblock %}

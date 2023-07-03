@@ -1,0 +1,86 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="profile/support-needed/case-work-readiness" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+      <form method="post">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l">Kevin Hall</span>
+        <h1 class="govuk-heading-l">CV</h1>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h2 class="govuk-fieldset__heading">
+                Progress
+              </h2>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="progress-1" name="progress" type="radio" value="Not started">
+                <label class="govuk-label govuk-radios__label" for="progress-1">
+                  Not started
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="progress-2" name="progress" type="radio" value="In progress" checked>
+                <label class="govuk-label govuk-radios__label" for="progress-2">
+                  In progress
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="progress-3" name="progress" type="radio" value="Completed">
+                <label class="govuk-label govuk-radios__label" for="progress-3">
+                  Completed
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <h2 class="govuk-heading-m">Notes</h2>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Created</th>
+              <th scope="col" class="govuk-table__header">Details</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td scope="row" class="govuk-table__cell govuk-!-width-one-quarter">
+                2 May 2022<br>
+                10:23<br>
+                <span class="govuk-hint">Ben Khan</span>
+              </td>
+              <td class="govuk-table__cell govuk-!-width-three-quarters">Kevin’s been to the employment hub this week and has made a start on a CV. Yet to start a cover letter.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="govuk-body govuk-!-margin-bottom-8"><a class="govuk-link" href="todo-in-progress-add-note">Add a note</a></p>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save progress
+          </button>
+          <!-- <p class="govuk-body"><a class="govuk-link" href="#">Cancel</a></p> -->
+
+
+    </div>
+
+  </form>
+  </main>
+
+</div>
+
+</div>
+
+{% endblock %}

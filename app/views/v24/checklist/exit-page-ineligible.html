@@ -1,0 +1,37 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          {% if data['scenario'] == '2' %}
+            Damien Adams is not allowed to work in the UK
+          {% else %}
+            Kevin Hall is not allowed to work in the UK
+          {% endif %}
+        </h1>
+
+        <p class="govuk-body">
+          The prison is unable to support {% if data['scenario'] == '2' %}Damien Adams{% else %}Kevin Hall{% endif %} into work.
+        </p>
+
+        <p class="govuk-body">
+          <a href="../list-all" class="govuk-button">Save and return to service home</a>
+        </p>
+
+
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

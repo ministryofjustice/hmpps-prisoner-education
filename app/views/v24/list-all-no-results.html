@@ -1,0 +1,132 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <!-- Breadcrumb -->
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dps-home">Digital Prison Services</a>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Main page -->
+
+  <main class="govuk-main-wrapper">
+
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-7">
+      Get someone ready to work
+    </h1>
+
+    <div class="govuk-form-group">
+      <div class="govuk-form-group filter-box govuk-!-margin-top-4">
+
+      <div class="govuk-grid-column-full govuk-!-margin-bottom-3">
+        <fieldset class="govuk-fieldset" aria-describedby="simple-filter-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s govuk-!-margin-bottom-0">
+            Status
+          </legend>
+
+          <div class="govuk-radios govuk-radios--inline govuk-radios govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="simple-filter" name="simple-filter" type="radio" value="All" checked="true">
+              <label class="govuk-label govuk-radios__label" for="simple-filter">All</a>
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input onclick="document.location.href='./list-all-no-profile'" class="govuk-radios__input" id="simple-filter-2" name="simple-filter" type="radio" value="Not started">
+                <label class="govuk-label govuk-radios__label" for="simple-filter-2">Not started</label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input onclick="document.location.href='./list-all-need-support'" class="govuk-radios__input" id="simple-filter-3" name="simple-filter" type="radio" value="Needs support">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-3">Needs support</label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input onclick="document.location.href='./list-all-ready'" class="govuk-radios__input" id="simple-filter-4" name="simple-filter" type="radio" value="Ready to work">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-4">Ready to work</label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input onclick="document.location.href='./list-all-doesnt-want-support'" class="govuk-radios__input" id="simple-filter-5" name="simple-filter" type="radio" value="Does not want support">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-5">Does not want support</label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input onclick="document.location.href='./list-all-No right to work'" class="govuk-radios__input" id="simple-filter-6" name="simple-filter" type="radio" value="No right to work">
+              <label class="govuk-label govuk-radios__label" for="simple-filter-6">No right to work</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-grid-column-one-third">
+
+        <div class="moj-search">
+          <form method="post">
+
+            <div class="govuk-form-group">
+              <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+                Search by prisoner's name
+              </label>
+              <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint" value="{{ data['search'] }}">
+            </div>
+
+            <button class="govuk-button moj-search__button" data-module="govuk-button">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-column-one-third" style="padding-left: 0px">
+        <p class="govuk-!-margin-bottom-0 govuk-!-margin-top-7"><a class="govuk-link" href="list-all">Clear</a></p>
+      </div>
+
+
+      </div>
+    </div>
+
+      <h2 class="govuk-heading-m">There are 0 results for "{{ data['search'] }}"</p>
+      <p class="govuk-body">Check your spelling and try searching again, or clear the search and browse for the prisoner.</p>
+
+  </main>
+
+</div>
+
+
+
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("filterName");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("prisonerTable");
+    tr = table.getElementsByTagName("tr");
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>
+
+
+
+{% endblock %}

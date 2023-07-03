@@ -1,0 +1,68 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l">
+          {% if data['prisoner-name'] == 'RD' %}
+            Robert Daniels
+          {% elseif data['prisoner-name'] == 'LB' %}
+            Lee Baron
+          {% else %}
+            Kevin Hall
+          {% endif %}
+        </span>
+        <h1 class="govuk-heading-l">Change work status</h1>
+
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-needsSupport" name="status" type="radio" value="Needs support" >
+                <label class="govuk-label govuk-radios__label" for="status-needsSupport">
+                  Needs support
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-Ready" name="status" type="radio" value="Ready to work" >
+                <label class="govuk-label govuk-radios__label" for="status-Ready">
+                  Ready to work
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-DoesNotWant" name="status" type="radio" value="Does not want support">
+                <label class="govuk-label govuk-radios__label" for="status-DoesNotWant">
+                  Does not want support
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-NoRightToWork" name="status" type="radio" value="No right to work">
+                <label class="govuk-label govuk-radios__label" for="status-NoRightToWork">
+                  No right to work in the UK
+                </label>
+              </div>
+            </div>
+        </div>
+
+
+          <button class="govuk-button" data-module="govuk-button">
+            Update status
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <!-- <div class="govuk-breadcrumbs govuk-!-margin-top-6 ">
+    <div class="prisoner-profile-breadcrumbs">
+
+  <div class="prisoner-profile-breadcrumbs__search">
+    <a href="/v17/search-results" class="govuk-link govuk-link--no-visited-state" data-test="recent-search-link">
+      View most recent search
+    </a>
+  </div>
+
+<div class="prisoner-profile-breadcrumbs__breadcrumbs">
+  <div class="govuk-breadcrumbs ">
+    <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/v17/home">Get someone work ready</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Assessment for Hall, Kevin</li>
+    </ol>
+    </div>
+</div>
+
+</div>
+
+  </div> -->
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Create a work readiness profile for a prisoner</h1>
+
+        <p class="govuk-body">Use this service to record:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+        <li>whether a prisoner wants support to get work</li>
+        <li>what support a prisoner needs to get ready for work</li>
+        <li>what they have set up already</li>
+      </ul>
+
+      <!-- <p class="govuk-body">The Prison Employment Lead will use this information to help the prisoner get ready for work.</p> -->
+
+      <p class="govuk-body">This information will be used to prioritise what support the prisoner needs to get ready for work.</p>
+
+
+        <a href="./search" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+          Start
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+          </svg></a>
+
+          <h2 class="govuk-heading-m">Before you start</h2>
+
+          <p class="govuk-body">You'll need to know if the prisoner has the right to work in the UK.</p>
+
+          <p class="govuk-body">If the prisoner wants support you will also need to know if they have:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>ID - for example, a passport</li>
+            <li>a bank account</li>
+            <li>housing for their release</li>
+            <li>a CV</li>
+            <li>a disclosure letter</li>
+            <li>any other work-related qualifications or certificates - for example, a heavy goods vehicle (HGV) licence</li>
+          </ul>
+
+          <p class="govuk-body">You'll also need to know what type of job they are interested in and if they have worked before.</p>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

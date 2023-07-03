@@ -1,0 +1,65 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <a href="#" onclick="history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          {% if data['scenario'] == '2' %}
+            Does Damien Adams have any previous work or volunteering experience?
+          {% else %}
+            Does Kevin Hall have any previous work or volunteering experience?
+          {% endif %}
+        </h1>
+
+        <!-- <form action="/v20/checklist/scenario-1/q8-qualifications" method="post" novalidate> -->
+        <form class="form" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+
+                  <input class="govuk-radios__input" id="work-experience" name="work-experience" type="radio" value="Yes" data-aria-controls="conditional-work-experience">
+                  <label class="govuk-label govuk-radios__label" for="work-experience">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-work-experience">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="work-experience-by-email">
+                      Give details
+                    </label>
+                    <textarea class="govuk-textarea" id="with-hint" name="with-hint" rows="3" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                  </div>
+
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="work-experience-2" name="work-experience" type="radio" value="No" data-aria-controls="conditional-work-experience-2">
+                  <label class="govuk-label govuk-radios__label" for="work-experience-2">
+                    No
+                  </label>
+                </div>
+                </div>
+
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

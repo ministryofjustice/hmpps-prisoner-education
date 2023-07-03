@@ -1,0 +1,277 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+    <div class="govuk-width-container">
+
+    <!-- Breadcrumb -->
+
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="../../dps-home">Digital Prison Services</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="../../list-all">Get someone ready to work</a>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Main page -->
+
+    <main class="govuk-main-wrapper">
+
+        <form method="post">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <div class="govuk-grid-column-one-quarter">
+                  <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Prison number: <span class="govuk-body">G2911GD</span></p>
+                </div>
+                <div class="govuk-grid-column-three-quarters">
+                  <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Release date: <span class="govuk-body">1 September 2022</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Kevin Hall's work profile </h1>
+
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+
+              <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+                <ul class="moj-sub-navigation__list">
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" aria-current="page" href="#">Overview</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="./case-work-readiness-personal-details">Personal details</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="./case-work-readiness-work">Work interests and experience</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="./case-work-readiness-skills">Training in prison</a>
+                  </li>
+
+                  <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="./case-work-readiness-contacts">Contacts</a>
+                  </li>
+
+                  <!-- <li class="moj-sub-navigation__item">
+                    <a class="moj-sub-navigation__link" href="#">Sentence and release</a>
+                  </li> -->
+
+
+                </ul>
+
+              </nav>
+
+            </div>
+          </div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-m govuk-!-margin-bottom-7">Overview</h1>
+
+
+      <section class="app-summary-card govuk-!-margin-bottom-6">
+        <header class="app-summary-card__header">
+          <h2 class="app-summary-card__title">
+            Status
+          </h2>
+        </header>
+
+        <div class="app-summary-card__body">
+          <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Current work status
+              </dt>
+              <dd class="govuk-summary-list__value">
+                {% if data['status'] == 'Ready to work' %}
+                  <strong class="govuk-tag govuk-tag--green">
+                    Ready to work
+                  </strong>
+                {% elseif data['status'] == 'No right to work' %}
+                  <strong class="govuk-tag govuk-tag--grey">
+                    No right to work
+                  </strong>
+                {% elseif data['status'] == 'Does not want support' %}
+                  <strong class="govuk-tag govuk-tag--grey">
+                    Does not want support
+                  </strong>
+                {% else %}
+                  <strong class="govuk-tag govuk-tag--yellow">
+                    Needs support
+                  </strong>
+                {% endif %}
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link govuk-link--no-visited-state" href="../../confirm-change-status">
+                  Change<span class="govuk-visually-hidden"> status</span>
+                </a>
+              </dd>
+            </div>
+          {% if data['status'] == 'Does not want support' %}
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Reason
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Lacks confidence in their ability to find work
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link govuk-link--no-visited-state" href="../../q2a-reason-for-decline">
+                  Change<span class="govuk-visually-hidden"> status</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Change in circumstance that would help
+              </dt>
+              <dd class="govuk-summary-list__value">
+                ID in place
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link govuk-link--no-visited-state" href="../../q2b-what-needs-to-change">
+                  Change<span class="govuk-visually-hidden"> status</span>
+                </a>
+              </dd>
+            </div>
+          {% else %}
+          {% endif %}
+            <div class="govuk-summary-list__row">
+            </div>
+          </dl>
+          <p class="app-summary-card__hint">Last updated 1 August by James Brown</p>
+
+        </div>
+
+
+      </section>
+
+      <section class="app-summary-card govuk-!-margin-bottom-6">
+        <header class="app-summary-card__header">
+          <h2 class="app-summary-card__title">
+            Things they have in place or need
+          </h2>
+        </header>
+
+        <div class="app-summary-card__body">
+
+        {% if data['status'] == 'No right to work' %}
+        <div class="govuk-warning-text govuk-!-margin-top-2 govuk-!-margin-bottom-4">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Kevin Hall no longer has the right to work in the UK. You do not need to do anything until their work status changes.
+          </strong>
+        </div>
+        {% elseif data['status'] == 'Does not want support' %}
+        <div class="govuk-warning-text govuk-!-margin-top-2 govuk-!-margin-bottom-4">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Kevin Hall no longer wants support to get work. You do not need to do anything until their work status changes.
+          </strong>
+        </div>
+        {% else %}
+        {% endif %}
+
+
+          <h3 class="govuk-heading-s govuk-!-margin-top-2 govuk-!-margin-bottom-2">To do list</h3>
+
+          <ol class="app-task-list">
+          <ul class="app-task-list__items govuk-!-margin-bottom-6" style="padding-left: 0px">
+            <li class="app-task-list__item" style="border-top: 0px">
+              <span class="app-task-list__task-name">
+                <a href="../../todo-in-progress" aria-describedby="CV-status">
+                  CV
+                </a>
+              </span>
+              <strong class="govuk-tag  govuk-tag--blue app-task-list__tag" id="CV-status">In progress</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="../../todo-not-started" aria-describedby="housing-status">
+                  Housing
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="housing-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="../../todo-not-started-ID" aria-describedby="ID-status">
+                  ID
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="ID-status">Not started</strong>
+            </li>
+          </ul>
+          </ol>
+
+          <h3 class="govuk-heading-s govuk-!-margin-top-2 govuk-!-margin-bottom-2">In place already</h3>
+
+          <ol class="app-task-list">
+          <ul class="app-task-list__items govuk-!-margin-bottom-6" style="padding-left: 0px">
+            <li class="app-task-list__item" style="border-top: 0px">
+              <span class="app-task-list__task-name">
+                <a href="../../todo-complete-blank" aria-describedby="bank-account-status">
+                 Bank account
+                </a>
+              </span>
+              <!-- <p class="govuk-body govuk-!-margin-bottom-0" style="float:right" id="bank-account-status">Completed</p> -->
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="disclosure-letter-status">
+                  Disclosure letter
+                </a>
+              </span>
+            <!-- <p class="govuk-body govuk-!-margin-bottom-0" style="float:right" id="disclosure-letter-status">Completed</p> -->
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="contact-status">
+                  Email address or phone number
+                </a>
+              </span>
+              <!-- <p class="govuk-body govuk-!-margin-bottom-0" style="float:right" id="contact-status">Completed</p> -->
+            </li>
+            <!-- <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="interview-clothes-status">
+                  Interview clothes
+                </a>
+              </span>
+              <p class="govuk-body govuk-!-margin-bottom-0" style="float:right" id="interview-clothes-status">Completed</p>
+            </li> -->
+
+          </ul>
+          </ol>
+
+          <p class="app-summary-card__hint">Last updated 1 August by James Brown</p>
+
+        </div>
+      </section>
+
+
+
+  </div>
+
+        </div>
+    </div>
+  </form>
+      </main>
+
+{% endblock %}

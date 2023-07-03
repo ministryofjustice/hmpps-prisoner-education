@@ -1,0 +1,100 @@
+{% extends "./includes/template.html" %}
+
+{% block content %}
+<div class="govuk-width-container">
+
+  <!-- Breadcrumb -->
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../../dps-home">Digital Prison Services</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../../list-all">Get someone ready to work</a>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Main page -->
+
+  <main class="govuk-main-wrapper">
+
+      <form method="post">
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+              <div class="govuk-grid-column-one-quarter">
+                <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Prison number: <span class="govuk-body">G2911GD</span></p>
+              </div>
+              <div class="govuk-grid-column-three-quarters">
+                <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-5">Release date: <span class="govuk-body">HDC: 28 May 2022</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-7">Damien Adams's work profile </h1>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+
+            <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+              <ul class="moj-sub-navigation__list">
+                <li class="moj-sub-navigation__item">
+                  <a class="moj-sub-navigation__link" aria-current="page" href="#">Overview</a>
+                </li>
+
+                <li class="moj-sub-navigation__item">
+                  <a class="moj-sub-navigation__link" href="./damien-adams-personal-details">Personal details</a>
+                </li>
+
+                <!-- <li class="moj-sub-navigation__item">
+                  <a class="moj-sub-navigation__link" href="./case-work-readiness-work">Work interests and experience</a>
+                </li> -->
+
+                <li class="moj-sub-navigation__item">
+                  <a class="moj-sub-navigation__link" href="./damien-adams-skills">Training in prison</a>
+                </li>
+
+                <li class="moj-sub-navigation__item">
+                  <a class="moj-sub-navigation__link" href="./damien-adams-contacts">Contacts</a>
+                </li>
+
+              </ul>
+
+            </nav>
+
+          </div>
+        </div>
+
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-m govuk-!-margin-bottom-7">Overview</h1>
+
+            <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+              <div class="govuk-notification-banner__header">
+                <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                  Important
+                </h2>
+              </div>
+              <div class="govuk-notification-banner__content">
+                <p class="govuk-notification-banner__heading">
+                  Damien Adams has not completed a work assessment.
+                  <a class="govuk-notification-banner__link" href="../../checklist/q1-right-to-work"><br>Complete assessment now</a>.
+                </p>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+</div>
+
+</main>
+
+{% endblock %}
