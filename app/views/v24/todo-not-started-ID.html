@@ -71,6 +71,22 @@
                 UK driving licence
               </label>
             </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="to-do-ID-other" name="to-do-ID" type="checkbox" value="Other" data-aria-controls="conditional-to-do-ID">
+              <label class="govuk-label govuk-checkboxes__label" for="to-do-ID-other">
+                Other
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-to-do-ID">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="to-do-ID-other-details">
+                  Details
+                </label>
+                <textarea class="govuk-textarea" id="with-hint" name="with-hint" rows="2" aria-describedby="with-hint-info with-hint-hint"></textarea>
+              </div>
+            </div>
+
           </div>
         </div>
 

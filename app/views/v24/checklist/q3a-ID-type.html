@@ -48,6 +48,21 @@
                   </label>
                 </div>
 
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="ID-type-other" name="ID-type" type="checkbox" value="Other" data-aria-controls="conditional-ID-type">
+                  <label class="govuk-label govuk-checkboxes__label" for="ID-type-other">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-ID-type">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="ID-type-other-details">
+                      Give details
+                    </label>
+                    <textarea class="govuk-textarea" id="with-hint" name="with-hint" rows="2" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                  </div>
+                </div>
+
               </div>
 
             </fieldset>
