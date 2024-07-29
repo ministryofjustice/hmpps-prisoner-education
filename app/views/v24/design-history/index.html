@@ -1,0 +1,100 @@
+
+{% extends "layout-history.html" %}
+
+{% block pageTitle %}
+  Work readiness Design History
+{% endblock %}
+
+
+{% block beforeContent %}
+
+</div>
+
+<section class="app-masthead" aria-label="head">
+  
+  <div class="app-masthead">
+    
+  <div class="govuk-width-container"> 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        {{ govukBackLink({
+          text: "Back",
+          href: "javascript:window.history.back()"
+        }) }}
+
+        
+      <h1 class="govuk-heading-xl app-masthead__title">
+        A design history for <br>
+        {% include('../includes/version.html') %} of the Get Someone Ready to Work
+       prototype 
+      </h1>
+
+       
+      <p class="app-masthead__description">
+        A record of how our service has iterated.
+      </p>
+      <p>GOV prototype kit version {{releaseVersion}}.</p>
+      </p>
+      </div>
+    </div>  
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+<div class="govuk-width-container">
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+
+  <span class="govuk-caption-l">{% include('../includes/date.html') %}</span>
+<h1 class="govuk-heading-l">Version {% include('../includes/version.html') %}</h1>
+
+      <p>This is the design story for Get Somone Ready to Work prototype {% include('../includes/version.html') %}.</p>
+         
+      <p>This iteration contains some significant changes, based on early insight from internal users. The main features of this initial prototype include:</p>
+      {% include('../includes/summary.html') %}
+
+      <h2 class="govuk-heading-m">H2 heading</h2>
+
+      <h3 class="govuk-heading-s">H3 heading</h3>
+      
+      <p>Content to follow</p>
+      <p>Content with a link <a href="#" title="Link to setup screen">to screen</a>.</p>
+      
+      <!-- <img style="border:1px solid;" class="govuk-!-margin-bottom-4 govuk-!-margin-top-3" src="/public/images/v6upload.png" width="100%" alt="Are you sure upload screen"> -->
+
+      <h2 class="govuk-heading-m">To do</h2>
+    <ul class="govuk-list--bullet govuk-list">
+      <li>Todo list to follow</li>
+    </ul>
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      
+
+    </div>
+  </div>
+
+  
+
+  
+
+{% endblock %}
+

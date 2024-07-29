@@ -19,6 +19,12 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.app-masthead a.govuk-back-link:link, .app-masthead.govuk-back-link:visited {
+  color: #ffffff;
+}
+.app-masthead a.govuk-back-link:before {
+  border-color: #ffffff; 
+}
 .filter-box {
     background-color: govuk-colour("light-grey");
     padding: 30px 10px 30px 10px;

@@ -17,14 +17,7 @@
 
 <h2 class="govuk-heading-l index-box">Work readiness</h2>
 
-  <h2 class="govuk-heading-m">Beta iteration 1 (v24)</h2>
-    <ul class="govuk-list govuk-list--bullet">
-      <li>Updates following private feedback to the following screens: Why don’t they want support (the reasons), Type of work (the job sector list), In place already (split email and phone into 2 options)</li>
-      <li>Updates to Type of ID to include an 'other' option following feedback from NFN about additional ID types</li>
-
-    </ul>
-
-  <a href="/v24/setup" class="govuk-button">View prototype</a>
+{% include('./v24/includes/summary-card.html') %}
 
 
 <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
@@ -407,11 +400,7 @@
       </h2>
       <nav role="navigation" aria-labelledby="subsection-title">
         <ul class="govuk-list govuk-!-font-size-16">
-          <li>
-            <a class="govuk-link govuk-link--no-visited-state" href="https://hmpps-education-design-history.herokuapp.com/">
-              Design history
-            </a>
-          </li>
+
           <li>
             <a class="govuk-link govuk-link--no-visited-state" href="https://github.com/ministryofjustice/hmpps-prisoner-education">
               Prototype Github repository
