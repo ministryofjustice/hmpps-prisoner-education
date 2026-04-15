@@ -10,7 +10,7 @@ const path = require('path')
 const gulp = require('gulp')
 const colour = require('ansi-colors')
 const log = require('fancy-log')
-const nodemon = require('gulp-nodemon')
+const nodemon = require('nodemon')
 
 const config = require('./config.json')
 
@@ -28,7 +28,7 @@ const onQuit = () => {
   process.exit(0)
 }
 
-gulp.task('server', function () {
+gulp.task('server', function (done) {
   nodemon({
     watch: ['.env', '**/*.js', '**/*.json'],
     script: 'listen-on-port.js',
