@@ -1,10 +1,9 @@
 // Core dependencies
 const fs = require('fs')
 const path = require('path')
-const url = require('url')
+const { URLSearchParams } = require('url')
 
 // NPM dependencies
-const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const dotenv = require('dotenv')
 const express = require('express')
@@ -168,8 +167,8 @@ if (useDocumentation) {
 }
 
 // Support for parsing data in POSTs
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({
+app.use(express.json())
+app.use(express.urlencoded({
   extended: true
 }))
 
@@ -306,11 +305,8 @@ if (useV6) {
 
 // Redirect all POSTs to GETs - this allows users to use POST for autoStoreData
 app.post(/^\/([^.]+)$/, function (req, res) {
-  res.redirect(url.format({
-    pathname: '/' + req.params[0],
-    query: req.query
-  })
-  )
+  const queryString = new URLSearchParams(req.query).toString()
+  res.redirect('/' + req.params[0] + (queryString ? '?' + queryString : ''))
 })
 
 // Catch 404 and forward to error handler
